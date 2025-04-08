@@ -1,0 +1,68 @@
+[
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  migration_costs_data.cpp -o build/maci64/migration_costs_data.o",
+    "file": "migration_costs_data.cpp",
+    "output": "build/maci64/migration_costs_data.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  rt_nonfinite.cpp -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  migration_costs_initialize.cpp -o build/maci64/migration_costs_initialize.o",
+    "file": "migration_costs_initialize.cpp",
+    "output": "build/maci64/migration_costs_initialize.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  migration_costs_terminate.cpp -o build/maci64/migration_costs_terminate.o",
+    "file": "migration_costs_terminate.cpp",
+    "output": "build/maci64/migration_costs_terminate.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  migration_costs.cpp -o build/maci64/migration_costs.o",
+    "file": "migration_costs.cpp",
+    "output": "build/maci64/migration_costs.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  power.cpp -o build/maci64/power.o",
+    "file": "power.cpp",
+    "output": "build/maci64/power.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_migration_costs_api.cpp -o build/maci64/_coder_migration_costs_api.o",
+    "file": "interface/_coder_migration_costs_api.cpp",
+    "output": "build/maci64/_coder_migration_costs_api.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_migration_costs_mex.cpp -o build/maci64/_coder_migration_costs_mex.o",
+    "file": "interface/_coder_migration_costs_mex.cpp",
+    "output": "build/maci64/_coder_migration_costs_mex.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  sumMatrixIncludeNaN.cpp -o build/maci64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.cpp",
+    "output": "build/maci64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_migration_costs_info.cpp -o build/maci64/_coder_migration_costs_info.o",
+    "file": "interface/_coder_migration_costs_info.cpp",
+    "output": "build/maci64/_coder_migration_costs_info.o"
+  },
+  {
+    "directory": "/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs/codegen/mex/migration_costs",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c  /Applications/MATLAB_R2021b.app/extern/version/cpp_mexapi_version.cpp -o build/maci64/cpp_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021b.app/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/maci64/cpp_mexapi_version.o"
+  }
+]

@@ -1,0 +1,57 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/drivers/loop_uhat_sparse_v1_0/src" --include "../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/6b2b/hdl" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_control_s_axi.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_flow_control_loop_pipe_sequential_init.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_integral_RAM_AUTO_1R1W.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_loop_uhat_sparse_Pipeline_loop_uhat_integral.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_52_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_12s_80ns_90_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_13s_71s_71_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_40ns_40ns_80_2_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_43ns_36ns_79_3_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_49ns_44ns_93_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_50ns_50ns_100_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_54s_6ns_54_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_71ns_4ns_75_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77s_54s_130_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v" \
+"../../../../VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip.v" \
+"../../../bd/design_1/ip/design_1_loop_uhat_sparse_0_0/sim/design_1_loop_uhat_sparse_0_0.v" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" \
+"../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
+"../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/ip/design_1_auto_cc_0/sim/design_1_auto_cc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

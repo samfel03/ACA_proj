@@ -1,0 +1,48 @@
+trmult_reduced = 17048 X 17048 = 290634304 elements
+integral = 17048 X 1 = 17048 elements
+
+##### trmult_reduced
+Total size / row = (17048 * 8) / 1024 = 133.1875 ~ 134 kb
+
+##### MRAM Banks
+Total Size = 64 MB = 64 * 1024 = 65536 kb
+
+##### DPU
+## Total Storage equation (For one MRAM)
+134 * x + 134 = 65536 kb (x is the number of rows 1 MRAM will store)
+x = 488.07 ~ 488 rows (Including trmult_reduced and integral (487 and 1))
+
+## Minimum numbers of dpu to hold trmult_reduced data:
+(Logic:) if one dpu holds 487 rows, how many(y) hold, 17048 rows
+y = 35.0061 dpus ~ 36 dpus
+
+## If we have 2000 dpus, how many rows each get at least? (z)
+z = 17048 / 2000 = 8.5 rows ~ 9 rows + 1 integral row for each
+
+##### Range
+[36, 2000] = [488, 10] (range of dpus = range of total rows it will hold)
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+#### Identifying max rows a dpu can hold of matrix given a certain k * k matrix and k * 1 vector
+
+Max Capacity Equation holding n rows:
+n * Rows (kb) + integral_vector(kb) = 65536 kb
+
+Considering 1 row is x kb...
+Rows = x kb
+integral_vector = x * 1 (k * 1 vector)
+
+n* x + x = 65536
+n = 65536 / (x + 1) ------> Realtionship between max_capacity and 1 row size in kb.
+
+However, x = (sizeof(datatype)) * k ~ 8k (Considering double values)
+x = 8k / 1024 kb
+Therefore:
+
+n = (65536 * 1024) / (8k + 1024)
+n ~ (8388 * 10^3) / (k + 128)

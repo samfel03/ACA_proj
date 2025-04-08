@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -pg -mavx  -g -pg -mavx -rdynamic CMakeFiles/main.dir/mainsparse.cpp.o -o main  ../library/libCCE-C.a 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="add.cpp" path="C:\Research\CU-Spur-Sean\spurFPGA\SoCNANDTest\VitisHLS\add.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="nandtb.cpp" path="C:\Research\CU-Spur-Sean\spurFPGA\SoCNANDTest\VitisHLS\nandtb.cpp"/>
+    <originFiles name="nandtb.h" path="C:\Research\CU-Spur-Sean\spurFPGA\SoCNANDTest\VitisHLS\nandtb.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

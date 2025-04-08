@@ -1,0 +1,460 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Fri Aug 02 15:12:17 -0600 2024
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         sparsefpgaimp
+    * Solution:        loop_uhat_sparse_imp (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z007s-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              26199
+FF:               13683
+DSP:              66
+BRAM:             704
+URAM:             0
+SRL:              1290
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was NOT met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 12.403      |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                        | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                        | 26199 | 13683 | 66  | 704  |      |     |        |      |         |          |        |
+|   (inst)                                                                    | 2301  | 1075  |     |      |      |     |        |      |         |          |        |
+|   CTRL_BUS_s_axi_U                                                          | 251   | 279   |     |      |      |     |        |      |         |          |        |
+|   dadddsub_64ns_64ns_64_7_full_dsp_1_U76                                    | 754   | 638   | 3   |      |      |     |        |      |         |          |        |
+|   dcmp_64ns_64ns_1_2_no_dsp_1_U78                                           | 84    | 128   |     |      |      |     |        |      |         |          |        |
+|     (dcmp_64ns_64ns_1_2_no_dsp_1_U78)                                       |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U77                                         | 116   | 280   | 11  |      |      |     |        |      |         |          |        |
+|   grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271                      | 2168  | 543   |     |      |      |     |        |      |         |          |        |
+|     (grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271)                  | 1168  | 119   |     |      |      |     |        |      |         |          |        |
+|   grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3_fu_288                      | 1360  | 276   |     |      |      |     |        |      |         |          |        |
+|     (grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3_fu_288)                  | 1226  | 274   |     |      |      |     |        |      |         |          |        |
+|   grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5_fu_333                      | 758   | 499   |     |      |      |     |        |      |         |          |        |
+|     (grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5_fu_333)                  | 718   | 497   |     |      |      |     |        |      |         |          |        |
+|   grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6_fu_320                      | 536   | 166   |     |      |      |     |        |      |         |          |        |
+|     (grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6_fu_320)                  | 480   | 164   |     |      |      |     |        |      |         |          |        |
+|   grp_pow_generic_double_s_fu_344                                           | 13163 | 9520  | 52  |      |      |     |        |      |         |          |        |
+|     (grp_pow_generic_double_s_fu_344)                                       | 5608  | 6294  | 3   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_15ns_19s_31_4_1_U27                                      | 426   | 84    |     |      |      |     |        |      |         |          |        |
+|     mul_12s_80ns_90_5_1_U12                                                 | 32    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_13s_71s_71_5_1_U13                                                  | 5     | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_40ns_40ns_80_2_1_U14                                                | 831   | 110   | 2   |      |      |     |        |      |         |          |        |
+|     mul_43ns_36ns_79_3_1_U15                                                | 1052  | 156   |     |      |      |     |        |      |         |          |        |
+|     mul_49ns_44ns_93_5_1_U16                                                | 122   | 53    | 9   |      |      |     |        |      |         |          |        |
+|     mul_50ns_50ns_100_5_1_U17                                               | 397   | 114   | 8   |      |      |     |        |      |         |          |        |
+|     mul_54s_6ns_54_5_1_U18                                                  | 53    | 51    | 3   |      |      |     |        |      |         |          |        |
+|     mul_71ns_4ns_75_5_1_U26                                                 | 17    | 37    | 3   |      |      |     |        |      |         |          |        |
+|     mul_73ns_6ns_79_5_1_U19                                                 | 137   | 39    | 3   |      |      |     |        |      |         |          |        |
+|     mul_77ns_6ns_83_5_1_U20                                                 | 503   | 333   |     |      |      |     |        |      |         |          |        |
+|     mul_77s_54s_130_5_1_U21                                                 | 782   | 289   | 13  |      |      |     |        |      |         |          |        |
+|     mul_82ns_6ns_88_5_1_U22                                                 | 527   | 266   |     |      |      |     |        |      |         |          |        |
+|     mul_83ns_6ns_89_5_1_U23                                                 | 532   | 278   |     |      |      |     |        |      |         |          |        |
+|     mul_87ns_6ns_93_5_1_U24                                                 | 557   | 290   |     |      |      |     |        |      |         |          |        |
+|     mul_92ns_6ns_98_5_1_U25                                                 | 593   | 307   |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log0_lut_table_array_U                   |       | 109   |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_U |       | 6     |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_U   | 84    | 90    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_U   | 70    | 76    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_U   | 55    | 61    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_U   | 81    | 41    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_U   | 26    | 31    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_U    | 52    | 105   |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_U    | 94    | 100   |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_U           | 223   | 58    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_U             | 158   | 40    |     |      |      |     |        |      |         |          |        |
+|     pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_U             | 146   | 34    |     |      |      |     |        |      |         |          |        |
+|   input_data_L_U                                                            |       |       |     | 128  |      |     |        |      |         |          |        |
+|   input_data_R_U                                                            | 64    |       |     | 128  |      |     |        |      |         |          |        |
+|   input_data_colIndex_U                                                     | 4350  | 15    |     |      |      |     |        |      |         |          |        |
+|   input_data_rowStart_U                                                     | 48    |       |     | 64   |      |     |        |      |         |          |        |
+|   input_data_value_U                                                        | 32    |       |     | 128  |      |     |        |      |         |          |        |
+|   integral_U                                                                | 32    |       |     | 128  |      |     |        |      |         |          |        |
+|   output_data_U                                                             | 69    |       |     | 128  |      |     |        |      |         |          |        |
+|   regslice_both_inStream_V_data_V_U                                         | 67    | 132   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_outStream_V_data_V_U                                        | 46    | 132   |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+---------+--------+
+| Criteria                                                  | Guideline | Actual  | Status |
++-----------------------------------------------------------+-----------+---------+--------+
+| LUT                                                       | 70%       | 181.94% | REVIEW |
+| FD                                                        | 50%       | 47.51%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 88.50%  | REVIEW |
+| MUXF7                                                     | 15%       | 27.39%  | REVIEW |
+| LUT Combining                                             | 20%       | 21.32%  | REVIEW |
+| DSP                                                       | 80%       | 100.00% | REVIEW |
+| RAMB/FIFO                                                 | 80%       | 704.00% | REVIEW |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 402.00% | REVIEW |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0       | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0       | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0       | OK     |
+| Control Sets                                              | 270       | 129     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 3.15    | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0       | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0       | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0       | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0       | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0       | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0       | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was NOT met
++--------+--------+------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path   |  SLACK | STARTPOINT PIN                                                               | ENDPOINT PIN                                                             | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|        |        |                                                                              |                                                                          |              |            |                |          DELAY |        DELAY |
++--------+--------+------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1  | -2.403 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[44]/D |           22 |         75 |         12.414 |          7.376 |        5.038 |
+| Path2  | -2.402 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[41]/D |           21 |         75 |         12.413 |          7.375 |        5.038 |
+| Path3  | -2.383 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[43]/D |           21 |         75 |         12.394 |          7.356 |        5.038 |
+| Path4  | -2.310 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[42]/D |           21 |         75 |         12.321 |          7.283 |        5.038 |
+| Path5  | -2.289 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[40]/D |           21 |         75 |         12.300 |          7.262 |        5.038 |
+| Path6  | -2.288 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[37]/D |           20 |         75 |         12.299 |          7.261 |        5.038 |
+| Path7  | -2.269 | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C                | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[39]/D |           20 |         75 |         12.280 |          7.242 |        5.038 |
+| Path8  | -2.260 | grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]/C                    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[45]/D |           20 |        105 |         12.271 |          6.640 |        5.631 |
+| Path9  | -2.251 | grp_pow_generic_double_s_fu_344/exp_Z4_m_1_reg_3559_pp0_iter70_reg_reg[14]/C | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[45]/D |           20 |         75 |         12.262 |          6.640 |        5.622 |
+| Path10 | -2.241 | grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]/C                    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]/D |           20 |        105 |         12.252 |          6.621 |        5.631 |
++--------+--------+------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[44]_i_1 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[44]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[41]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[43]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[42]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[40]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path6 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[37]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path7 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]                | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10                                 | LUT.others.LUT4      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17                                | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[39]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path8 Cells                                                                | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]                    | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0[16]__0_i_88 | LUT.others.LUT6      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[16]__0_i_53                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[15]__2_i_68                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_68                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_44                                | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_33                                 | LUT.others.LUT3      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_25                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_12                                | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_11                                 | LUT.others.LUT3      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_7                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_8                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]_i_1 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[45]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------+----------------------+
+    | Path9 Cells                                                                 | Primitive Type       |
+    +-----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/exp_Z4_m_1_reg_3559_pp0_iter70_reg_reg[14]  | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[16]__1_i_174 | LUT.others.LUT6      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__1_i_104                             | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__3_i_68                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__1_i_69                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_45                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[19]__1_i_33                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__1_i_25                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_12                              | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[19]__1_i_11                                  | LUT.others.LUT3      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__1_i_7                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_8                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__1_i_2                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__1_i_2                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0[27]__1_i_4                                   | LUT.others.LUT2      |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__1_i_1                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_1                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[35]__0_i_1                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[39]__0_i_1                               | CARRY.others.CARRY4  |
+    | mul_43ns_36ns_79_3_1_U15/buff0_reg[43]__0_i_1                               | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[47]_i_1  | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[45]      | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------+----------------------+
+    | Path10 Cells                                                               | Primitive Type       |
+    +----------------------------------------------------------------------------+----------------------+
+    | grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]                    | FLOP_LATCH.flop.FDRE |
+    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0[16]__0_i_88 | LUT.others.LUT6      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[16]__0_i_53                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[15]__2_i_68                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_68                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_44                                | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_33                                 | LUT.others.LUT3      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_25                             | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_12                                | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_11                                 | LUT.others.LUT3      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_7                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_8                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[23]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_2                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0[27]__0_i_4                                  | LUT.others.LUT2      |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_1                              | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[35]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[39]_i_1                                 | CARRY.others.CARRY4  |
+    | mul_40ns_40ns_80_2_1_U14/buff0_reg[43]_i_1                                 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]_i_1 | CARRY.others.CARRY4  |
+    | grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]     | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------------------+
+| Report Type              | Report Location                                                         |
++--------------------------+-------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/loop_uhat_sparse_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/loop_uhat_sparse_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/loop_uhat_sparse_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/loop_uhat_sparse_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/loop_uhat_sparse_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/loop_uhat_sparse_utilization_hierarchical_synth.rpt |
++--------------------------+-------------------------------------------------------------------------+
+
+

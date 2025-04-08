@@ -1,0 +1,265 @@
+---
+MainSourceFile:  'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/.autopilot/db/call_rcond.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_52_1:  '
+    FileOffset:      52
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          78161
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_52_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_54_2:  '
+    FileOffset:      54
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          78212
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_54_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_3:  '
+    FileOffset:      69
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          78509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_4:  '
+    FileOffset:      76
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          78680
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_5:  '
+    FileOffset:      86
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          78929
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_6:  '
+    FileOffset:      95
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          79172
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_7:  '
+    FileOffset:      100
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          79278
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_8:  '
+    FileOffset:      105
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          79453
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_9:  '
+    FileOffset:      113
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          79623
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_10:  '
+    FileOffset:      127
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          79889
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_130_11:  '
+    FileOffset:      130
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          79977
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_130_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_132_12:  '
+    FileOffset:      132
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80036
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_132_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_13:  '
+    FileOffset:      135
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80155
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_14:  '
+    FileOffset:      140
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_15:  '
+    FileOffset:      143
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80434
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_149_16:  '
+    FileOffset:      149
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80611
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_149_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_17:  '
+    FileOffset:      152
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80717
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_157_18:  '
+    FileOffset:      157
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          80866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_157_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_161_19:  '
+    FileOffset:      161
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          81002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_161_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_20:  '
+    FileOffset:      169
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          81216
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_21:  '
+    FileOffset:      173
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          81373
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_191_22:  '
+    FileOffset:      191
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          81869
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_191_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_23:  '
+    FileOffset:      205
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          82270
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_24:  '
+    FileOffset:      210
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          82424
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_24: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_217_25:  '
+    FileOffset:      217
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          82652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_217_25: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_234_26:  '
+    FileOffset:      234
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          83123
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_234_26: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_27:  '
+    FileOffset:      249
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          83580
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_27: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_28:  '
+    FileOffset:      258
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          83854
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_28: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_273_29:  '
+    FileOffset:      273
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c'
+        Offset:          84214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_273_29: '
+...

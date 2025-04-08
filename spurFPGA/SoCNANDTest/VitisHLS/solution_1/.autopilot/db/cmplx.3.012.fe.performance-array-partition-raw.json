@@ -1,0 +1,11 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "add.cpp",
+    "fileloc": 4,
+    "instructions": 5,
+    "name": "add",
+    "total_instructions": 5
+  }
+}

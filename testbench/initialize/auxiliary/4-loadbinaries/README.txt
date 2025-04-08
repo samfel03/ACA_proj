@@ -1,0 +1,1 @@
+Create routing read_binary and load H (real) and C_vect (small_idx_t) and eyeball that are correct (compare/main.m)

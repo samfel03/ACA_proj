@@ -1,0 +1,622 @@
+#include "sw.h"
+
+extern "C"
+{
+
+	/**
+	 * First-time setup as separate top-level function
+	 */
+	void top_init(real *kp_in, real st_kprimes[NSTATES], real st_kcross[N_AGENTS])
+	{
+		// SIMPLE
+		for (int j = 0; j < NSTATES; ++j)
+		{
+			st_kprimes[j] = kp_in[j];
+		}
+
+		for (int j = 0; j < N_AGENTS; ++j)
+		{
+			st_kcross[j] = env__kss;
+		}
+		return;
+	}
+
+	void runOncpu(
+		env_t *env,
+		vars_t *vars,
+		const unsigned char *hw_agshock,
+		const unsigned char *hw_idshock,
+		out_t *out,
+		int *hw_iter)
+	{
+
+		/** STATE: static across top-level calls */
+		// Local
+		real st_kcross[N_AGENTS];
+		real st_kprimes[NSTATES];
+		real kmts[SIM_STEPS];
+		real r2[NSTATES_AG];
+		real metric_coeff = pow(10., 10.);
+		real kmprime[NSTATES_AG * NKM_GRID];
+
+		/**
+		 * SETUP:
+		 */
+		top_init(vars->kprime_a, st_kprimes, st_kcross);
+
+		int hw_main_iter = 0; ///< total number of egm calls
+		int curr_egm_iter;	  ///< number of egm iterations in each egm call
+		int num_iter = 0;
+		while (metric_coeff > TOLL_COEFF)
+		{
+			if ((hw_main_iter >= num_iter) & (num_iter != 0))
+			{
+				break;
+			}
+			hw_main_iter++;
+			hw_sim_alm(kmprime, vars->coeff, env->km);
+
+			curr_egm_iter = 0;
+			hw_sim_egm(kmprime, st_kprimes, env, curr_egm_iter);
+			hw_iter[hw_main_iter] = curr_egm_iter;
+
+			real kcross_l[N_AGENTS];
+			for (int is = 0; is < N_AGENTS; is++)
+			{
+				kcross_l[is] = st_kcross[is];
+			}
+			hw_sim_ast(kmts, hw_idshock, hw_agshock, env,
+					   st_kprimes, kcross_l);
+
+			sim_alm_coeff(kmts, vars->coeff, &metric_coeff, r2, hw_agshock);
+
+			if (metric_coeff > TOLL_COEFF * 100)
+			{
+				// Replace the old with new capital distribution
+				for (int j = 0; j < N_AGENTS; j++)
+					st_kcross[j] = kcross_l[j];
+			}
+			printf("main loop iteration = %d\n", hw_main_iter);
+		}
+
+		for (int i = 0; i < NSTATES_AG; i++)
+		{ // main_3
+			out->r2[i] = r2[i];
+		}
+
+		for (int i = 0; i < NSTATES; i++)
+		{ // main_5
+			out->kprime[i] = st_kprimes[i];
+		}
+
+		for (int i = 0; i < N_AGENTS; i++)
+		{ // main_8
+			out->kcross[i] = st_kcross[i];
+		}
+
+		for (int i = 0; i < NCOEFF; i++)
+		{ // main_8
+			out->coeff[i] = vars->coeff[i];
+		}
+
+		hw_iter[0] = hw_main_iter;
+
+		return;
+	}
+
+	/**
+	 * Aggregate Law of Motion (ALM):
+	 *	Consumes:
+	 *		coeff[]: from external
+	 *	Produces:
+	 *		kmprime[] stream to EGM
+	 */
+	void hw_sim_alm(real *kmprime, real *coeff, real *km_grid)
+	{
+		small_idx_t cidx = 0;
+		real c0, c1;
+		small_idx_t kidx = 0;
+
+		for (int ia = 0; ia < NSTATES_AG; ++ia)
+		{ // alm_1
+			c0 = coeff[cidx];
+			c1 = coeff[cidx + 1];
+			cidx += REGRESSORS;
+			for (int ikm = 0; ikm < NKM_GRID; ++ikm)
+			{ // alm_2
+				// real val = exp(c0
+				// 		+ c1
+				// 		* env->log_env_km[ikm]);
+				real val = exp(c0 + c1 * log(km_grid[ikm]));
+				hw_rail_values(&val, KM_MAX, KM_MIN);
+				kmprime[kidx++] = val;
+			}
+		}
+		return;
+	}
+
+	/**
+	 * EGM:
+	 *	Consumes:
+	 *		kmprime[]: in order
+	 *	Updates:
+	 *		kprimes[]
+	 */
+	void hw_sim_egm(real *kmprime, real *st_kprimes, env_t *env, int &hw_egm_iter)
+	{
+
+		/** Lookup tables */
+		// substitute for IXV call
+		static const small_idx_t li_2d_aux_idx_base[4] = {
+			0,
+			NKGRID,
+			NKM_GRID * NSTATES_ID * NKGRID,
+			(NKGRID + NKM_GRID * NSTATES_ID * NKGRID)};
+
+		// Local kprime/new copies
+		real kprime_new[NSTATES];
+		real metric = 1;
+#if PRINT_LOOP_CNT
+		unsigned int iter_cnt = 0;
+#endif
+		// Convergence loop: 4x1600 interp over kprime[]
+		while (metric > (real)TOLL_K)
+		{ // egm_1
+			hw_egm_iter++;
+			real spread_scalar = VERY_SMALL_SCALAR;
+			// Reset index values for [1600] loop
+			small_idx_t p_idx_outer = 0b0100; // 4
+			small_idx_t hundreds_cnt = NKGRID;
+			small_idx_t kp_iter_cnt = (NSTATES_ID * NKGRID);
+			small_idx_t kidx = 0;
+			// ^^ Loop 1.1: 1600 * 4x LI2D over kprime[] --> kprime_new[]
+			real kmp = 0;
+			real temp_base = 0;
+			small_idx_t p_idx_inner = 0; // IIDP x IAP
+			for (small_idx_t is = 0; is < NSTATES; ++is)
+			{ // egm_2
+
+				emu_s_t emu_s = 0.;
+				real kp = st_kprimes[is];
+
+				// Index handling
+				if (++kp_iter_cnt >= NSTATES_ID * NKGRID)
+				{
+					kp_iter_cnt = 0;
+					kmp = kmprime[kidx++];
+					temp_base = kmp * (real)env__l_bar_inv;
+				}
+				if (++hundreds_cnt >= NKGRID)
+				{
+					hundreds_cnt = 0;
+					//(changes between 0 and 4 for every 100 iterations uptil is = 800, and changes between 8 and 12 for every 100 iterations uptil is = 1600)
+					p_idx_outer ^= (small_idx_t)0b0100; // (XOR at every bit) 0100 ^ 0100 = 0000 -> 0 (explicit conversion to short) decimal value
+				}
+				if (is == (NKM_GRID * NSTATES_ID * NKGRID)) // 800 ia
+					p_idx_outer |= (small_idx_t)0b1000;			// (OR at every bit) 0000 | 1000 = 1000 -> 8 (explicit conversion to short) decimal value
+				p_idx_inner = 0;							// not necessary? check it
+				// 4x EGM 2D interpolation over kprime[]
+				// Loop 1.1.1
+				for (int iap = 0; iap < NSTATES_AG; ++iap)
+				{ // egm_3
+					real temp = temp_base * env->er_inv[iap];
+					real irate = env->irate_factor[iap] * pow(temp, env__alpha_c);
+					real imrt = env__delta_c + irate;
+					real wage = env->wage_factor[iap] * pow(temp, env__alpha);
+					for (int iidp = 0; iidp < NSTATES_ID; ++iidp)
+					{ // egm_4
+						small_idx_t i1_min = hw_findrange(kmp, env->km, NKM_GRID);
+						small_idx_t i1_max = i1_min + 1;
+						real i1_min_val = env->km[i1_min];
+						real i1_max_val = env->km[i1_max];
+						small_idx_t i2_min = hw_findrange(kp, env->k, NKGRID);
+						small_idx_t i2_max = i2_min + 1;
+						real i2_min_val = env->k[i2_min];
+						real i2_max_val = env->k[i2_max];
+						small_idx_t idx_base = li_2d_aux_idx_base[p_idx_inner];
+						small_idx_t i1_min_base = idx_base + (NSTATES_ID * NKGRID * i1_min);
+						small_idx_t i1_max_base = idx_base + (NSTATES_ID * NKGRID * i1_max);
+						real tz = (kmp - i1_min_val) / (i1_max_val - i1_min_val);
+						real tw = (kp - i2_min_val) / (i2_max_val - i2_min_val);
+						real fp = st_kprimes[i1_min_base + i2_min] * (1.0 - tz) * (1.0 - tw) +
+								  st_kprimes[i1_min_base + i2_max] * (1.0 - tz) * tw +
+								  st_kprimes[i1_max_base + i2_min] * tz * (1.0 - tw) +
+								  st_kprimes[i1_max_base + i2_max] * tz * tw;
+						real cons2 = (imrt * kp + wage * env->cons2_factor[p_idx_inner]) - fp;
+						if (cons2 < 0)
+							cons2 = CONS2_MIN;
+						real mu2 = pow(cons2, env__gamma_neg);
+						emu_s += (emu_s_t)(env->P[p_idx_outer + p_idx_inner] * imrt * mu2);
+						++p_idx_inner;
+					}
+				} // end 4x EGM interpolation over kprime[]
+				// ~ Today (each 4x interpolate yields one new kprime value)
+				real new_kp = env->wealth[is] - pow(env__beta * (real)emu_s, env__gamma_neg_inv);
+				hw_rail_values(&new_kp, KMAX, KMIN);
+				// ~ Convergence check
+
+				real spread = fabs(new_kp - kp);
+				if (spread > spread_scalar)
+					spread_scalar = spread;
+				kprime_new[is] = new_kp;
+			}
+
+			// ~Update guess: new kprimes[] for next top-level call
+			for (small_idx_t is = 0; is < NSTATES; ++is)
+			{ // egm_5
+				real updated_kp = UPDATE_K * kprime_new[is] + UPDATE_K_C * st_kprimes[is];
+				st_kprimes[is] = updated_kp;
+			}
+
+			// ~ Update metric
+			metric = spread_scalar;
+			if (hw_egm_iter % 100 == 0)
+				printf("Iteration dV: %d metric %18.15lf\n", hw_egm_iter, metric);
+		}
+		printf("Iteration dV: %d metric %18.15lf\n", hw_egm_iter, metric);
+	}
+
+	/**
+	 * Aggregate ST (AST:)
+	 * 	Consumes:
+	 *		kprimes: for interpolation
+	 *		hw_agshock: from external
+	 *		kcross: old values, updated in place
+	 *	Produces:
+	 *		kmts: to external (for sim_alm_coeff)
+	 *		kcross: updates static state
+	 */
+	void hw_sim_ast(real *kmts, const unsigned char *hw_idshock, const unsigned char *hw_agshock,
+					env_t *env, real *st_kprimes, real *st_kcross)
+	{
+
+		real kprime_interp[NSTATES_ID * NKGRID];
+		int idshock_idx = 0;
+		idx_t agshock_idx = 0;
+		shock_t curr_ids = 0;
+		shock_t curr_ags = 0;
+		small_idx_t ags_phase = AGS_PACK_FACTOR;
+
+// Loop 1
+#if PRINT_LOOP_CNT
+		unsigned int iter_cnt = 0;
+#endif
+		for (int t = 0; t < SIM_STEPS; ++t)
+		{ // ast_1
+#if PRINT_LOOP_CNT
+			++iter_cnt;
+#endif
+			real mean = 0;
+			for (int j = 0; j < N_AGENTS; j++)
+			{
+				mean = mean + st_kcross[j];
+			} // j
+			kmts[t] = mean / N_AGENTS;
+			if (kmts[t] > KM_MAX)
+				kmts[t] = KM_MAX;
+			if (kmts[t] < KM_MIN)
+				kmts[t] = KM_MIN;
+
+			// Read next packed hw_agshock value when needed
+			if (++ags_phase >= AGS_PACK_FACTOR)
+			{
+				curr_ags = hw_agshock[agshock_idx++];
+				ags_phase = 0;
+			}
+
+			real p0 = (curr_ags & 0b1) ? (real)1.0 : (real)0.0;
+			curr_ags >>= 1;
+			real p1 = kmts[t];
+
+			small_idx_t i2_min = hw_findrange(p1, env->km, NKM_GRID);
+			small_idx_t i2_max = i2_min + 1;
+			real i2_min_val = env->km[i2_min];
+			real i2_max_val = env->km[i2_max];
+			real tx = p0;
+			real ty = (p1 - i2_min_val) / (i2_max_val - i2_min_val);
+			real P = (1.0 - tx) * (1.0 - ty);
+			real Q = (1.0 - tx) * ty;
+			real R = tx * (1.0 - ty);
+			real S = tx * ty;
+			small_idx_t i1_min_base = 0;	  // L4D_D3 * i1.min(0)
+			small_idx_t i1_max_base = L4D_D3; // L4D_D3 * i1.max
+			small_idx_t i2_min_base = L4D_D2 * i2_min;
+			small_idx_t i2_max_base = L4D_D2 * i2_max;
+			small_idx_t i12_min_min = i1_min_base + i2_min_base;
+			small_idx_t i12_min_max = i1_min_base + i2_max_base;
+			small_idx_t i12_max_min = i1_max_base + i2_min_base;
+			small_idx_t i12_max_max = i1_max_base + i2_max_base;
+			small_idx_t kpi_idx = 0;
+			// Loop 1.1
+			for (int iid = 0; iid < NSTATES_ID; ++iid)
+			{									  // ast_2
+				small_idx_t i3_min_base = 0;	  // L4D_D1 * i3.min (0)
+				small_idx_t i3_max_base = L4D_D1; // L4D_D1 * i3.max (1)
+				real tz = env->epsilon[iid];
+				// Loop 1.1.1
+				for (int ik = 0; ik < NKGRID; ++ik)
+				{ // ast_3
+					int i4_min = ik;
+					real p = ((real)1.0 - tz);
+					real r = tz;
+					small_idx_t kp_idx_0 = i4_min + i3_min_base + i12_min_min;
+					small_idx_t kp_idx_2 = i4_min + i3_max_base + i12_min_min;
+					small_idx_t kp_idx_4 = i4_min + i3_min_base + i12_min_max;
+					small_idx_t kp_idx_6 = i4_min + i3_max_base + i12_min_max;
+					small_idx_t kp_idx_8 = i4_min + i3_min_base + i12_max_min;
+					small_idx_t kp_idx_10 = i4_min + i3_max_base + i12_max_min;
+					small_idx_t kp_idx_12 = i4_min + i3_min_base + i12_max_max;
+					small_idx_t kp_idx_14 = i4_min + i3_max_base + i12_max_max;
+					// ** LI4D
+					real fp = st_kprimes[kp_idx_0] * P * p +
+							  st_kprimes[kp_idx_2] * P * r +
+							  st_kprimes[kp_idx_4] * Q * p +
+							  st_kprimes[kp_idx_6] * Q * r +
+							  st_kprimes[kp_idx_8] * R * p +
+							  st_kprimes[kp_idx_10] * R * r +
+							  st_kprimes[kp_idx_12] * S * p +
+							  st_kprimes[kp_idx_14] * S * r;
+					kprime_interp[kpi_idx] = fp;
+					++kpi_idx;
+				}
+			}
+
+			// kc_t agg_capital = 0;
+			small_idx_t ids_phase = IDS_PACK_FACTOR;
+			// Loop 1.3: AST agents interp over kprime_interp
+			for (int j = 0; j < N_AGENTS; ++j)
+			{ // ast_4
+				// Read next packed hw_idshock value when needed
+				if (++ids_phase >= IDS_PACK_FACTOR)
+				{
+					curr_ids = hw_idshock[idshock_idx++];
+					ids_phase = 0;
+				}
+				real p0b = (curr_ids & 0b1) ? (real)1.0 : (real)0.0;
+				curr_ids >>= 1;
+
+				real p1b = st_kcross[j];
+				small_idx_t i2b_min = hw_findrange(p1b, env->k, NKGRID);
+				small_idx_t i2b_max = i2b_min + 1;
+				real i2b_min_val = env->k[i2b_min];
+				real i2b_max_val = env->k[i2b_max];
+				small_idx_t i1b_min_base = 0;	   // NKGRID * i1b.min always 0
+				small_idx_t i1b_max_base = NKGRID; // NKGRID * i1b.max always NKGRID
+				real bw = (p1b - i2b_min_val) / (i2b_max_val - i2b_min_val);
+				real sub_bw = (1.0 - bw);
+				real bz_bw = (p0b == 1) ? bw : 0;
+				real sub_bz_sub_bw = (p0b == 1) ? 0 : sub_bw;
+				real bz_sub_bw = (p0b == 1) ? sub_bw : 0;
+				real bw_sub_bz = (p0b == 1) ? 0 : bw;
+				real fpb = (kprime_interp[i1b_min_base + i2b_min] * sub_bz_sub_bw) +
+						   (kprime_interp[i1b_min_base + i2b_max] * bw_sub_bz) +
+						   (kprime_interp[i1b_max_base + i2b_min] * bz_sub_bw) +
+						   (kprime_interp[i1b_max_base + i2b_max] * bz_bw);
+
+				hw_rail_values(&fpb, KMAX, KMIN);
+				st_kcross[j] = fpb;
+			}
+		} // end simulation steps (ast_1)
+#if PRINT_LOOP_CNT
+		printf("ast loop cnt = %d\n", iter_cnt);
+#endif
+		return;
+	}
+
+	/**
+	 * @brief generates coefficients and r squared of regression using kmts
+	 * @param kmts Uses kmts ini setup of regression
+	 * @param coeff Pointer to location to store regressiion coefficients
+	 * @param metric Stores difference n coefficients to determiine convergence
+	 * @param R2 Pointer to array to store regressioin correlation
+	 * @return none but stores kmts into vars
+	 */
+	void sim_alm_coeff(const real *kmts, real *coeff_updated, real *metric, real *R2, const unsigned char *hw_agshock)
+	{
+		real coeff[NCOEFF] = {0.};
+#ifndef __SYNTHESIS__
+		real test = 0;
+		for (int t = 0; t < SIM_STEPS; ++t)
+		{ // sim_alm_1
+			test += kmts[t];
+		}
+#endif
+		for (small_idx_t i = 0; i < NCOEFF; i++)
+		{ // sim_alm_1
+			coeff[i] = coeff_updated[i];
+		}
+		small_idx_t agshock_idx = 0;
+		small_idx_t ags_phase = AGS_PACK_FACTOR;
+		shock_t curr_ags = 0;
+		shock_t curr_shock_val = 0;
+		real coeff_new[NCOEFF] = {0.};
+		real x_good_v[1000] = {0.};
+		real y_good_v[1000] = {0.};
+		real x_bad_v[1000] = {0.};
+		real y_bad_v[1000] = {0.};
+		int ibad = 0;
+		int igood = 0;
+		agshock_idx = 0;
+		ags_phase = AGS_PACK_FACTOR;
+		for (int t = 0; t < SIM_STEPS; t++)
+		{ // sim_alm_2
+			// Read new value when needed
+			if (++ags_phase >= AGS_PACK_FACTOR)
+			{
+				curr_ags = hw_agshock[agshock_idx++];
+				ags_phase = 0;
+			}
+			curr_shock_val = curr_ags & 0b1;
+			curr_ags >>= 1;
+			// Discard
+			if (t < NDISCARD || t > SIM_STEPS - 2)
+				continue;
+			if (curr_shock_val == 0)
+			{
+				y_bad_v[ibad] = log(kmts[t + 1]);
+				x_bad_v[ibad] = log(kmts[t]);
+				ibad++;
+			}
+			else
+			{
+				y_good_v[igood] = log(kmts[t + 1]);
+				x_good_v[igood] = log(kmts[t]);
+				igood++;
+			}
+		}
+		real badcoeff[2] = {0.}; // initialize to prevent garbage values
+		real goodcoeff[2] = {0.};
+		matrixfunction(badcoeff, x_bad_v, y_bad_v, ibad);
+		matrixfunction(goodcoeff, x_good_v, y_good_v, igood);
+		real rbad = RSquaredCalc(badcoeff, x_bad_v, y_bad_v, ibad);
+		real rgood = RSquaredCalc(goodcoeff, x_good_v, y_good_v, igood);
+		coeff_new[0] = badcoeff[0]; // bb
+		coeff_new[1] = badcoeff[1];
+		coeff_new[2] = goodcoeff[0];
+		coeff_new[3] = goodcoeff[1];
+		R2[0] = rbad;
+		R2[1] = rgood;
+		// Update metric for convergence test
+		real norm = 0.;
+		for (int ib = 0; ib < NCOEFF; ++ib)
+		{ // sim_alm_3
+			norm += (coeff_new[ib] - coeff[ib]) * (coeff_new[ib] - coeff[ib]);
+		}
+		*metric = sqrt(norm);
+		// Update ALM coefficients vector
+		for (int ib = 0; ib < NCOEFF; ++ib)
+		{ // sim_alm_4
+			coeff_updated[ib] = coeff_new[ib] * UPDATE_B + coeff[ib] * (1. - UPDATE_B);
+		}
+		return;
+	}
+
+	/**
+	 * @brief Performs matrix inversion and inner product to perform regression
+	 * @param resultmatrix regression coefficients (mx+b)
+	 * @param x Independent values of regression (log k)
+	 * @param y Dependent values of regression (log k')
+	 * @param ndim number of elements in y
+	 * @return none
+	 */
+	void matrixfunction(real *resultmatrix, real *x, real *y, int ndim)
+	{
+		real twobytwo[4] = {0, 0, 0, 0};
+		// #pragma HLS array_partition variable=resultmatrix complete
+		for (int i = 0; i < ndim; i++)
+		{ // matrix_func_1
+			twobytwo[0] += 1;
+			twobytwo[1] += x[i];
+			twobytwo[2] += x[i];
+			twobytwo[3] += pow(x[i], 2);
+		}
+		// get inverse
+		real a = twobytwo[0]; // switching indices and multiplying by determinant
+		real b = twobytwo[1];
+		real c = twobytwo[2];
+		real d = twobytwo[3];
+		real det = (a * d - b * c);
+		real inv_det = (1.0 / det);
+		real inv_d = inv_det * d;
+		real inv_b = inv_det * (b) * -1;
+		real inv_c = inv_det * (c) * -1;
+		real inv_a = inv_det * a;
+		real acc1 = resultmatrix[0];
+		real acc2 = resultmatrix[1];
+		for (int i = 0; i < ndim; i++)
+		{ // matrix_func_2
+			acc1 += (inv_d + (inv_b * x[i])) * y[i];
+		}
+		resultmatrix[0] = real(acc1);
+		for (int i = 0; i < ndim; i++)
+		{ // matrix_func_3
+			acc2 += (inv_c + (inv_a * x[i])) * y[i];
+		}
+		resultmatrix[1] = real(acc2);
+		return;
+	}
+
+	/**
+	 * @brief Computes R Squuared of regression once fit is determined
+	 * @param coeff regression coefficients
+	 * @param x Independent values of regression (log k)
+	 * @param y Dependent values of regression (log k')
+	 * @param ndim number of elements in y
+	 * @return R^2 of OLS regression fit
+	 */
+	real RSquaredCalc(real *coeff, real *x, real *y, int ndim)
+	{
+		real r_value = 0;
+		real predict[1000] = {0};
+		real rss = 0;
+		real tss = 0;
+		real y_mean = 0;
+		for (int i = 0; i < ndim; i++)
+		{ // R2_1
+			y_mean += y[i];
+		}
+		y_mean = (y_mean / ndim);
+		for (int i = 0; i < ndim; i++)
+		{ // R2_2
+			predict[i] = (coeff[0] + (coeff[1] * x[i]));
+			rss += pow((predict[i] - y[i]), 2);
+			tss += pow((y[i] - y_mean), 2);
+		}
+		r_value = (1.0 - (rss / tss));
+
+		return r_value;
+	}
+
+	void hw_rail_values(real *val, const real max, const real min)
+	{
+		real src = *val;
+		bool over_max = (src > max);
+		bool under_min = (src < min);
+
+		if (over_max)
+			*val = max;
+		else if (under_min)
+			*val = min;
+		return;
+	}
+
+	small_idx_t hw_findrange(real p, const real *src, int n_elem)
+	{
+		// assert(n_elem >= 2 && n_elem <= 100);
+		// if (n_elem == 2)
+		// 	return new_hw_findrange_n2(p, src);
+		// small_idx_t xmin = 0;
+		// for (int i = 2; i <= (n_elem - 1); i++)
+		// 	if (p < src[i - 1])
+		// 	{
+		// 		xmin = i - 2;
+		// 		return xmin;
+		// 	}
+
+		// xmin = n_elem - 2;
+		// return xmin;
+
+        small_idx_t l = 0;
+        small_idx_t r = n_elem - 1; //last index for array with 100 elements
+        real curr = 0;
+		
+		fr100_bf:
+        while(l <= r){
+
+            small_idx_t m = (l + r) >> 1; //div by 2
+            // curr = src[m];
+
+            // If x greater, ignore left half  
+            if (src[m]<= p) 
+                l = m + 1; 
+
+            // If x is smaller, ignore right half 
+            else{
+                r = m - 1; 
+            } 
+            
+        }
+
+		return r;
+	}
+}

@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5'
+================================================================
+* Date:           Fri Aug  2 15:04:19 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sparsefpgaimp
+* Solution:       loop_uhat_sparse_imp (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.297 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_83_5  |        ?|        ?|        18|          7|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|    144|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|    114|    -|
+|Register         |        -|   -|    526|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|    526|    258|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  66|  28800|  14400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|      1|      1|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln83_fu_143_p2   |         +|   0|  0|  71|          64|           1|
+    |icmp_ln83_fu_133_p2  |      icmp|   0|  0|  71|          64|          64|
+    |ap_enable_pp0        |       xor|   0|  0|   2|           1|           2|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0| 144|         129|          67|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                         |  42|          8|    1|          8|
+    |ap_done_int                       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2           |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_rhs_load         |   9|          2|   64|        128|
+    |e_fu_40                           |   9|          2|   64|        128|
+    |rhs_fu_36                         |   9|          2|   64|        128|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 114|         24|  198|        402|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   7|   0|    7|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |e_1_reg_185                       |  64|   0|   64|          0|
+    |e_fu_40                           |  64|   0|   64|          0|
+    |icmp_ln83_reg_190                 |   1|   0|    1|          0|
+    |icmp_ln83_reg_190_pp0_iter1_reg   |   1|   0|    1|          0|
+    |input_data_value_load_reg_204     |  64|   0|   64|          0|
+    |integral_load_reg_214             |  64|   0|   64|          0|
+    |mul1_reg_219                      |  64|   0|   64|          0|
+    |rhs_1_reg_229                     |  64|   0|   64|          0|
+    |rhs_fu_36                         |  64|   0|   64|          0|
+    |wide_trip_count_cast_reg_180      |  64|   0|   64|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 526|   0|  526|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |               Source Object               |    C Type    |
++------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_374_p_din0             |  out|   64|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_374_p_din1             |  out|   64|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_374_p_opcode           |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_374_p_dout0            |   in|   64|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_374_p_ce               |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_380_p_din0             |  out|   64|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_380_p_din1             |  out|   64|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_380_p_dout0            |   in|   64|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|grp_fu_380_p_ce               |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5|  return value|
+|sext_ln83                     |   in|   32|     ap_none|                                  sext_ln83|        scalar|
+|wide_trip_count               |   in|   32|     ap_none|                            wide_trip_count|        scalar|
+|input_data_value_address0     |  out|   15|   ap_memory|                           input_data_value|         array|
+|input_data_value_ce0          |  out|    1|   ap_memory|                           input_data_value|         array|
+|input_data_value_q0           |   in|   64|   ap_memory|                           input_data_value|         array|
+|input_data_colIndex_address0  |  out|   15|   ap_memory|                        input_data_colIndex|         array|
+|input_data_colIndex_ce0       |  out|    1|   ap_memory|                        input_data_colIndex|         array|
+|input_data_colIndex_q0        |   in|   15|   ap_memory|                        input_data_colIndex|         array|
+|integral_address0             |  out|   15|   ap_memory|                                   integral|         array|
+|integral_ce0                  |  out|    1|   ap_memory|                                   integral|         array|
+|integral_q0                   |   in|   64|   ap_memory|                                   integral|         array|
+|rhs_out                       |  out|   64|      ap_vld|                                    rhs_out|       pointer|
+|rhs_out_ap_vld                |  out|    1|      ap_vld|                                    rhs_out|       pointer|
++------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+

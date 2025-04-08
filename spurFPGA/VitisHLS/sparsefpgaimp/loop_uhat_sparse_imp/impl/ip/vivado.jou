@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Aug  2 15:06:56 2024
+# Process ID: 11084
+# Current directory: C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/impl/ip/vivado.log
+# Journal file: C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/impl/ip\vivado.jou
+# Running On: gerard, OS: Windows, CPU Frequency: 3993 MHz, CPU Physical cores: 16, Host memory: 33515 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

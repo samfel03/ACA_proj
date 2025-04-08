@@ -1,0 +1,105 @@
+{
+    "1": {
+        "name": "loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3",
+        "file": "sparsefpgaimp\/loop_uhat_sparse.cpp",
+        "fileloc": "70",
+        "instructions": "23",
+        "total_instructions": "439",
+        "calls": "2",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "loop_uhat_sparse",
+        "file": "loop_uhat_sparse.cpp",
+        "fileloc": "31",
+        "instructions": "98",
+        "total_instructions": "1085",
+        "calls": "3 5 1 4 2",
+        "basicblocks": "7",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "2": {
+        "name": "pow_generic<double>",
+        "file": "hls_pow.h",
+        "fileloc": "291",
+        "instructions": "416",
+        "total_instructions": "416",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "13"
+        }
+    },
+    "3": {
+        "name": "loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1",
+        "file": "sparsefpgaimp\/loop_uhat_sparse.cpp",
+        "fileloc": "57",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5",
+        "file": "sparsefpgaimp\/loop_uhat_sparse.cpp",
+        "fileloc": "81",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6",
+        "file": "sparsefpgaimp\/loop_uhat_sparse.cpp",
+        "fileloc": "96",
+        "instructions": "60",
+        "total_instructions": "60",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

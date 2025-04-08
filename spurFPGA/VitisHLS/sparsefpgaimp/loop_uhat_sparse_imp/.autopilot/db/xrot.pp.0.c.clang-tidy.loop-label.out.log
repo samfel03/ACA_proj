@@ -1,0 +1,5 @@
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xrot.pp.0.c:1107:3: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+  for (k = 0; k < 8; k++) {
+  ^~~
+  VITIS_LOOP_20_1: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xrot.pp.0.c:1107:3: note: FIX-IT applied suggested code changes

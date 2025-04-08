@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="VitisHLS/add.cpp" line="6" pragmaType="interface" parentfunction="add" mode="s_axilite" port="" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="VitisHLS/add.cpp" line="7" pragmaType="interface" parentfunction="add" mode="s_axilite" port="a" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="VitisHLS/add.cpp" line="8" pragmaType="interface" parentfunction="add" mode="s_axilite" port="b" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

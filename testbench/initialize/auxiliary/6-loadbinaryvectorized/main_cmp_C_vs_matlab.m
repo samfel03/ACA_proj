@@ -1,0 +1,59 @@
+%% Compare C and Matlab Vectors
+% Vectors List: Missing amen_sens and prod_sens
+readveclist = {'a_norm','C_vect','emi_no_ff','forc_noCO2','H','natal_data','pop5_dens','price_energy0',...
+                'prod0','scaler_temp','u0','zeta_clean0','zeta_fossil0'};
+for j=1:length(readveclist)
+    var = readveclist{j};
+    display(var);
+    % Read Matlab Vector
+    address = [outputfolder,'/',var,'.bin']; % set it as binary file
+    fprintf("Reading variable %s in: %s2\n",address,var);
+    fid = fopen(address, 'r');
+    eval(strcat(var,'2=fread(fid, size(',var,'),''double'');')); % H2 = fread(fid, 1, 'double);
+    fclose(fid);
+    eval(strcat('diff_',var,' = ',var,'-',var,'2;'));
+    eval(strcat('diff(',(num2str(j)),')=max(max(diff_',var,',[],2),[],1);'));
+end
+assert(sum(diff)==0); %% Vector of differences between variables is zero
+
+%% Compare C and Matlab Matrixes
+% Matrix List
+readmatlist = {'trmult_reduced','temp_past','Delta_temp'};
+for j=1:length(readmatlist)
+    var = readmatlist{j};
+    display(var);
+    % Read Matlab Vector
+    address = [outputfolder,'/',var,'.bin']; % set it as binary file
+    eval(strcat('[row,col]=size(',var,');'));
+    eval(strcat(var,'2=read_bin_2D_from_C(address,row,col);')); % H2 =read_bin_2D_from_C(address,row,col);
+    eval(strcat('diff_',var,' = ',var,'-',var,'2;'));
+    eval(strcat('diff(',(num2str(j)),')=max(max(diff_',var,',[],2),[],1);'));
+    clearvars row col
+end
+assert(sum(diff)==0); %% Vector of differences between variables is zero
+
+%% Eyballing trmult_reduced
+disp('trmult_reduced')
+trmult_reduced(1,12355)
+trmult_reduced(17048,17048)
+trmult_reduced(2,17048-6+1)
+trmult_reduced(17048-12000+1,1201)
+
+disp('temp_past')
+temp_past(1,1)
+temp_past(17048,51)
+temp_past(14001,4)
+temp_past(15651,48)
+
+disp('temp_past')
+Delta_temp(1,1)
+Delta_temp(17048,50)
+Delta_temp(11001,4)
+Delta_temp(17001,48)
+
+%{
+trmult_reduced(12355,1)
+trmult_reduced(17048,17048)
+trmult_reduced(17049-6,2)
+trmult_reduced(1200,17049-12000)
+%}

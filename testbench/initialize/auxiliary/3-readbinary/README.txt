@@ -1,0 +1,1 @@
+Load trmult_reduced.bin and verified by eyeballing that is identical to matlab using matlab/main.m

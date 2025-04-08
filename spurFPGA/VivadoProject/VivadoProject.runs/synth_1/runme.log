@@ -1,0 +1,463 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/seank/Documents/Research/ExportedVivadoIP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9240
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1304.887 ; gain = 441.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1' [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/.Xil/Vivado-7140-gerard/realtime/design_1_clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1' (0#1) [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/.Xil/Vivado-7140-gerard/realtime/design_1_clk_wiz_1_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+INFO: [Synth 8-6157] synthesizing module 'design_1_loop_uhat_sparse_0_0' [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/.Xil/Vivado-7140-gerard/realtime/design_1_loop_uhat_sparse_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_loop_uhat_sparse_0_0' (0#1) [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/.Xil/Vivado-7140-gerard/realtime/design_1_loop_uhat_sparse_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_control_AWREADY' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_WREADY' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_BRESP' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_BVALID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_ARREADY' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_RDATA' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_RRESP' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 's_axi_control_RVALID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWADDR' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWLEN' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWSIZE' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWBURST' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWLOCK' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWREGION' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWCACHE' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWPROT' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWQOS' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_AWVALID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_WID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_WDATA' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_WSTRB' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_WLAST' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_WVALID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_BREADY' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARADDR' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARLEN' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARSIZE' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARBURST' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARLOCK' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARREGION' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARCACHE' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARPROT' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARQOS' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_ARVALID' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_RREADY' of module 'design_1_loop_uhat_sparse_0_0' is unconnected for instance 'loop_uhat_sparse_0' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+WARNING: [Synth 8-7023] instance 'loop_uhat_sparse_0' of module 'design_1_loop_uhat_sparse_0_0' has 70 connections declared, but only 30 given [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:77]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_100M_1' [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/.Xil/Vivado-7140-gerard/realtime/design_1_rst_clk_wiz_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_100M_1' (0#1) [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/.Xil/Vivado-7140-gerard/realtime/design_1_rst_clk_wiz_100M_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:108]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:108]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:108]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:108]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_100M' of module 'design_1_rst_clk_wiz_100M_1' has 10 connections declared, but only 6 given [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-3848] Net uhat_i_o_0 in module/entity design_1 does not have driver. [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:40]
+WARNING: [Synth 8-3848] Net uhat_i_o_ap_vld_0 in module/entity design_1 does not have driver. [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/synth/design_1.v:41]
+WARNING: [Synth 8-7129] Port uhat_i_o_0[63] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[62] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[61] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[60] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[59] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[58] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[57] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[56] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[55] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[54] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[53] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[52] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[51] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[50] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[49] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[48] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[47] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[46] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[45] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[44] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[43] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[42] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[41] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[40] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[39] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[38] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[37] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[36] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[35] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[34] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[33] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[32] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[31] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[30] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[29] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[28] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[27] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[26] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[25] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[24] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[23] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[22] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[21] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[20] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[19] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[18] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[17] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[16] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[15] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[14] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[13] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[12] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[11] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[10] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[9] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[8] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[7] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[6] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[5] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[4] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[3] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[2] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[1] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_0[0] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uhat_i_o_ap_vld_0 in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[63] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[62] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[61] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[60] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[59] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[58] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[57] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[56] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[55] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[54] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[53] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[52] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[51] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[50] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[49] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[48] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[47] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[46] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[45] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[44] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[43] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[42] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[41] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[40] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[39] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[38] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[37] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[36] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[35] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[34] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[33] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[32] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[31] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[30] in module design_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L_0[29] in module design_1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1413.086 ; gain = 549.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1413.086 ; gain = 549.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1413.086 ; gain = 549.934
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1413.086 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/design_1_loop_uhat_sparse_0_0/design_1_loop_uhat_sparse_0_0_in_context.xdc] for cell 'design_1_i/loop_uhat_sparse_0'
+Finished Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/design_1_loop_uhat_sparse_0_0/design_1_loop_uhat_sparse_0_0_in_context.xdc] for cell 'design_1_i/loop_uhat_sparse_0'
+Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Finished Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_1/design_1_rst_clk_wiz_100M_1/design_1_rst_clk_wiz_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_100M'
+Finished Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_1/design_1_rst_clk_wiz_100M_1/design_1_rst_clk_wiz_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_100M'
+Parsing XDC File [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'RGB0[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'RGB0[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'RGB0[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'RGB1[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'RGB1[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'RGB1[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'D0_a[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'D0_a[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'D0_a[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'D0_a[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[4]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[5]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[6]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[7]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[2]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[3]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[4]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[5]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[6]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[7]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'btn[0]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'btn[1]'. [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc:84]
+Finished Parsing XDC File [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.srcs/constrs_1/imports/const/project1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1428.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1428.273 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/seank/Documents/Research/VivadoProject/VivadoProject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/loop_uhat_sparse_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_100M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_clk_wiz_1            |         1|
+|2     |design_1_loop_uhat_sparse_0_0 |         1|
+|3     |design_1_rst_clk_wiz_100M_1   |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |design_1_clk_wiz            |     1|
+|2     |design_1_loop_uhat_sparse_0 |     1|
+|3     |design_1_rst_clk_wiz_100M   |     1|
+|4     |IBUF                        |   353|
+|5     |OBUFT                       |    65|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 258 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1428.273 ; gain = 549.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1428.273 ; gain = 565.121
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1431.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1435.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 306a4452
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 220 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1435.379 ; gain = 961.559
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1435.379 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/seank/Documents/Research/VivadoProject/VivadoProject.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 10 10:28:37 2024...

@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libCCE-C.a "CMakeFiles/CCE-C.dir/src/call_rcond.c.obj" "CMakeFiles/CCE-C.dir/src/rt_nonfinite.c.obj" "CMakeFiles/CCE-C.dir/src/rtGetInf.c.obj" "CMakeFiles/CCE-C.dir/src/rtGetNaN.c.obj" "CMakeFiles/CCE-C.dir/src/svd.c.obj" "CMakeFiles/CCE-C.dir/src/xaxpy.c.obj" "CMakeFiles/CCE-C.dir/src/xdotc.c.obj" "CMakeFiles/CCE-C.dir/src/xnrm2.c.obj" "CMakeFiles/CCE-C.dir/src/xrot.c.obj" "CMakeFiles/CCE-C.dir/src/xrotg.c.obj" "CMakeFiles/CCE-C.dir/src/xswap.c.obj" "CMakeFiles/CCE-C.dir/src/loop_uhat_sparse.cpp.obj"
+C:\msys64\ucrt64\bin\ranlib.exe libCCE-C.a

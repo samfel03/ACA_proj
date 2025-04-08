@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "doGain",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "doGain"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Research/CU-Spur-Sean/spurFPGA/MatrixGainTest/VitisHLS/solution1/csynth.tcl",
+    "sourceLine": 15,
+    "success": true
+  }
+]

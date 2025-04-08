@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vitis HLS Report for 'loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6'
+================================================================
+* Date:           Fri Aug  2 15:04:19 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sparsefpgaimp
+* Solution:       loop_uhat_sparse_imp (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.073 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    17052|    17052|  0.171 ms|  0.171 ms|  17052|  17052|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_96_6  |    17050|    17050|         4|          1|          1|  17048|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|    857|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|     45|    -|
+|Register         |        -|   -|    172|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|    172|    902|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  66|  28800|  14400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|      6|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+-----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+-----+------------+------------+
+    |add_ln96_fu_138_p2         |         +|   0|  0|   20|          15|           1|
+    |sub_ln140_1_fu_206_p2      |         -|   0|  0|   12|           1|          12|
+    |sub_ln140_2_fu_368_p2      |         -|   0|  0|   71|           1|          64|
+    |sub_ln140_fu_194_p2        |         -|   0|  0|   12|          11|          12|
+    |and_ln140_1_fu_318_p2      |       and|   0|  0|    2|           1|           1|
+    |and_ln140_2_fu_324_p2      |       and|   0|  0|    2|           1|           1|
+    |and_ln140_3_fu_354_p2      |       and|   0|  0|    2|           1|           1|
+    |and_ln140_fu_291_p2        |       and|   0|  0|    2|           1|           1|
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|    2|           1|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|    2|           1|           1|
+    |icmp_ln140_1_fu_200_p2     |      icmp|   0|  0|   12|          11|          11|
+    |icmp_ln140_2_fu_237_p2     |      icmp|   0|  0|   12|          12|           1|
+    |icmp_ln140_3_fu_242_p2     |      icmp|   0|  0|   12|          12|           6|
+    |icmp_ln140_4_fu_247_p2     |      icmp|   0|  0|   14|           6|           1|
+    |icmp_ln140_fu_188_p2       |      icmp|   0|  0|   70|          63|           1|
+    |icmp_ln96_fu_132_p2        |      icmp|   0|  0|   20|          15|          15|
+    |lshr_ln140_fu_259_p2       |      lshr|   0|  0|  161|          54|          54|
+    |or_ln140_1_fu_342_p2       |        or|   0|  0|    2|           1|           1|
+    |or_ln140_fu_308_p2         |        or|   0|  0|    2|           1|           1|
+    |outStream_TDATA            |    select|   0|  0|   64|           1|          64|
+    |select_ln140_1_fu_330_p3   |    select|   0|  0|   54|           1|          54|
+    |select_ln140_2_fu_360_p3   |    select|   0|  0|   64|           1|          64|
+    |select_ln140_fu_296_p3     |    select|   0|  0|   53|           1|          53|
+    |shl_ln140_fu_280_p2        |       shl|   0|  0|  182|          64|          64|
+    |ap_enable_pp0              |       xor|   0|  0|    2|           1|           2|
+    |xor_ln140_1_fu_312_p2      |       xor|   0|  0|    2|           1|           2|
+    |xor_ln140_2_fu_348_p2      |       xor|   0|  0|    2|           1|           2|
+    |xor_ln140_fu_286_p2        |       xor|   0|  0|    2|           1|           2|
+    +---------------------------+----------+----+---+-----+------------+------------+
+    |Total                      |          |   0|  0|  857|         281|         493|
+    +---------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1     |   9|          2|   15|         30|
+    |i_fu_88                  |   9|          2|   15|         30|
+    |outStream_TDATA_blk_n    |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   33|         66|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |i_fu_88                           |  15|   0|   15|          0|
+    |icmp_ln140_1_reg_419              |   1|   0|    1|          0|
+    |icmp_ln140_reg_406                |   1|   0|    1|          0|
+    |select_ln140_2_reg_435            |  64|   0|   64|          0|
+    |sub_ln140_1_reg_425               |  12|   0|   12|          0|
+    |sub_ln140_reg_412                 |  12|   0|   12|          0|
+    |tmp_29_reg_430                    |   6|   0|    6|          0|
+    |tmp_reg_396                       |   1|   0|    1|          0|
+    |tmp_reg_396_pp0_iter2_reg         |   1|   0|    1|          0|
+    |trunc_ln140_1_reg_401             |  52|   0|   52|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 172|   0|  172|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+-------------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |               Source Object               |    C Type    |
++----------------------+-----+-----+------------+-------------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6|  return value|
+|outStream_TREADY      |   in|    1|        axis|                         outStream_V_data_V|       pointer|
+|outStream_TDATA       |  out|   64|        axis|                         outStream_V_data_V|       pointer|
+|output_data_address0  |  out|   15|   ap_memory|                                output_data|         array|
+|output_data_ce0       |  out|    1|   ap_memory|                                output_data|         array|
+|output_data_q0        |   in|   64|   ap_memory|                                output_data|         array|
+|outStream_TVALID      |  out|    1|        axis|                         outStream_V_last_V|       pointer|
+|outStream_TLAST       |  out|    1|        axis|                         outStream_V_last_V|       pointer|
+|outStream_TKEEP       |  out|    8|        axis|                         outStream_V_keep_V|       pointer|
+|outStream_TSTRB       |  out|    8|        axis|                         outStream_V_strb_V|       pointer|
++----------------------+-----+-----+------------+-------------------------------------------+--------------+
+

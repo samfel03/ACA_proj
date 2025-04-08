@@ -1,0 +1,31 @@
+---
+MainSourceFile:  'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/.autopilot/db/xaxpy.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_23_1:  '
+    FileOffset:      23
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xaxpy.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xaxpy.pp.0.c'
+        Offset:          47933
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_23_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_37_1:  '
+    FileOffset:      37
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xaxpy.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xaxpy.pp.0.c'
+        Offset:          48193
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_37_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_1:  '
+    FileOffset:      51
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xaxpy.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xaxpy.pp.0.c'
+        Offset:          48432
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_1: '
+...

@@ -1,0 +1,103 @@
+---
+MainSourceFile:  'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/.autopilot/db/loop_uhat_sparse.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          59332
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          286655
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          287119
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          287584
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          570861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_1:  '
+    FileOffset:      57
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          1773735
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_66_2:  '
+    FileOffset:      66
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          1774074
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_66_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_70_3:  '
+    FileOffset:      70
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          1774111
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_70_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_4:  '
+    FileOffset:      74
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          1774250
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_5:  '
+    FileOffset:      83
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          1774480
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_96_6:  '
+    FileOffset:      96
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\loop_uhat_sparse.pp.0.cpp'
+        Offset:          1774887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_96_6: '
+...

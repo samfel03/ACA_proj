@@ -1,0 +1,25 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7s50csga324-1",
+      "gen_directory": "../../../../VivadoProject.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "loop_uhat_sparse_0": ""
+    },
+    "components": {
+      "loop_uhat_sparse_0": {
+        "vlnv": "xilinx.com:hls:loop_uhat_sparse:1.0",
+        "ip_revision": "2113637812",
+        "xci_name": "design_2_loop_uhat_sparse_0_0",
+        "xci_path": "ip\\design_2_loop_uhat_sparse_0_0\\design_2_loop_uhat_sparse_0_0.xci",
+        "inst_hier_path": "loop_uhat_sparse_0"
+      }
+    }
+  }
+}

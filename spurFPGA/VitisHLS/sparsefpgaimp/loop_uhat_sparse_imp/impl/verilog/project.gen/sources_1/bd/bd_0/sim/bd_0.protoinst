@@ -1,0 +1,59 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/inStream": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "inStream_TDATA[63:0]"},
+						"TKEEP": { "actual": "inStream_TKEEP[7:0]"},
+						"TLAST": { "actual": "inStream_TLAST[0:0]"},
+						"TREADY": { "actual": "inStream_TREADY"},
+						"TSTRB": { "actual": "inStream_TSTRB[7:0]"},
+						"TVALID": { "actual": "inStream_TVALID"}
+					}
+				},
+				"/hls_inst/outStream": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "outStream_TDATA[63:0]"},
+						"TKEEP": { "actual": "outStream_TKEEP[7:0]"},
+						"TLAST": { "actual": "outStream_TLAST[0:0]"},
+						"TREADY": { "actual": "outStream_TREADY"},
+						"TSTRB": { "actual": "outStream_TSTRB[7:0]"},
+						"TVALID": { "actual": "outStream_TVALID"}
+					}
+				},
+				"/hls_inst/s_axi_CTRL_BUS": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_CTRL_BUS_ARADDR[5:0]"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_CTRL_BUS_ARREADY"},
+						"ARVALID": { "actual": "s_axi_CTRL_BUS_ARVALID"},
+						"AWADDR": { "actual": "s_axi_CTRL_BUS_AWADDR[5:0]"},
+						"AWREADY": { "actual": "s_axi_CTRL_BUS_AWREADY"},
+						"AWVALID": { "actual": "s_axi_CTRL_BUS_AWVALID"},
+						"BREADY": { "actual": "s_axi_CTRL_BUS_BREADY"},
+						"BRESP": { "actual": "s_axi_CTRL_BUS_BRESP[1:0]"},
+						"BVALID": { "actual": "s_axi_CTRL_BUS_BVALID"},
+						"RDATA": { "actual": "s_axi_CTRL_BUS_RDATA[31:0]"},
+						"RREADY": { "actual": "s_axi_CTRL_BUS_RREADY"},
+						"RRESP": { "actual": "s_axi_CTRL_BUS_RRESP[1:0]"},
+						"RVALID": { "actual": "s_axi_CTRL_BUS_RVALID"},
+						"WDATA": { "actual": "s_axi_CTRL_BUS_WDATA[31:0]"},
+						"WREADY": { "actual": "s_axi_CTRL_BUS_WREADY"},
+						"WSTRB": { "actual": "s_axi_CTRL_BUS_WSTRB[3:0]"},
+						"WVALID": { "actual": "s_axi_CTRL_BUS_WVALID"}
+					}
+				}
+			}
+		}
+	}
+}

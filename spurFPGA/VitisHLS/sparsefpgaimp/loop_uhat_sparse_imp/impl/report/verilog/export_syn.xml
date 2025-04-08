@@ -1,0 +1,573 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>12.403</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>12.403</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>12.403</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>-2.403</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>-2.403</SLACK_SYNTH>
+    <TIMING_MET>FALSE</TIMING_MET>
+    <TNS_FINAL>-225.524</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>-225.524</TNS_SYNTH>
+    <WNS_FINAL>-2.403</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>-2.403</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>704</BRAM>
+      <CLB>0</CLB>
+      <DSP>66</DSP>
+      <FF>13683</FF>
+      <LATCH>0</LATCH>
+      <LUT>26199</LUT>
+      <SRL>1290</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>100</BRAM>
+      <CLB>0</CLB>
+      <DSP>66</DSP>
+      <FF>28800</FF>
+      <LUT>14400</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="loop_uhat_sparse" DISPNAME="inst" RTLNAME="loop_uhat_sparse">
+      <SubModules count="18">CTRL_BUS_s_axi_U dadddsub_64ns_64ns_64_7_full_dsp_1_U76 dcmp_64ns_64ns_1_2_no_dsp_1_U78 dmul_64ns_64ns_64_7_max_dsp_1_U77 grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271 grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3_fu_288 grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5_fu_333 grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6_fu_320 grp_pow_generic_double_s_fu_344 input_data_L_U input_data_R_U input_data_colIndex_U input_data_rowStart_U input_data_value_U integral_U output_data_U regslice_both_inStream_V_data_V_U regslice_both_outStream_V_data_V_U</SubModules>
+      <Resources BRAM="704" DSP="66" FF="13683" LUT="26199"/>
+      <LocalResources FF="1075" LUT="2301"/>
+    </RtlModule>
+    <RtlModule CELL="inst/CTRL_BUS_s_axi_U" BINDMODULE="loop_uhat_sparse_CTRL_BUS_s_axi" DEPTH="1" TYPE="resource" MODULENAME="CTRL_BUS_s_axi" DISPNAME="CTRL_BUS_s_axi_U" RTLNAME="loop_uhat_sparse_CTRL_BUS_s_axi">
+      <Resources FF="279" LUT="251"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL_BUS" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_BUS_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U76" BINDMODULE="loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dadddsub_64ns_64ns_64_7_full_dsp_1" DISPNAME="dadddsub_64ns_64ns_64_7_full_dsp_1_U76" RTLNAME="loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1">
+      <Resources DSP="3" FF="638" LUT="754"/>
+      <LocalResources FF="194" LUT="101"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="6" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_7_full_dsp_1_U76" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="error"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="6" LOOP="VITIS_LOOP_74_4" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_7_full_dsp_1_U76" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:88" STORAGESUBTYPE="" URAM="0" VARIABLE="deviation"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="6" LOOP="VITIS_LOOP_74_4" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_7_full_dsp_1_U76" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="error_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dcmp_64ns_64ns_1_2_no_dsp_1_U78" BINDMODULE="loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="1" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U78" RTLNAME="loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="128" LUT="84"/>
+      <LocalResources FF="128"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dmul_64ns_64ns_64_7_max_dsp_1_U77" BINDMODULE="loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_7_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_7_max_dsp_1_U77" RTLNAME="loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1">
+      <Resources DSP="11" FF="280" LUT="116"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="6" LOOP="VITIS_LOOP_74_4" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_7_max_dsp_1_U77" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:87" STORAGESUBTYPE="" URAM="0" VARIABLE="uhat_f"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="6" LOOP="VITIS_LOOP_74_4" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_7_max_dsp_1_U77" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="mul3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271" DEPTH="1" TYPE="function" MODULENAME="loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1" DISPNAME="grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271" RTLNAME="loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U sitodp_64ns_64_6_no_dsp_1_U1</SubModules>
+      <Resources FF="543" LUT="2168"/>
+      <LocalResources FF="119" LUT="1168"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271/flow_control_loop_pipe_sequential_init_U" BINDMODULE="loop_uhat_sparse_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="loop_uhat_sparse_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="651"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_57_1_fu_271/sitodp_64ns_64_6_no_dsp_1_U1" BINDMODULE="loop_uhat_sparse_sitodp_64ns_64_6_no_dsp_1" DEPTH="2" TYPE="rtl" MODULENAME="sitodp_64ns_64_6_no_dsp_1" DISPNAME="sitodp_64ns_64_6_no_dsp_1_U1" RTLNAME="loop_uhat_sparse_sitodp_64ns_64_6_no_dsp_1">
+      <Resources FF="422" LUT="349"/>
+      <LocalResources FF="129" LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3_fu_288" DEPTH="1" TYPE="function" MODULENAME="loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3" DISPNAME="grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3_fu_288" RTLNAME="loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="276" LUT="1360"/>
+      <LocalResources FF="274" LUT="1226"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_70_3_fu_288/flow_control_loop_pipe_sequential_init_U" BINDMODULE="loop_uhat_sparse_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="loop_uhat_sparse_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="134"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5_fu_333" DEPTH="1" TYPE="function" MODULENAME="loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5" DISPNAME="grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5_fu_333" RTLNAME="loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="499" LUT="758"/>
+      <LocalResources FF="497" LUT="718"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_83_5_fu_333/flow_control_loop_pipe_sequential_init_U" BINDMODULE="loop_uhat_sparse_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="loop_uhat_sparse_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="40"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6_fu_320" DEPTH="1" TYPE="function" MODULENAME="loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6" DISPNAME="grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6_fu_320" RTLNAME="loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="166" LUT="536"/>
+      <LocalResources FF="164" LUT="480"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_loop_uhat_sparse_Pipeline_VITIS_LOOP_96_6_fu_320/flow_control_loop_pipe_sequential_init_U" BINDMODULE="loop_uhat_sparse_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="loop_uhat_sparse_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="56"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344" DEPTH="1" TYPE="function" MODULENAME="pow_generic_double_s" DISPNAME="grp_pow_generic_double_s_fu_344" RTLNAME="loop_uhat_sparse_pow_generic_double_s">
+      <SubModules count="28">mac_muladd_16s_15ns_19s_31_4_1_U27 mul_12s_80ns_90_5_1_U12 mul_13s_71s_71_5_1_U13 mul_40ns_40ns_80_2_1_U14 mul_43ns_36ns_79_3_1_U15 mul_49ns_44ns_93_5_1_U16 mul_50ns_50ns_100_5_1_U17 mul_54s_6ns_54_5_1_U18 mul_71ns_4ns_75_5_1_U26 mul_73ns_6ns_79_5_1_U19 mul_77ns_6ns_83_5_1_U20 mul_77s_54s_130_5_1_U21 mul_82ns_6ns_88_5_1_U22 mul_83ns_6ns_89_5_1_U23 mul_87ns_6ns_93_5_1_U24 mul_92ns_6ns_98_5_1_U25 pow_reduce_anonymous_namespace_log0_lut_table_array_U pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_U pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_U pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_U pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_U pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_U</SubModules>
+      <Resources DSP="52" FF="9520" LUT="13163"/>
+      <LocalResources DSP="3" FF="6294" LUT="5608"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mac_muladd_16s_15ns_19s_31_4_1_U27" BINDMODULE="loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15ns_19s_31_4_1" DISPNAME="mac_muladd_16s_15ns_19s_31_4_1_U27" RTLNAME="loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1">
+      <Resources FF="84" LUT="426"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15ns_19s_31_4_1_U27" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:563" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln563"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15ns_19s_31_4_1_U27" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:563" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln563"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15ns_19s_31_4_1_U27" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:563" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln563"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15ns_19s_31_4_1_U27" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:563" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln563"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_12s_80ns_90_5_1_U12" BINDMODULE="loop_uhat_sparse_mul_12s_80ns_90_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_12s_80ns_90_5_1" DISPNAME="mul_12s_80ns_90_5_1_U12" RTLNAME="loop_uhat_sparse_mul_12s_80ns_90_5_1">
+      <Resources DSP="4" FF="34" LUT="32"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_80ns_90_5_1_U12" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:494" STORAGESUBTYPE="" URAM="0" VARIABLE="Elog2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_80ns_90_5_1_U12" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:494" STORAGESUBTYPE="" URAM="0" VARIABLE="Elog2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_13s_71s_71_5_1_U13" BINDMODULE="loop_uhat_sparse_mul_13s_71s_71_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_13s_71s_71_5_1" DISPNAME="mul_13s_71s_71_5_1_U13" RTLNAME="loop_uhat_sparse_mul_13s_71s_71_5_1">
+      <Resources DSP="4" FF="34" LUT="5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_13s_71s_71_5_1_U13" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:568" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln568"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_13s_71s_71_5_1_U13" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:568" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln568"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14" BINDMODULE="loop_uhat_sparse_mul_40ns_40ns_80_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_40ns_40ns_80_2_1" DISPNAME="mul_40ns_40ns_80_2_1_U14" RTLNAME="loop_uhat_sparse_mul_40ns_40ns_80_2_1">
+      <Resources DSP="2" FF="110" LUT="831"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_40ns_40ns_80_2_1_U14" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:522" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln522"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_40ns_40ns_80_2_1_U14" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:522" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln522"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15" BINDMODULE="loop_uhat_sparse_mul_43ns_36ns_79_3_1" DEPTH="2" TYPE="resource" MODULENAME="mul_43ns_36ns_79_3_1" DISPNAME="mul_43ns_36ns_79_3_1_U15" RTLNAME="loop_uhat_sparse_mul_43ns_36ns_79_3_1">
+      <Resources FF="156" LUT="1052"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="6" ID="" IMPL="auto" LATENCY="2" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_43ns_36ns_79_3_1_U15" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:258" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln258"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="6" ID="" IMPL="auto" LATENCY="2" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_43ns_36ns_79_3_1_U15" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:258" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln258"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_49ns_44ns_93_5_1_U16" BINDMODULE="loop_uhat_sparse_mul_49ns_44ns_93_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_49ns_44ns_93_5_1" DISPNAME="mul_49ns_44ns_93_5_1_U16" RTLNAME="loop_uhat_sparse_mul_49ns_44ns_93_5_1">
+      <Resources DSP="9" FF="53" LUT="122"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="9" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_49ns_44ns_93_5_1_U16" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:277" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln277"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="9" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_49ns_44ns_93_5_1_U16" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:277" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln277"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_50ns_50ns_100_5_1_U17" BINDMODULE="loop_uhat_sparse_mul_50ns_50ns_100_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_50ns_50ns_100_5_1" DISPNAME="mul_50ns_50ns_100_5_1_U17" RTLNAME="loop_uhat_sparse_mul_50ns_50ns_100_5_1">
+      <Resources DSP="8" FF="114" LUT="397"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="9" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_50ns_50ns_100_5_1_U17" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:616" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln616"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="9" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_50ns_50ns_100_5_1_U17" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:616" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln616"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_54s_6ns_54_5_1_U18" BINDMODULE="loop_uhat_sparse_mul_54s_6ns_54_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_54s_6ns_54_5_1" DISPNAME="mul_54s_6ns_54_5_1_U18" RTLNAME="loop_uhat_sparse_mul_54s_6ns_54_5_1">
+      <Resources DSP="3" FF="51" LUT="53"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_54s_6ns_54_5_1_U18" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:516" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln516"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_54s_6ns_54_5_1_U18" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:516" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln516"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_71ns_4ns_75_5_1_U26" BINDMODULE="loop_uhat_sparse_mul_71ns_4ns_75_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_71ns_4ns_75_5_1" DISPNAME="mul_71ns_4ns_75_5_1_U26" RTLNAME="loop_uhat_sparse_mul_71ns_4ns_75_5_1">
+      <Resources DSP="3" FF="37" LUT="17"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_71ns_4ns_75_5_1_U26" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_71ns_4ns_75_5_1_U26" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_73ns_6ns_79_5_1_U19" BINDMODULE="loop_uhat_sparse_mul_73ns_6ns_79_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_73ns_6ns_79_5_1" DISPNAME="mul_73ns_6ns_79_5_1_U19" RTLNAME="loop_uhat_sparse_mul_73ns_6ns_79_5_1">
+      <Resources DSP="3" FF="39" LUT="137"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_73ns_6ns_79_5_1_U19" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_73ns_6ns_79_5_1_U19" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_77ns_6ns_83_5_1_U20" BINDMODULE="loop_uhat_sparse_mul_77ns_6ns_83_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_77ns_6ns_83_5_1" DISPNAME="mul_77ns_6ns_83_5_1_U20" RTLNAME="loop_uhat_sparse_mul_77ns_6ns_83_5_1">
+      <Resources FF="333" LUT="503"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_77ns_6ns_83_5_1_U20" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_77ns_6ns_83_5_1_U20" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_77s_54s_130_5_1_U21" BINDMODULE="loop_uhat_sparse_mul_77s_54s_130_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_77s_54s_130_5_1" DISPNAME="mul_77s_54s_130_5_1_U21" RTLNAME="loop_uhat_sparse_mul_77s_54s_130_5_1">
+      <Resources DSP="13" FF="289" LUT="782"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="15" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_77s_54s_130_5_1_U21" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:539" STORAGESUBTYPE="" URAM="0" VARIABLE="m_frac_l"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="15" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_77s_54s_130_5_1_U21" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:539" STORAGESUBTYPE="" URAM="0" VARIABLE="m_frac_l"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_82ns_6ns_88_5_1_U22" BINDMODULE="loop_uhat_sparse_mul_82ns_6ns_88_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_82ns_6ns_88_5_1" DISPNAME="mul_82ns_6ns_88_5_1_U22" RTLNAME="loop_uhat_sparse_mul_82ns_6ns_88_5_1">
+      <Resources FF="266" LUT="527"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_82ns_6ns_88_5_1_U22" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_82ns_6ns_88_5_1_U22" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_83ns_6ns_89_5_1_U23" BINDMODULE="loop_uhat_sparse_mul_83ns_6ns_89_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_83ns_6ns_89_5_1" DISPNAME="mul_83ns_6ns_89_5_1_U23" RTLNAME="loop_uhat_sparse_mul_83ns_6ns_89_5_1">
+      <Resources FF="278" LUT="532"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_83ns_6ns_89_5_1_U23" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_83ns_6ns_89_5_1_U23" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_87ns_6ns_93_5_1_U24" BINDMODULE="loop_uhat_sparse_mul_87ns_6ns_93_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_87ns_6ns_93_5_1" DISPNAME="mul_87ns_6ns_93_5_1_U24" RTLNAME="loop_uhat_sparse_mul_87ns_6ns_93_5_1">
+      <Resources FF="290" LUT="557"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_87ns_6ns_93_5_1_U24" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_87ns_6ns_93_5_1_U24" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/mul_92ns_6ns_98_5_1_U25" BINDMODULE="loop_uhat_sparse_mul_92ns_6ns_98_5_1" DEPTH="2" TYPE="resource" MODULENAME="mul_92ns_6ns_98_5_1" DISPNAME="mul_92ns_6ns_98_5_1_U25" RTLNAME="loop_uhat_sparse_mul_92ns_6ns_98_5_1">
+      <Resources FF="307" LUT="593"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_92ns_6ns_98_5_1_U25" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="5" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_92ns_6ns_98_5_1_U25" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_pow.h:44" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln44_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log0_lut_table_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud" DISPNAME="pow_reduce_anonymous_namespace_log0_lut_table_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud">
+      <Resources FF="109"/>
+      <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log0_lut_table_array_U" SOURCE="" STORAGESIZE="109 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log0_lut_table_array"/>
+      <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log0_lut_table_array_U" SOURCE="" STORAGESIZE="109 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log0_lut_table_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb" DISPNAME="pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb">
+      <Resources FF="6"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_U" SOURCE="" STORAGESIZE="6 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_U" SOURCE="" STORAGESIZE="6 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi">
+      <Resources FF="90" LUT="84"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_U" SOURCE="" STORAGESIZE="97 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_U" SOURCE="" STORAGESIZE="97 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j">
+      <Resources FF="76" LUT="70"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_U" SOURCE="" STORAGESIZE="92 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_U" SOURCE="" STORAGESIZE="92 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi">
+      <Resources FF="61" LUT="55"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_U" SOURCE="" STORAGESIZE="87 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_U" SOURCE="" STORAGESIZE="87 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs">
+      <Resources FF="41" LUT="81"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_U" SOURCE="" STORAGESIZE="82 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_U" SOURCE="" STORAGESIZE="82 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC">
+      <Resources FF="31" LUT="26"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_U" SOURCE="" STORAGESIZE="77 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_U" SOURCE="" STORAGESIZE="77 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe">
+      <Resources FF="105" LUT="52"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_U" SOURCE="" STORAGESIZE="105 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_U" SOURCE="" STORAGESIZE="105 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg" DISPNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg">
+      <Resources FF="100" LUT="94"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_U" SOURCE="" STORAGESIZE="102 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array"/>
+      <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_U" SOURCE="" STORAGESIZE="102 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM" DISPNAME="pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM">
+      <Resources FF="58" LUT="223"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_U" SOURCE="" STORAGESIZE="58 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_U" SOURCE="" STORAGESIZE="58 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6" DISPNAME="pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6">
+      <Resources FF="40" LUT="158"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_U" SOURCE="" STORAGESIZE="42 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_U" SOURCE="" STORAGESIZE="42 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_pow_generic_double_s_fu_344/pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_U" BINDMODULE="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW" DEPTH="2" TYPE="resource" MODULENAME="pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW" DISPNAME="pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_U" RTLNAME="loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW">
+      <Resources FF="34" LUT="146"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_2p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_U" SOURCE="" STORAGESIZE="26 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_2p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_2p" PRAGMA="" RTLNAME="pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_U" SOURCE="" STORAGESIZE="26 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_2p" URAM="0" VARIABLE="pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array"/>
+    </RtlModule>
+    <RtlModule CELL="inst/input_data_L_U" BINDMODULE="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_value_RAM_AUTO_1R1W" DISPNAME="input_data_L_U" RTLNAME="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W">
+      <Resources BRAM="128"/>
+      <BindNode BINDTYPE="storage" BRAM="128" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="input_data_L_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:50" STORAGESIZE="64 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="input_data_L"/>
+    </RtlModule>
+    <RtlModule CELL="inst/input_data_R_U" BINDMODULE="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_value_RAM_AUTO_1R1W" DISPNAME="input_data_R_U" RTLNAME="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W">
+      <Resources BRAM="128" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="128" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="input_data_R_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:50" STORAGESIZE="64 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="input_data_R"/>
+    </RtlModule>
+    <RtlModule CELL="inst/input_data_colIndex_U" BINDMODULE="loop_uhat_sparse_input_data_colIndex_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_colIndex_RAM_AUTO_1R1W" DISPNAME="input_data_colIndex_U" RTLNAME="loop_uhat_sparse_input_data_colIndex_RAM_AUTO_1R1W">
+      <Resources FF="15" LUT="4350"/>
+      <BindNode BINDTYPE="storage" BRAM="30" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="input_data_colIndex_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:50" STORAGESIZE="15 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="input_data_colIndex"/>
+    </RtlModule>
+    <RtlModule CELL="inst/input_data_rowStart_U" BINDMODULE="loop_uhat_sparse_input_data_rowStart_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_rowStart_RAM_AUTO_1R1W" DISPNAME="input_data_rowStart_U" RTLNAME="loop_uhat_sparse_input_data_rowStart_RAM_AUTO_1R1W">
+      <Resources BRAM="64" LUT="48"/>
+      <BindNode BINDTYPE="storage" BRAM="64" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="input_data_rowStart_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:50" STORAGESIZE="32 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="input_data_rowStart"/>
+    </RtlModule>
+    <RtlModule CELL="inst/input_data_value_U" BINDMODULE="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_value_RAM_AUTO_1R1W" DISPNAME="input_data_value_U" RTLNAME="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W">
+      <Resources BRAM="128" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="128" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="input_data_value_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:50" STORAGESIZE="64 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="input_data_value"/>
+    </RtlModule>
+    <RtlModule CELL="inst/integral_U" BINDMODULE="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_value_RAM_AUTO_1R1W" DISPNAME="integral_U" RTLNAME="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W">
+      <Resources BRAM="128" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="128" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="integral_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:52" STORAGESIZE="64 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="integral"/>
+    </RtlModule>
+    <RtlModule CELL="inst/output_data_U" BINDMODULE="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="input_data_value_RAM_AUTO_1R1W" DISPNAME="output_data_U" RTLNAME="loop_uhat_sparse_input_data_value_RAM_AUTO_1R1W">
+      <Resources BRAM="128" LUT="69"/>
+      <BindNode BINDTYPE="storage" BRAM="128" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_data_U" SOURCE="sparsefpgaimp/loop_uhat_sparse.cpp:51" STORAGESIZE="64 17048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_data"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_inStream_V_data_V_U" BINDMODULE="loop_uhat_sparse_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_inStream_V_data_V_U" RTLNAME="loop_uhat_sparse_regslice_both">
+      <Resources FF="132" LUT="67"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_outStream_V_data_V_U" BINDMODULE="loop_uhat_sparse_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_outStream_V_data_V_U" RTLNAME="loop_uhat_sparse_regslice_both">
+      <Resources FF="132" LUT="46"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="12.414" DATAPATH_LOGIC_DELAY="7.376" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[44]/D" LOGIC_LEVELS="22" MAX_FANOUT="75" SLACK="-2.403" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[44]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[44]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.413" DATAPATH_LOGIC_DELAY="7.375" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[41]/D" LOGIC_LEVELS="21" MAX_FANOUT="75" SLACK="-2.402" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[41]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.394" DATAPATH_LOGIC_DELAY="7.356" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[43]/D" LOGIC_LEVELS="21" MAX_FANOUT="75" SLACK="-2.383" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[43]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.321" DATAPATH_LOGIC_DELAY="7.283" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[42]/D" LOGIC_LEVELS="21" MAX_FANOUT="75" SLACK="-2.310" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[42]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.300" DATAPATH_LOGIC_DELAY="7.262" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[40]/D" LOGIC_LEVELS="21" MAX_FANOUT="75" SLACK="-2.289" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[40]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.299" DATAPATH_LOGIC_DELAY="7.261" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[37]/D" LOGIC_LEVELS="20" MAX_FANOUT="75" SLACK="-2.288" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[37]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.280" DATAPATH_LOGIC_DELAY="7.242" DATAPATH_NET_DELAY="5.038" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[39]/D" LOGIC_LEVELS="20" MAX_FANOUT="75" SLACK="-2.269" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z3_m_1_reg_3570_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[11]__0_i_28" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__0_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[16]__0_i_10" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[7]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[11]__2_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_17" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__2_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[39]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.271" DATAPATH_LOGIC_DELAY="6.640" DATAPATH_NET_DELAY="5.631" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[45]/D" LOGIC_LEVELS="20" MAX_FANOUT="105" SLACK="-2.260" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0[16]__0_i_88" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[16]__0_i_53" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[15]__2_i_68" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_68" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_44" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_33" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_25" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_8" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[45]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="46"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.262" DATAPATH_LOGIC_DELAY="6.640" DATAPATH_NET_DELAY="5.622" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[45]/D" LOGIC_LEVELS="20" MAX_FANOUT="75" SLACK="-2.251" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/exp_Z4_m_1_reg_3559_pp0_iter70_reg_reg[14]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/exp_Z4_m_1_reg_3559_pp0_iter70_reg_reg[14]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1671"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0[16]__1_i_174" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[16]__1_i_104" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[15]__3_i_68" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__1_i_69" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_45" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[19]__1_i_33" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__1_i_25" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[19]__1_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[19]__1_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_8" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[23]__1_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__1_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0[27]__1_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[27]__1_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[31]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[35]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[39]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="mul_43ns_36ns_79_3_1_U15/buff0_reg[43]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[47]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="38"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_43ns_36ns_79_3_1_U15/buff0_reg[45]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="49"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="12.252" DATAPATH_LOGIC_DELAY="6.621" DATAPATH_NET_DELAY="5.631" ENDPOINT_PIN="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]/D" LOGIC_LEVELS="20" MAX_FANOUT="105" SLACK="-2.241" STARTPOINT_PIN="grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]/C">
+      <CELL NAME="grp_pow_generic_double_s_fu_344/tmp_18_reg_3216_reg[34]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0[16]__0_i_88" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[16]__0_i_53" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[15]__2_i_68" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_68" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_44" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_33" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_25" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0[19]__0_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[19]__0_i_7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_8" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[23]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0[27]__0_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[27]__0_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="mul_40ns_40ns_80_2_1_U14/buff0_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="33"/>
+      <CELL NAME="grp_pow_generic_double_s_fu_344/mul_40ns_40ns_80_2_1_U14/buff0_reg[47]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="46"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/loop_uhat_sparse_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/loop_uhat_sparse_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/loop_uhat_sparse_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/loop_uhat_sparse_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/loop_uhat_sparse_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/loop_uhat_sparse_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Fri Aug 02 15:12:17 -0600 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="sparsefpgaimp"/>
+    <item NAME="Solution" VALUE="loop_uhat_sparse_imp (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z007s-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

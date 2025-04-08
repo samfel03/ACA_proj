@@ -1,0 +1,10 @@
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xnrm2.pp.0.c:1552:3: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+  for (k = ix0; k <= kend; k++) {
+  ^~~
+  VITIS_LOOP_27_1: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xnrm2.pp.0.c:1552:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xnrm2.pp.0.c:1578:3: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+  for (k = ix0; k <= kend; k++) {
+  ^~~
+  VITIS_LOOP_53_1: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xnrm2.pp.0.c:1578:3: note: FIX-IT applied suggested code changes

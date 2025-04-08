@@ -1,0 +1,2103 @@
+---------- Initialization ----------
+
+Allocated 60 DPU(s)	NR_TASKLETS	20	BLOCK	10
+trmult_rows: 120, trmult_cols: 120, integral_rows: 120, integral_cols: 1
+
+
+input_size: 14400, input_size_8bytes(aligned): 14400, input_size_dpu: 240, input_size_dpu_8bytes(aligned): 240
+
+integral_input_size: 120, integral_input_size_8bytes(aligned): 120, integral_input_size_dpu: 120, integral_input_size_dpu_8bytes(aligned): 120
+
+Total trmult_reduced Allocation (bytes): 115200
+
+Total integral Allocation (bytes): 960
+
+Data Reding begins...
+Data Reding complete!
+
+Setting Host output checker
+Host output set...
+
+
+
+---------- Setting and Transferring data ----------
+
+Max Capacity: 33822
+Data per dpu 0: 2
+Data per dpu 1: 2
+Data per dpu 2: 2
+Data per dpu 3: 2
+Data per dpu 4: 2
+Data per dpu 5: 2
+Data per dpu 6: 2
+Data per dpu 7: 2
+Data per dpu 8: 2
+Data per dpu 9: 2
+Data per dpu 10: 2
+Data per dpu 11: 2
+Data per dpu 12: 2
+Data per dpu 13: 2
+Data per dpu 14: 2
+Data per dpu 15: 2
+Data per dpu 16: 2
+Data per dpu 17: 2
+Data per dpu 18: 2
+Data per dpu 19: 2
+Data per dpu 20: 2
+Data per dpu 21: 2
+Data per dpu 22: 2
+Data per dpu 23: 2
+Data per dpu 24: 2
+Data per dpu 25: 2
+Data per dpu 26: 2
+Data per dpu 27: 2
+Data per dpu 28: 2
+Data per dpu 29: 2
+Data per dpu 30: 2
+Data per dpu 31: 2
+Data per dpu 32: 2
+Data per dpu 33: 2
+Data per dpu 34: 2
+Data per dpu 35: 2
+Data per dpu 36: 2
+Data per dpu 37: 2
+Data per dpu 38: 2
+Data per dpu 39: 2
+Data per dpu 40: 2
+Data per dpu 41: 2
+Data per dpu 42: 2
+Data per dpu 43: 2
+Data per dpu 44: 2
+Data per dpu 45: 2
+Data per dpu 46: 2
+Data per dpu 47: 2
+Data per dpu 48: 2
+Data per dpu 49: 2
+Data per dpu 50: 2
+Data per dpu 51: 2
+Data per dpu 52: 2
+Data per dpu 53: 2
+Data per dpu 54: 2
+Data per dpu 55: 2
+Data per dpu 56: 2
+Data per dpu 57: 2
+Data per dpu 58: 2
+Data per dpu 59: 2
+Output on:: dpu being adequate: 1
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 0, end_index: 240
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 240, end_index: 480
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 480, end_index: 720
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 720, end_index: 960
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 960, end_index: 1200
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 1200, end_index: 1440
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 1440, end_index: 1680
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 1680, end_index: 1920
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 1920, end_index: 2160
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 2160, end_index: 2400
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 2400, end_index: 2640
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 2640, end_index: 2880
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 2880, end_index: 3120
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 3120, end_index: 3360
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 3360, end_index: 3600
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 3600, end_index: 3840
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 3840, end_index: 4080
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 4080, end_index: 4320
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 4320, end_index: 4560
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 4560, end_index: 4800
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 4800, end_index: 5040
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 5040, end_index: 5280
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 5280, end_index: 5520
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 5520, end_index: 5760
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 5760, end_index: 6000
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 6000, end_index: 6240
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 6240, end_index: 6480
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 6480, end_index: 6720
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 6720, end_index: 6960
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 6960, end_index: 7200
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 7200, end_index: 7440
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 7440, end_index: 7680
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 7680, end_index: 7920
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 7920, end_index: 8160
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 8160, end_index: 8400
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 8400, end_index: 8640
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 8640, end_index: 8880
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 8880, end_index: 9120
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 9120, end_index: 9360
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 9360, end_index: 9600
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 9600, end_index: 9840
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 9840, end_index: 10080
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 10080, end_index: 10320
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 10320, end_index: 10560
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 10560, end_index: 10800
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 10800, end_index: 11040
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 11040, end_index: 11280
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 11280, end_index: 11520
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 11520, end_index: 11760
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 11760, end_index: 12000
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 12000, end_index: 12240
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 12240, end_index: 12480
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 12480, end_index: 12720
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 12720, end_index: 12960
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 12960, end_index: 13200
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 13200, end_index: 13440
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 13440, end_index: 13680
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 13680, end_index: 13920
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 13920, end_index: 14160
+size(bytes): 1920, transfer size(bytes): 1920, start_index: 14160, end_index: 14400
+Hash indexes: 120
+Hash indexes: 240
+Hash indexes: 360
+Hash indexes: 480
+Hash indexes: 600
+Hash indexes: 720
+Hash indexes: 840
+Hash indexes: 960
+Hash indexes: 1080
+Hash indexes: 1200
+Hash indexes: 1320
+Hash indexes: 1440
+Hash indexes: 1560
+Hash indexes: 1680
+Hash indexes: 1800
+Hash indexes: 1920
+Hash indexes: 2040
+Hash indexes: 2160
+Hash indexes: 2280
+Hash indexes: 2400
+Hash indexes: 2520
+Hash indexes: 2640
+Hash indexes: 2760
+Hash indexes: 2880
+Hash indexes: 3000
+Hash indexes: 3120
+Hash indexes: 3240
+Hash indexes: 3360
+Hash indexes: 3480
+Hash indexes: 3600
+Hash indexes: 3720
+Hash indexes: 3840
+Hash indexes: 3960
+Hash indexes: 4080
+Hash indexes: 4200
+Hash indexes: 4320
+Hash indexes: 4440
+Hash indexes: 4560
+Hash indexes: 4680
+Hash indexes: 4800
+Hash indexes: 4920
+Hash indexes: 5040
+Hash indexes: 5160
+Hash indexes: 5280
+Hash indexes: 5400
+Hash indexes: 5520
+Hash indexes: 5640
+Hash indexes: 5760
+Hash indexes: 5880
+Hash indexes: 6000
+Hash indexes: 6120
+Hash indexes: 6240
+Hash indexes: 6360
+Hash indexes: 6480
+Hash indexes: 6600
+Hash indexes: 6720
+Hash indexes: 6840
+Hash indexes: 6960
+Hash indexes: 7080
+Hash indexes: 7200
+Hash indexes: 7320
+Hash indexes: 7440
+Hash indexes: 7560
+Hash indexes: 7680
+Hash indexes: 7800
+Hash indexes: 7920
+Hash indexes: 8040
+Hash indexes: 8160
+Hash indexes: 8280
+Hash indexes: 8400
+Hash indexes: 8520
+Hash indexes: 8640
+Hash indexes: 8760
+Hash indexes: 8880
+Hash indexes: 9000
+Hash indexes: 9120
+Hash indexes: 9240
+Hash indexes: 9360
+Hash indexes: 9480
+Hash indexes: 9600
+Hash indexes: 9720
+Hash indexes: 9840
+Hash indexes: 9960
+Hash indexes: 10080
+Hash indexes: 10200
+Hash indexes: 10320
+Hash indexes: 10440
+Hash indexes: 10560
+Hash indexes: 10680
+Hash indexes: 10800
+Hash indexes: 10920
+Hash indexes: 11040
+Hash indexes: 11160
+Hash indexes: 11280
+Hash indexes: 11400
+Hash indexes: 11520
+Hash indexes: 11640
+Hash indexes: 11760
+Hash indexes: 11880
+Hash indexes: 12000
+Hash indexes: 12120
+Hash indexes: 12240
+Hash indexes: 12360
+Hash indexes: 12480
+Hash indexes: 12600
+Hash indexes: 12720
+Hash indexes: 12840
+Hash indexes: 12960
+Hash indexes: 13080
+Hash indexes: 13200
+Hash indexes: 13320
+Hash indexes: 13440
+Hash indexes: 13560
+Hash indexes: 13680
+Hash indexes: 13800
+Hash indexes: 13920
+Hash indexes: 14040
+Hash indexes: 14160
+Hash indexes: 14280
+Hash indexes: 14400
+
+PARALLEL TRANSFER: Input args transfer starts...
+Input args transfer ends...
+
+SERIAL TRANSFER: Data transfer for trmult_reduced starts...
+Data transfer for trmult_reduced ends!
+
+Broadcasting integral begins...
+Broadcasting integral ends!
+
+
+---------- Launching DPU ----------
+
+Dpu Processing ends!
+
+
+
+---------- Running DPU Logs ----------
+
+Beginning DPU output...
+
+=== DPU#0x0 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 568820.000003::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 1425620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x10000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 2282420.000010::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 3139220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x20000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 3996020.000010::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 4852820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x30000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 5709620.000020::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 6566420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x40000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 7423220.000020::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 8280020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x50000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 9136816.000040::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 9993620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x60000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 10850416.000040::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 11707220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x70000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 12564016.000040::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 13420820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x80000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 14277616.000040::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 15134420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x90000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 15991216.000040::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 16848020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0xa0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 17704816.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 18561620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0xb0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 19418416.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 20275220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0xc0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 21132016.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 21988820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0xd0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 22845616.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 23702420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0xe0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 24559216.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 25416020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0xf0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 26272816.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 27129620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x100000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 27986416.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 28843220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x110000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 29700016.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 30556820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x120000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 31413616.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 32270420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x130000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 33127216.000081::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 33984020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x140000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 34840800.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 35697620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x150000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 36554400.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 37411220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x160000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 38268000.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 39124820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x170000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 39981600.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 40838420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x180000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 41695200.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 42552020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x190000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 43408800.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 44265620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x1a0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 45122400.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 45979220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x1b0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 46836000.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 47692820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x1c0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 48549600.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 49406420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x1d0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 50263200.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 51120020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x1e0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 51976800.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 52833620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x1f0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 53690400.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 54547220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x200000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 55404000.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 56260820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x210000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 57117600.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 57974420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x220000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 58831200.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 59688020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x230000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 60544800.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 61401620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x240000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 62258400.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 63115220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x250000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 63972000.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 64828820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x260000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 65685600.000162::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 66542420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x270000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 67399168.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 68256020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x280000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 69112768.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 69969620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x290000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 70826368.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 71683220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x2a0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 72539968.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 73396820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x2b0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 74253568.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 75110420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x2c0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 75967168.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 76824020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x2d0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 77680768.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 78537620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x2e0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 79394368.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 80251220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x2f0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 81107968.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 81964820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x300000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 82821568.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 83678420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x310000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 84535168.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 85392020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x320000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 86248768.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 87105620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x330000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 87962368.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 88819220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x340000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 89675968.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 90532820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x350000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 91389568.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 92246420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x360000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 93103168.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 93960020.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x370000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 94816768.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 95673620.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x380000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 96530368.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 97387220.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x390000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 98243968.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 99100820.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x3a0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 99957568.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 100814420.000000::::::::::::::::::::::::::::::::::::::::
+=== DPU#0x3b0000 ===
+T_9::		byte_trmult offset: 864, dpu_memory_loc: 108, transfered bytes: 96
+T_0::		byte_trmult offset: 0, dpu_memory_loc: 0, transfered bytes: 96
+T_10::		byte_trmult offset: 960, dpu_memory_loc: 120, transfered bytes: 96
+T_11::		byte_trmult offset: 1056, dpu_memory_loc: 132, transfered bytes: 96
+T_12::		byte_trmult offset: 1152, dpu_memory_loc: 144, transfered bytes: 96
+T_13::		byte_trmult offset: 1248, dpu_memory_loc: 156, transfered bytes: 96
+T_14::		byte_trmult offset: 1344, dpu_memory_loc: 168, transfered bytes: 96
+T_15::		byte_trmult offset: 1440, dpu_memory_loc: 180, transfered bytes: 96
+T_16::		byte_trmult offset: 1536, dpu_memory_loc: 192, transfered bytes: 96
+T_17::		byte_trmult offset: 1632, dpu_memory_loc: 204, transfered bytes: 96
+T_18::		byte_trmult offset: 1728, dpu_memory_loc: 216, transfered bytes: 96
+T_19::		byte_trmult offset: 1824, dpu_memory_loc: 228, transfered bytes: 96
+T_1::		byte_trmult offset: 96, dpu_memory_loc: 12, transfered bytes: 96
+T_2::		byte_trmult offset: 192, dpu_memory_loc: 24, transfered bytes: 96
+T_3::		byte_trmult offset: 288, dpu_memory_loc: 36, transfered bytes: 96
+T_4::		byte_trmult offset: 384, dpu_memory_loc: 48, transfered bytes: 96
+T_5::		byte_trmult offset: 480, dpu_memory_loc: 60, transfered bytes: 96
+T_6::		byte_trmult offset: 576, dpu_memory_loc: 72, transfered bytes: 96
+T_7::		byte_trmult offset: 672, dpu_memory_loc: 84, transfered bytes: 96
+T_8::		byte_trmult offset: 768, dpu_memory_loc: 96, transfered bytes: 96
+Acc Sum: 101671168.000324::::::::::::::::::::::::::::::::::::::::
+Acc Sum: 102528020.000000::::::::::::::::::::::::::::::::::::::::
+Ending DPU output!
+
+
+
+----------Reading data back from DPU----------
+
+Vector multiplication data reading back started...
+Collecting for i: 0
+Collecting for i: 1
+Collecting for i: 2
+Collecting for i: 3
+Collecting for i: 4
+Collecting for i: 5
+Collecting for i: 6
+Collecting for i: 7
+Collecting for i: 8
+Collecting for i: 9
+Collecting for i: 10
+Collecting for i: 11
+Collecting for i: 12
+Collecting for i: 13
+Collecting for i: 14
+Collecting for i: 15
+Collecting for i: 16
+Collecting for i: 17
+Collecting for i: 18
+Collecting for i: 19
+Collecting for i: 20
+Collecting for i: 21
+Collecting for i: 22
+Collecting for i: 23
+Collecting for i: 24
+Collecting for i: 25
+Collecting for i: 26
+Collecting for i: 27
+Collecting for i: 28
+Collecting for i: 29
+Collecting for i: 30
+Collecting for i: 31
+Collecting for i: 32
+Collecting for i: 33
+Collecting for i: 34
+Collecting for i: 35
+Collecting for i: 36
+Collecting for i: 37
+Collecting for i: 38
+Collecting for i: 39
+Collecting for i: 40
+Collecting for i: 41
+Collecting for i: 42
+Collecting for i: 43
+Collecting for i: 44
+Collecting for i: 45
+Collecting for i: 46
+Collecting for i: 47
+Collecting for i: 48
+Collecting for i: 49
+Collecting for i: 50
+Collecting for i: 51
+Collecting for i: 52
+Collecting for i: 53
+Collecting for i: 54
+Collecting for i: 55
+Collecting for i: 56
+Collecting for i: 57
+Collecting for i: 58
+Collecting for i: 59
+Vector multiplication data from DPU recieved back!
+
+
+---------- Total Time ----------
+
+CPU Time (ms): 0.000000	CPU-DPU Time (ms): 101.371000	DPU Kernel Time (ms): 3465.689000	DPU-CPU Time (ms): 57.520000	Accumulator size: 120
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~Printing Gathered Data Result!
+index: 0, result: 568820.000003
+index: 1, result: 1425620.000000
+index: 2, result: 2282420.000010
+index: 3, result: 3139220.000000
+index: 4, result: 3996020.000010
+index: 5, result: 4852820.000000
+index: 6, result: 5709620.000020
+index: 7, result: 6566420.000000
+index: 8, result: 7423220.000020
+index: 9, result: 8280020.000000
+index: 10, result: 9136816.000040
+index: 11, result: 9993620.000000
+index: 12, result: 10850416.000040
+index: 13, result: 11707220.000000
+index: 14, result: 12564016.000040
+index: 15, result: 13420820.000000
+index: 16, result: 14277616.000040
+index: 17, result: 15134420.000000
+index: 18, result: 15991216.000040
+index: 19, result: 16848020.000000
+index: 20, result: 17704816.000081
+index: 21, result: 18561620.000000
+index: 22, result: 19418416.000081
+index: 23, result: 20275220.000000
+index: 24, result: 21132016.000081
+index: 25, result: 21988820.000000
+index: 26, result: 22845616.000081
+index: 27, result: 23702420.000000
+index: 28, result: 24559216.000081
+index: 29, result: 25416020.000000
+index: 30, result: 26272816.000081
+index: 31, result: 27129620.000000
+index: 32, result: 27986416.000081
+index: 33, result: 28843220.000000
+index: 34, result: 29700016.000081
+index: 35, result: 30556820.000000
+index: 36, result: 31413616.000081
+index: 37, result: 32270420.000000
+index: 38, result: 33127216.000081
+index: 39, result: 33984020.000000
+index: 40, result: 34840800.000162
+index: 41, result: 35697620.000000
+index: 42, result: 36554400.000162
+index: 43, result: 37411220.000000
+index: 44, result: 38268000.000162
+index: 45, result: 39124820.000000
+index: 46, result: 39981600.000162
+index: 47, result: 40838420.000000
+index: 48, result: 41695200.000162
+index: 49, result: 42552020.000000
+index: 50, result: 43408800.000162
+index: 51, result: 44265620.000000
+index: 52, result: 45122400.000162
+index: 53, result: 45979220.000000
+index: 54, result: 46836000.000162
+index: 55, result: 47692820.000000
+index: 56, result: 48549600.000162
+index: 57, result: 49406420.000000
+index: 58, result: 50263200.000162
+index: 59, result: 51120020.000000
+index: 60, result: 51976800.000162
+index: 61, result: 52833620.000000
+index: 62, result: 53690400.000162
+index: 63, result: 54547220.000000
+index: 64, result: 55404000.000162
+index: 65, result: 56260820.000000
+index: 66, result: 57117600.000162
+index: 67, result: 57974420.000000
+index: 68, result: 58831200.000162
+index: 69, result: 59688020.000000
+index: 70, result: 60544800.000162
+index: 71, result: 61401620.000000
+index: 72, result: 62258400.000162
+index: 73, result: 63115220.000000
+index: 74, result: 63972000.000162
+index: 75, result: 64828820.000000
+index: 76, result: 65685600.000162
+index: 77, result: 66542420.000000
+index: 78, result: 67399168.000323
+index: 79, result: 68256020.000000
+index: 80, result: 69112768.000323
+index: 81, result: 69969620.000000
+index: 82, result: 70826368.000323
+index: 83, result: 71683220.000000
+index: 84, result: 72539968.000323
+index: 85, result: 73396820.000000
+index: 86, result: 74253568.000323
+index: 87, result: 75110420.000000
+index: 88, result: 75967168.000323
+index: 89, result: 76824020.000000
+index: 90, result: 77680768.000323
+index: 91, result: 78537620.000000
+index: 92, result: 79394368.000323
+index: 93, result: 80251220.000000
+index: 94, result: 81107968.000323
+index: 95, result: 81964820.000000
+index: 96, result: 82821568.000323
+index: 97, result: 83678420.000000
+index: 98, result: 84535168.000323
+index: 99, result: 85392020.000000
+index: 100, result: 86248768.000323
+index: 101, result: 87105620.000000
+index: 102, result: 87962368.000323
+index: 103, result: 88819220.000000
+index: 104, result: 89675968.000323
+index: 105, result: 90532820.000000
+index: 106, result: 91389568.000323
+index: 107, result: 92246420.000000
+index: 108, result: 93103168.000323
+index: 109, result: 93960020.000000
+index: 110, result: 94816768.000323
+index: 111, result: 95673620.000000
+index: 112, result: 96530368.000323
+index: 113, result: 97387220.000000
+index: 114, result: 98243968.000323
+index: 115, result: 99100820.000000
+index: 116, result: 99957568.000323
+index: 117, result: 100814420.000000
+index: 118, result: 101671168.000323
+index: 119, result: 102528020.000000
+Item: 119, Index: 0
+Item: 239, Index: 1
+Item: 359, Index: 2
+Item: 479, Index: 3
+Item: 599, Index: 4
+Item: 719, Index: 5
+Item: 839, Index: 6
+Item: 959, Index: 7
+Item: 1079, Index: 8
+Item: 1199, Index: 9
+Item: 1319, Index: 10
+Item: 1439, Index: 11
+Item: 1559, Index: 12
+Item: 1679, Index: 13
+Item: 1799, Index: 14
+Item: 1919, Index: 15
+Item: 2039, Index: 16
+Item: 2159, Index: 17
+Item: 2279, Index: 18
+Item: 2399, Index: 19
+Item: 2519, Index: 20
+Item: 2639, Index: 21
+Item: 2759, Index: 22
+Item: 2879, Index: 23
+Item: 2999, Index: 24
+Item: 3119, Index: 25
+Item: 3239, Index: 26
+Item: 3359, Index: 27
+Item: 3479, Index: 28
+Item: 3599, Index: 29
+Item: 3719, Index: 30
+Item: 3839, Index: 31
+Item: 3959, Index: 32
+Item: 4079, Index: 33
+Item: 4199, Index: 34
+Item: 4319, Index: 35
+Item: 4439, Index: 36
+Item: 4559, Index: 37
+Item: 4679, Index: 38
+Item: 4799, Index: 39
+Item: 4919, Index: 40
+Item: 5039, Index: 41
+Item: 5159, Index: 42
+Item: 5279, Index: 43
+Item: 5399, Index: 44
+Item: 5519, Index: 45
+Item: 5639, Index: 46
+Item: 5759, Index: 47
+Item: 5879, Index: 48
+Item: 5999, Index: 49
+Item: 6119, Index: 50
+Item: 6239, Index: 51
+Item: 6359, Index: 52
+Item: 6479, Index: 53
+Item: 6599, Index: 54
+Item: 6719, Index: 55
+Item: 6839, Index: 56
+Item: 6959, Index: 57
+Item: 7079, Index: 58
+Item: 7199, Index: 59
+Item: 7319, Index: 60
+Item: 7439, Index: 61
+Item: 7559, Index: 62
+Item: 7679, Index: 63
+Item: 7799, Index: 64
+Item: 7919, Index: 65
+Item: 8039, Index: 66
+Item: 8159, Index: 67
+Item: 8279, Index: 68
+Item: 8399, Index: 69
+Item: 8519, Index: 70
+Item: 8639, Index: 71
+Item: 8759, Index: 72
+Item: 8879, Index: 73
+Item: 8999, Index: 74
+Item: 9119, Index: 75
+Item: 9239, Index: 76
+Item: 9359, Index: 77
+Item: 9479, Index: 78
+Item: 9599, Index: 79
+Item: 9719, Index: 80
+Item: 9839, Index: 81
+Item: 9959, Index: 82
+Item: 10079, Index: 83
+Item: 10199, Index: 84
+Item: 10319, Index: 85
+Item: 10439, Index: 86
+Item: 10559, Index: 87
+Item: 10679, Index: 88
+Item: 10799, Index: 89
+Item: 10919, Index: 90
+Item: 11039, Index: 91
+Item: 11159, Index: 92
+Item: 11279, Index: 93
+Item: 11399, Index: 94
+Item: 11519, Index: 95
+Item: 11639, Index: 96
+Item: 11759, Index: 97
+Item: 11879, Index: 98
+Item: 11999, Index: 99
+Item: 12119, Index: 100
+Item: 12239, Index: 101
+Item: 12359, Index: 102
+Item: 12479, Index: 103
+Item: 12599, Index: 104
+Item: 12719, Index: 105
+Item: 12839, Index: 106
+Item: 12959, Index: 107
+Item: 13079, Index: 108
+Item: 13199, Index: 109
+Item: 13319, Index: 110
+Item: 13439, Index: 111
+Item: 13559, Index: 112
+Item: 13679, Index: 113
+Item: 13799, Index: 114
+Item: 13919, Index: 115
+Item: 14039, Index: 116
+Item: 14159, Index: 117
+Item: 14279, Index: 118
+Item: 14399, Index: 119
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~Printing Integral result!
+index: 0, result: 568820.000003
+index: 1, result: 1425620.000000
+index: 2, result: 2282420.000010
+index: 3, result: 3139220.000000
+index: 4, result: 3996020.000010
+index: 5, result: 4852820.000000
+index: 6, result: 5709620.000020
+index: 7, result: 6566420.000000
+index: 8, result: 7423220.000020
+index: 9, result: 8280020.000000
+index: 10, result: 9136816.000040
+index: 11, result: 9993620.000000
+index: 12, result: 10850416.000040
+index: 13, result: 11707220.000000
+index: 14, result: 12564016.000040
+index: 15, result: 13420820.000000
+index: 16, result: 14277616.000040
+index: 17, result: 15134420.000000
+index: 18, result: 15991216.000040
+index: 19, result: 16848020.000000
+index: 20, result: 17704816.000081
+index: 21, result: 18561620.000000
+index: 22, result: 19418416.000081
+index: 23, result: 20275220.000000
+index: 24, result: 21132016.000081
+index: 25, result: 21988820.000000
+index: 26, result: 22845616.000081
+index: 27, result: 23702420.000000
+index: 28, result: 24559216.000081
+index: 29, result: 25416020.000000
+index: 30, result: 26272816.000081
+index: 31, result: 27129620.000000
+index: 32, result: 27986416.000081
+index: 33, result: 28843220.000000
+index: 34, result: 29700016.000081
+index: 35, result: 30556820.000000
+index: 36, result: 31413616.000081
+index: 37, result: 32270420.000000
+index: 38, result: 33127216.000081
+index: 39, result: 33984020.000000
+index: 40, result: 34840800.000162
+index: 41, result: 35697620.000000
+index: 42, result: 36554400.000162
+index: 43, result: 37411220.000000
+index: 44, result: 38268000.000162
+index: 45, result: 39124820.000000
+index: 46, result: 39981600.000162
+index: 47, result: 40838420.000000
+index: 48, result: 41695200.000162
+index: 49, result: 42552020.000000
+index: 50, result: 43408800.000162
+index: 51, result: 44265620.000000
+index: 52, result: 45122400.000162
+index: 53, result: 45979220.000000
+index: 54, result: 46836000.000162
+index: 55, result: 47692820.000000
+index: 56, result: 48549600.000162
+index: 57, result: 49406420.000000
+index: 58, result: 50263200.000162
+index: 59, result: 51120020.000000
+index: 60, result: 51976800.000162
+index: 61, result: 52833620.000000
+index: 62, result: 53690400.000162
+index: 63, result: 54547220.000000
+index: 64, result: 55404000.000162
+index: 65, result: 56260820.000000
+index: 66, result: 57117600.000162
+index: 67, result: 57974420.000000
+index: 68, result: 58831200.000162
+index: 69, result: 59688020.000000
+index: 70, result: 60544800.000162
+index: 71, result: 61401620.000000
+index: 72, result: 62258400.000162
+index: 73, result: 63115220.000000
+index: 74, result: 63972000.000162
+index: 75, result: 64828820.000000
+index: 76, result: 65685600.000162
+index: 77, result: 66542420.000000
+index: 78, result: 67399168.000323
+index: 79, result: 68256020.000000
+index: 80, result: 69112768.000323
+index: 81, result: 69969620.000000
+index: 82, result: 70826368.000323
+index: 83, result: 71683220.000000
+index: 84, result: 72539968.000323
+index: 85, result: 73396820.000000
+index: 86, result: 74253568.000323
+index: 87, result: 75110420.000000
+index: 88, result: 75967168.000323
+index: 89, result: 76824020.000000
+index: 90, result: 77680768.000323
+index: 91, result: 78537620.000000
+index: 92, result: 79394368.000323
+index: 93, result: 80251220.000000
+index: 94, result: 81107968.000323
+index: 95, result: 81964820.000000
+index: 96, result: 82821568.000323
+index: 97, result: 83678420.000000
+index: 98, result: 84535168.000323
+index: 99, result: 85392020.000000
+index: 100, result: 86248768.000323
+index: 101, result: 87105620.000000
+index: 102, result: 87962368.000323
+index: 103, result: 88819220.000000
+index: 104, result: 89675968.000323
+index: 105, result: 90532820.000000
+index: 106, result: 91389568.000323
+index: 107, result: 92246420.000000
+index: 108, result: 93103168.000323
+index: 109, result: 93960020.000000
+index: 110, result: 94816768.000323
+index: 111, result: 95673620.000000
+index: 112, result: 96530368.000323
+index: 113, result: 97387220.000000
+index: 114, result: 98243968.000323
+index: 115, result: 99100820.000000
+index: 116, result: 99957568.000323
+index: 117, result: 100814420.000000
+index: 118, result: 101671168.000323
+index: 119, result: 102528020.000000
+Totals: 6185810400.000000 ---- 6185808868.010935

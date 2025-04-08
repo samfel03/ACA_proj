@@ -1,0 +1,106 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../CCE-C/library/mainsparse.cpp in debug mode
+   Compiling(apcc) ../../../../../CCE-C/library/src/call_rcond.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:24 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/139643546425284
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.264 seconds; peak allocated memory: 5.477 MB.
+   Compiling ../../../loop_uhat_sparse.cpp in debug mode
+   Compiling(apcc) ../../../../../CCE-C/library/src/rtGetInf.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:27 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/21443549587135
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.676 seconds; peak allocated memory: 0.000 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/rtGetNaN.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:30 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/72323551898427
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.666 seconds; peak allocated memory: 5.816 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/rt_nonfinite.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:32 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/211483554217579
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.679 seconds; peak allocated memory: 0.000 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/svd.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:34 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/212483556549371
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.723 seconds; peak allocated memory: 7.738 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/xaxpy.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:39 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/163763560917495
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.71 seconds; peak allocated memory: 7.109 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/xdotc.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:41 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/216443563270548
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.681 seconds; peak allocated memory: 7.719 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/xnrm2.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:43 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/203003565621961
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.727 seconds; peak allocated memory: 7.793 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/xrot.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:46 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/109643567996688
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.683 seconds; peak allocated memory: 5.418 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/xrotg.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:48 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/163923570350526
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.683 seconds; peak allocated memory: 1.285 MB.
+   Compiling(apcc) ../../../../../CCE-C/library/src/xswap.c in debug mode
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'seank' on host 'gerard' (Windows NT_amd64 version 6.2) on Thu Jul 25 12:47:50 -0600 2024
+INFO: [HLS 200-10] In directory 'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/csim/build/apcc_db_seank/199203572681259
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.705 seconds; peak allocated memory: 7.562 MB.
+   Generating csim.exe
+INFO: [SIM 1] CSim file generation done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

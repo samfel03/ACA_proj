@@ -1,0 +1,50 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maci64
+matlabdir = /Applications/MATLAB_R2021b.app
+startdir = /Users/alessandroperi/Dropbox/Projects/CCE-FPGA/CCE-C/testbench/migration_costs
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx12.1 clang
+cxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+linker = /usr/bin/xcrun -sdk macosx12.1 clang
+linkerxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+
+cflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c 
+
+cxxflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=migration_costs_mex -DMW_NEEDS_VERSION_H -c 
+
+ldflags =  -Wl,-twolevel_namespace -undefined error -arch x86_64 -mmacosx-version-min=10.15 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -framework Cocoa -bundle  -stdlib=libc++ -L"$matlabdir/bin/maci64" -lmx -lmex -lmat -L"$matlabdir/extern/bin/maci64" -lMatlabDataArray -lMatlabEngine  -Wl,-rpath,@loader_path -o migration_costs_mex.mexmaci64 -lemlrt -lcovrt -lut -lmwmathutil 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/migration_costs_data.o : cxx $root/migration_costs_data.cpp
+build $builddir/rt_nonfinite.o : cxx $root/rt_nonfinite.cpp
+build $builddir/migration_costs_initialize.o : cxx $root/migration_costs_initialize.cpp
+build $builddir/migration_costs_terminate.o : cxx $root/migration_costs_terminate.cpp
+build $builddir/migration_costs.o : cxx $root/migration_costs.cpp
+build $builddir/power.o : cxx $root/power.cpp
+build $builddir/_coder_migration_costs_api.o : cxx $root/interface/_coder_migration_costs_api.cpp
+build $builddir/_coder_migration_costs_mex.o : cxx $root/interface/_coder_migration_costs_mex.cpp
+build $builddir/sumMatrixIncludeNaN.o : cxx $root/sumMatrixIncludeNaN.cpp
+build $builddir/_coder_migration_costs_info.o : cxx $root/interface/_coder_migration_costs_info.cpp
+build $builddir/cpp_mexapi_version.o : cxx $matlabdir/extern/version/cpp_mexapi_version.cpp
+
+# Link
+build $root/migration_costs_mex.mexmaci64 : linkxx $builddir/migration_costs_data.o $builddir/rt_nonfinite.o $builddir/migration_costs_initialize.o $builddir/migration_costs_terminate.o $builddir/migration_costs.o $builddir/power.o $builddir/_coder_migration_costs_api.o $builddir/_coder_migration_costs_mex.o $builddir/sumMatrixIncludeNaN.o $builddir/_coder_migration_costs_info.o $builddir/cpp_mexapi_version.o 

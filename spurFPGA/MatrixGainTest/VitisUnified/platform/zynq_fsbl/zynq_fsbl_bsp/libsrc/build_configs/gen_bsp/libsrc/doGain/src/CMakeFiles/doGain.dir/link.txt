@@ -1,0 +1,2 @@
+arm-none-eabi-ar qc libdoGain.a CMakeFiles/doGain.dir/xdogain.c.obj CMakeFiles/doGain.dir/xdogain_sinit.c.obj CMakeFiles/doGain.dir/xdogain_linux.c.obj CMakeFiles/doGain.dir/xdogain_g.c.obj
+C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib.exe libdoGain.a

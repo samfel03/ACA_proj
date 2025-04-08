@@ -1,0 +1,680 @@
+
+*** Running vivado
+    with args -log design_1_loop_uhat_sparse_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_loop_uhat_sparse_0_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_loop_uhat_sparse_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 469.277 ; gain = 184.105
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/seank/Documents/Research/ExportedVivadoIPZynq'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_loop_uhat_sparse_0_0
+Command: synth_design -top design_1_loop_uhat_sparse_0_0 -part xc7z007sclg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14708
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1316.414 ; gain = 439.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_loop_uhat_sparse_0_0' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/synth/design_1_loop_uhat_sparse_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_integral_RAM_AUTO_1R1W' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_integral_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_integral_RAM_AUTO_1R1W' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_integral_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_loop_uhat_sparse_Pipeline_loop_uhat_integral' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_loop_uhat_sparse_Pipeline_loop_uhat_integral.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_flow_control_loop_pipe_sequential_init' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_loop_uhat_sparse_Pipeline_loop_uhat_integral' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_loop_uhat_sparse_Pipeline_loop_uhat_integral.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_52_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_52_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_52_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_loop_uhat_sparse_Pipeline_VITIS_LOOP_52_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_array_ROM_cud.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_dEe.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_eOg.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17g8j.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22hbi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27ibs.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32jbC.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_arkbM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_arralbW.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6.v:7]
+INFO: [Synth 8-3876] $readmem data file './loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6.dat' is read successfully [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_arramb6.v:7]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_12s_80ns_90_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_12s_80ns_90_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_12s_80ns_90_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_12s_80ns_90_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_13s_71s_71_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_13s_71s_71_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_13s_71s_71_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_13s_71s_71_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_40ns_40ns_80_2_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_40ns_40ns_80_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_40ns_40ns_80_2_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_40ns_40ns_80_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_43ns_36ns_79_3_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_43ns_36ns_79_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_43ns_36ns_79_3_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_43ns_36ns_79_3_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_49ns_44ns_93_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_49ns_44ns_93_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_49ns_44ns_93_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_49ns_44ns_93_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_50ns_50ns_100_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_50ns_50ns_100_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_50ns_50ns_100_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_50ns_50ns_100_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_54s_6ns_54_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_54s_6ns_54_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_54s_6ns_54_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_54s_6ns_54_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_73ns_6ns_79_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_73ns_6ns_79_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_77ns_6ns_83_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_77ns_6ns_83_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_77s_54s_130_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77s_54s_130_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_77s_54s_130_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77s_54s_130_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_82ns_6ns_88_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_82ns_6ns_88_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_83ns_6ns_89_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_83ns_6ns_89_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_87ns_6ns_93_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_87ns_6ns_93_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_92ns_6ns_98_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_92ns_6ns_98_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mul_71ns_4ns_75_5_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_71ns_4ns_75_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mul_71ns_4ns_75_5_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_71ns_4ns_75_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_pow_generic_double_s' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_control_s_axi' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_control_s_axi.v:294]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_control_s_axi' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_store' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized0' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_mem' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_mem' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized0' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized0' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized0' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized2' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized2' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_store' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_load' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:327]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized3' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_mem__parameterized0' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_mem__parameterized0' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized3' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_load' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:327]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_write' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_burst_converter' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_burst_converter' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized4' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized2' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized2' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized4' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_throttle' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2173]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized0' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized0' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized5' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized3' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized3' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized5' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized6' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized4' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_srl__parameterized4' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_fifo__parameterized6' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_throttle' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2173]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1858]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1861]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_write' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_read' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized2' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized2' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:2399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1539]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi_read' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:1355]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_gmem_m_axi' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_gmem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip' [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/ip/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'loop_uhat_sparse' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_loop_uhat_sparse_0_0' (0#1) [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/synth/design_1_loop_uhat_sparse_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_control_s_axi.v:418]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized116 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized116 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized116 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized116 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized116 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized114 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized114 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized114 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized114 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized114 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized112 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized112 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized112 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized112 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized112 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[63] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[62] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[61] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[60] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[59] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[58] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[57] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[56] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[55] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[54] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[53] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[52] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[51] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[50] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[49] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[48] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[47] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[46] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[45] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[44] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[43] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[42] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[41] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[40] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[39] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[38] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[37] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[36] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[35] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[34] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[33] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[32] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1631.824 ; gain = 754.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1631.824 ; gain = 754.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1631.824 ; gain = 754.828
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.936 . Memory (MB): peak = 1631.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 451 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/constraints/loop_uhat_sparse_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ip/design_1_loop_uhat_sparse_0_0/constraints/loop_uhat_sparse_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.runs/design_1_loop_uhat_sparse_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.runs/design_1_loop_uhat_sparse_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1728.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  FDE => FDRE: 19 instances
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.806 . Memory (MB): peak = 1749.906 ; gain = 21.711
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1749.906 ; gain = 872.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1749.906 ; gain = 872.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.runs/design_1_loop_uhat_sparse_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1749.906 ; gain = 872.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln616_1_reg_3662_reg' and it is trimmed from '107' to '106' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_pow_generic_double_s.v:3087]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'loop_uhat_sparse_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'loop_uhat_sparse_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'loop_uhat_sparse_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'loop_uhat_sparse_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'loop_uhat_sparse_gmem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 1749.906 ; gain = 872.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U63/loop_uhat_sparse_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U64/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U64/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U64/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U64/loop_uhat_sparse_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U65/loop_uhat_sparse_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element mul_12s_80ns_90_5_1_U1/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_12s_80ns_90_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_83ns_6ns_89_5_1_U12/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_92ns_6ns_98_5_1_U14/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_87ns_6ns_93_5_1_U13/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_82ns_6ns_88_5_1_U11/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_77ns_6ns_83_5_1_U9/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_83ns_6ns_89_5_1_U12/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_92ns_6ns_98_5_1_U14/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_87ns_6ns_93_5_1_U13/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_82ns_6ns_88_5_1_U11/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_77ns_6ns_83_5_1_U9/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_71ns_4ns_75_5_1_U15/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_71ns_4ns_75_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_73ns_6ns_79_5_1_U8/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_54s_6ns_54_5_1_U7/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_54s_6ns_54_5_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mul_73ns_6ns_79_5_1_U8/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_15ns_19s_31_4_1_U16/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '31' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_15ns_19s_31_4_1_U16/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '31' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1.v:34]
+WARNING: [Synth 8-6014] Unused sequential element mul_13s_71s_71_5_1_U2/buff0_reg was removed.  [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_13s_71s_71_5_1.v:53]
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module loop_uhat_sparse_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module loop_uhat_sparse_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:19 . Memory (MB): peak = 1749.906 ; gain = 872.910
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 102, Available = 66. Use report_utilization command for details.
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_54s_6ns_54_5_1_U7/buff0_reg_2a : 0 0 : 955 3340 : Used 1 time 100
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_54s_6ns_54_5_1_U7/buff0_reg_2a : 0 1 : 987 3340 : Used 1 time 100
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_54s_6ns_54_5_1_U7/buff0_reg_2a : 0 2 : 1398 3340 : Used 1 time 100
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_12s_80ns_90_5_1_U1/buff0_reg_0 : 0 0 : 2164 10822 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_12s_80ns_90_5_1_U1/buff0_reg_0 : 0 1 : 2183 10822 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_12s_80ns_90_5_1_U1/buff0_reg_0 : 0 2 : 2231 10822 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_12s_80ns_90_5_1_U1/buff0_reg_0 : 0 3 : 2213 10822 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_12s_80ns_90_5_1_U1/buff0_reg_0 : 0 4 : 2031 10822 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_11 : 0 0 : 3340 9794 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_11 : 0 1 : 3203 9794 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_11 : 0 2 : 3251 9794 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_14 : 0 0 : 3340 9794 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_14 : 0 1 : 3203 9794 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_14 : 0 2 : 3251 9794 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_13s_71s_71_5_1_U2/buff0_reg_34 : 0 0 : 2375 9759 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_13s_71s_71_5_1_U2/buff0_reg_34 : 0 1 : 2442 9759 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_13s_71s_71_5_1_U2/buff0_reg_34 : 0 2 : 2412 9759 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_13s_71s_71_5_1_U2/buff0_reg_34 : 0 3 : 2530 9759 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_40 : 0 0 : 3221 9730 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_40 : 0 1 : 3240 9730 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_40 : 0 2 : 3269 9730 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4b : 0 0 : 3221 9730 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4b : 0 1 : 3240 9730 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4b : 0 2 : 3269 9730 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_d : 0 0 : 3203 9676 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_d : 0 1 : 3222 9676 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_d : 0 2 : 3251 9676 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4c : 0 0 : 3135 9539 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4c : 0 1 : 3221 9539 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4c : 0 2 : 3183 9539 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4f : 0 0 : 3135 9406 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4f : 0 1 : 3135 9406 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_50ns_50ns_100_5_1_U6/buff0_reg_4f : 0 2 : 3136 9406 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_15 : 0 0 : 3340 8298 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_15 : 0 1 : 3203 8298 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_15 : 0 2 : 1755 8298 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_44 : 0 0 : 2087 8231 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_44 : 0 1 : 3221 8231 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_44 : 0 2 : 2923 8231 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_40ns_40ns_80_2_1_U3/tmp_product_9 : 0 0 : 3518 7103 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_40ns_40ns_80_2_1_U3/tmp_product_9 : 0 1 : 3585 7103 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_48 : 0 0 : 2087 7034 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_48 : 0 1 : 2875 7034 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_49ns_44ns_93_5_1_U5/buff0_reg_48 : 0 2 : 2072 7034 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_17 : 0 0 : 3340 6889 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_17 : 0 1 : 1707 6889 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_77s_54s_130_5_1_U10/buff0_reg_17 : 0 2 : 1842 6889 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_92ns_6ns_98_5_1_U14/buff0_reg_20 : 0 0 : 1281 6752 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_92ns_6ns_98_5_1_U14/buff0_reg_20 : 0 1 : 1300 6752 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_92ns_6ns_98_5_1_U14/buff0_reg_20 : 0 2 : 1348 6752 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_92ns_6ns_98_5_1_U14/buff0_reg_20 : 0 3 : 1300 6752 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_92ns_6ns_98_5_1_U14/buff0_reg_20 : 0 4 : 1523 6752 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_40ns_40ns_80_2_1_U3/tmp_product_6 : 0 0 : 3137 6722 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_40ns_40ns_80_2_1_U3/tmp_product_6 : 0 1 : 3585 6722 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_87ns_6ns_93_5_1_U13/buff0_reg_24 : 0 0 : 1281 6627 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_87ns_6ns_93_5_1_U13/buff0_reg_24 : 0 1 : 1300 6627 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_87ns_6ns_93_5_1_U13/buff0_reg_24 : 0 2 : 1348 6627 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_87ns_6ns_93_5_1_U13/buff0_reg_24 : 0 3 : 1300 6627 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_87ns_6ns_93_5_1_U13/buff0_reg_24 : 0 4 : 1398 6627 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_43ns_36ns_79_3_1_U4/tmp_product_39 : 0 0 : 3173 6552 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_43ns_36ns_79_3_1_U4/tmp_product_39 : 0 1 : 3379 6552 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_43ns_36ns_79_3_1_U4/tmp_product_3c : 0 0 : 3173 6552 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_43ns_36ns_79_3_1_U4/tmp_product_3c : 0 1 : 3379 6552 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_83ns_6ns_89_5_1_U12/buff0_reg_1a : 0 0 : 1274 6506 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_83ns_6ns_89_5_1_U12/buff0_reg_1a : 0 1 : 1293 6506 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_83ns_6ns_89_5_1_U12/buff0_reg_1a : 0 2 : 1341 6506 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_83ns_6ns_89_5_1_U12/buff0_reg_1a : 0 3 : 1300 6506 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_83ns_6ns_89_5_1_U12/buff0_reg_1a : 0 4 : 1298 6506 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_82ns_6ns_88_5_1_U11/buff0_reg_26 : 0 0 : 1281 6502 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_82ns_6ns_88_5_1_U11/buff0_reg_26 : 0 1 : 1300 6502 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_82ns_6ns_88_5_1_U11/buff0_reg_26 : 0 2 : 1348 6502 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_82ns_6ns_88_5_1_U11/buff0_reg_26 : 0 3 : 1300 6502 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_82ns_6ns_88_5_1_U11/buff0_reg_26 : 0 4 : 1273 6502 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_77ns_6ns_83_5_1_U9/buff0_reg_28 : 0 0 : 1281 6377 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_77ns_6ns_83_5_1_U9/buff0_reg_28 : 0 1 : 1300 6377 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_77ns_6ns_83_5_1_U9/buff0_reg_28 : 0 2 : 1348 6377 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_77ns_6ns_83_5_1_U9/buff0_reg_28 : 0 3 : 1300 6377 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB1 mul_77ns_6ns_83_5_1_U9/buff0_reg_28 : 0 4 : 1148 6377 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_73ns_6ns_79_5_1_U8/buff0_reg_30 : 0 0 : 1281 5402 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_73ns_6ns_79_5_1_U8/buff0_reg_30 : 0 1 : 1348 5402 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_73ns_6ns_79_5_1_U8/buff0_reg_30 : 0 2 : 1300 5402 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_73ns_6ns_79_5_1_U8/buff0_reg_30 : 0 3 : 1473 5402 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_43ns_36ns_79_3_1_U4/tmp_product_3d : 0 0 : 1785 3711 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mul_43ns_36ns_79_3_1_U4/tmp_product_3d : 0 1 : 1926 3711 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB3 mac_muladd_16s_15ns_19s_31_4_1_U16/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_32 : 0 0 : 2586 2586 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_71ns_4ns_75_5_1_U15/buff0_reg_2d : 0 0 : 925 1935 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB2 mul_71ns_4ns_75_5_1_U15/buff0_reg_2d : 0 1 : 1010 1935 : Used 1 time 0
+ Sort Area is loop_uhat_sparse_pow_generic_double_s__GB0 mul_40ns_40ns_80_2_1_U3/buff0_reg_b : 0 0 : 1376 1376 : Used 1 time 0
+ DSP resource Status: mul_40ns_40ns_80_2_1_U3/buff0_reg_b 0 1376 1376: Used 1 time : Rejected (88 > 52) uniquify 0 
+ DSP resource Status: mul_40ns_40ns_80_2_1_U3/tmp_product_9 0 7103 3518: Used 1 time : Accepted (40 < 52) uniquify 0 
+ DSP resource Status: mul_40ns_40ns_80_2_1_U3/tmp_product_9 1 7103 3585: Used 1 time : Accepted (41 < 52) uniquify 0 
+ DSP resource Status: mul_40ns_40ns_80_2_1_U3/tmp_product_6 0 6722 3137: Used 1 time : Rejected (53 > 52) uniquify 0 
+ DSP resource Status: mul_40ns_40ns_80_2_1_U3/tmp_product_6 1 6722 3585: Used 1 time : Rejected (54 > 52) uniquify 0 
+ DSP resource Status: mul_12s_80ns_90_5_1_U1/buff0_reg_0 0 10822 2164: Used 1 time : Accepted (4 < 52) uniquify 0 
+ DSP resource Status: mul_12s_80ns_90_5_1_U1/buff0_reg_0 1 10822 2183: Used 1 time : Accepted (5 < 52) uniquify 0 
+ DSP resource Status: mul_12s_80ns_90_5_1_U1/buff0_reg_0 2 10822 2231: Used 1 time : Accepted (6 < 52) uniquify 0 
+ DSP resource Status: mul_12s_80ns_90_5_1_U1/buff0_reg_0 3 10822 2213: Used 1 time : Accepted (7 < 52) uniquify 0 
+ DSP resource Status: mul_12s_80ns_90_5_1_U1/buff0_reg_0 4 10822 2031: Used 1 time : Accepted (8 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_17 0 6889 3340: Used 1 time : Accepted (45 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_17 1 6889 1707: Used 1 time : Accepted (46 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_17 2 6889 1842: Used 1 time : Accepted (47 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_15 0 8298 3340: Used 1 time : Accepted (34 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_15 1 8298 3203: Used 1 time : Accepted (35 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_15 2 8298 1755: Used 1 time : Accepted (36 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_14 0 9794 3340: Used 1 time : Accepted (12 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_14 1 9794 3203: Used 1 time : Accepted (13 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_14 2 9794 3251: Used 1 time : Accepted (14 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_11 0 9794 3340: Used 1 time : Accepted (9 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_11 1 9794 3203: Used 1 time : Accepted (10 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_11 2 9794 3251: Used 1 time : Accepted (11 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_d 0 9676 3203: Used 1 time : Accepted (25 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_d 1 9676 3222: Used 1 time : Accepted (26 < 52) uniquify 0 
+ DSP resource Status: mul_77s_54s_130_5_1_U10/buff0_reg_d 2 9676 3251: Used 1 time : Accepted (27 < 52) uniquify 0 
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_40ns_40ns_80_2_1_U3/buff0_reg' and it is trimmed from '48' to '46' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_40ns_40ns_80_2_1.v:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_40ns_40ns_80_2_1_U3/buff0_reg' and it is trimmed from '48' to '29' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_40ns_40ns_80_2_1.v:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_12s_80ns_90_5_1_U1/buff2_reg' and it is trimmed from '48' to '22' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_12s_80ns_90_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_12s_80ns_90_5_1_U1/buff1_reg' and it is trimmed from '48' to '22' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_12s_80ns_90_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_77s_54s_130_5_1_U10/buff1_reg' and it is trimmed from '48' to '28' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77s_54s_130_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_77s_54s_130_5_1_U10/buff0_reg' and it is trimmed from '48' to '28' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77s_54s_130_5_1.v:53]
+ DSP resource Status: mul_83ns_6ns_89_5_1_U12/buff0_reg_1a 0 6506 1274: Used 1 time : Rejected (64 > 52) uniquify 0 
+ DSP resource Status: mul_83ns_6ns_89_5_1_U12/buff0_reg_1a 1 6506 1293: Used 1 time : Rejected (65 > 52) uniquify 0 
+ DSP resource Status: mul_83ns_6ns_89_5_1_U12/buff0_reg_1a 2 6506 1341: Used 1 time : Rejected (66 > 52) uniquify 0 
+ DSP resource Status: mul_83ns_6ns_89_5_1_U12/buff0_reg_1a 3 6506 1300: Used 1 time : Rejected (67 > 52) uniquify 0 
+ DSP resource Status: mul_83ns_6ns_89_5_1_U12/buff0_reg_1a 4 6506 1298: Used 1 time : Rejected (68 > 52) uniquify 0 
+ DSP resource Status: mul_92ns_6ns_98_5_1_U14/buff0_reg_20 0 6752 1281: Used 1 time : Accepted (48 < 52) uniquify 0 
+ DSP resource Status: mul_92ns_6ns_98_5_1_U14/buff0_reg_20 1 6752 1300: Used 1 time : Accepted (49 < 52) uniquify 0 
+ DSP resource Status: mul_92ns_6ns_98_5_1_U14/buff0_reg_20 2 6752 1348: Used 1 time : Accepted (50 < 52) uniquify 0 
+ DSP resource Status: mul_92ns_6ns_98_5_1_U14/buff0_reg_20 3 6752 1300: Used 1 time : Accepted (51 < 52) uniquify 0 
+ DSP resource Status: mul_92ns_6ns_98_5_1_U14/buff0_reg_20 4 6752 1523: Used 1 time : Accepted (52 < 52) uniquify 0 
+ DSP resource Status: mul_87ns_6ns_93_5_1_U13/buff0_reg_24 0 6627 1281: Used 1 time : Rejected (55 > 52) uniquify 0 
+ DSP resource Status: mul_87ns_6ns_93_5_1_U13/buff0_reg_24 1 6627 1300: Used 1 time : Rejected (56 > 52) uniquify 0 
+ DSP resource Status: mul_87ns_6ns_93_5_1_U13/buff0_reg_24 2 6627 1348: Used 1 time : Rejected (57 > 52) uniquify 0 
+ DSP resource Status: mul_87ns_6ns_93_5_1_U13/buff0_reg_24 3 6627 1300: Used 1 time : Rejected (58 > 52) uniquify 0 
+ DSP resource Status: mul_87ns_6ns_93_5_1_U13/buff0_reg_24 4 6627 1398: Used 1 time : Rejected (59 > 52) uniquify 0 
+ DSP resource Status: mul_82ns_6ns_88_5_1_U11/buff0_reg_26 0 6502 1281: Used 1 time : Rejected (69 > 52) uniquify 0 
+ DSP resource Status: mul_82ns_6ns_88_5_1_U11/buff0_reg_26 1 6502 1300: Used 1 time : Rejected (70 > 52) uniquify 0 
+ DSP resource Status: mul_82ns_6ns_88_5_1_U11/buff0_reg_26 2 6502 1348: Used 1 time : Rejected (71 > 52) uniquify 0 
+ DSP resource Status: mul_82ns_6ns_88_5_1_U11/buff0_reg_26 3 6502 1300: Used 1 time : Rejected (72 > 52) uniquify 0 
+ DSP resource Status: mul_82ns_6ns_88_5_1_U11/buff0_reg_26 4 6502 1273: Used 1 time : Rejected (73 > 52) uniquify 0 
+ DSP resource Status: mul_77ns_6ns_83_5_1_U9/buff0_reg_28 0 6377 1281: Used 1 time : Rejected (74 > 52) uniquify 0 
+ DSP resource Status: mul_77ns_6ns_83_5_1_U9/buff0_reg_28 1 6377 1300: Used 1 time : Rejected (75 > 52) uniquify 0 
+ DSP resource Status: mul_77ns_6ns_83_5_1_U9/buff0_reg_28 2 6377 1348: Used 1 time : Rejected (76 > 52) uniquify 0 
+ DSP resource Status: mul_77ns_6ns_83_5_1_U9/buff0_reg_28 3 6377 1300: Used 1 time : Rejected (77 > 52) uniquify 0 
+ DSP resource Status: mul_77ns_6ns_83_5_1_U9/buff0_reg_28 4 6377 1148: Used 1 time : Rejected (78 > 52) uniquify 0 
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_83ns_6ns_89_5_1_U12/buff2_reg' and it is trimmed from '48' to '21' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_83ns_6ns_89_5_1_U12/buff1_reg' and it is trimmed from '48' to '21' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_83ns_6ns_89_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_92ns_6ns_98_5_1_U14/buff2_reg' and it is trimmed from '48' to '30' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_92ns_6ns_98_5_1_U14/buff1_reg' and it is trimmed from '48' to '30' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_92ns_6ns_98_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_87ns_6ns_93_5_1_U13/buff2_reg' and it is trimmed from '48' to '25' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_87ns_6ns_93_5_1_U13/buff1_reg' and it is trimmed from '48' to '25' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_87ns_6ns_93_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_82ns_6ns_88_5_1_U11/buff2_reg' and it is trimmed from '48' to '20' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_82ns_6ns_88_5_1_U11/buff1_reg' and it is trimmed from '48' to '20' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_82ns_6ns_88_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_77ns_6ns_83_5_1_U9/buff2_reg' and it is trimmed from '48' to '15' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_77ns_6ns_83_5_1_U9/buff1_reg' and it is trimmed from '48' to '15' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_77ns_6ns_83_5_1.v:59]
+ DSP resource Status: mul_54s_6ns_54_5_1_U7/buff0_reg_2a 0 3340 955: Used 1 time : Accepted (1 < 52) uniquify 0 
+ DSP resource Status: mul_54s_6ns_54_5_1_U7/buff0_reg_2a 1 3340 987: Used 1 time : Accepted (2 < 52) uniquify 0 
+ DSP resource Status: mul_54s_6ns_54_5_1_U7/buff0_reg_2a 2 3340 1398: Used 1 time : Accepted (3 < 52) uniquify 0 
+ DSP resource Status: mul_71ns_4ns_75_5_1_U15/buff0_reg_2d 0 1935 925: Used 1 time : Rejected (86 > 52) uniquify 0 
+ DSP resource Status: mul_71ns_4ns_75_5_1_U15/buff0_reg_2d 1 1935 1010: Used 1 time : Rejected (87 > 52) uniquify 0 
+ DSP resource Status: mul_73ns_6ns_79_5_1_U8/buff0_reg_30 0 5402 1281: Used 1 time : Rejected (79 > 52) uniquify 0 
+ DSP resource Status: mul_73ns_6ns_79_5_1_U8/buff0_reg_30 1 5402 1348: Used 1 time : Rejected (80 > 52) uniquify 0 
+ DSP resource Status: mul_73ns_6ns_79_5_1_U8/buff0_reg_30 2 5402 1300: Used 1 time : Rejected (81 > 52) uniquify 0 
+ DSP resource Status: mul_73ns_6ns_79_5_1_U8/buff0_reg_30 3 5402 1473: Used 1 time : Rejected (82 > 52) uniquify 0 
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_54s_6ns_54_5_1_U7/buff2_reg' and it is trimmed from '48' to '20' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_54s_6ns_54_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_73ns_6ns_79_5_1_U8/buff2_reg' and it is trimmed from '48' to '28' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_73ns_6ns_79_5_1_U8/buff1_reg' and it is trimmed from '48' to '28' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_73ns_6ns_79_5_1.v:59]
+ DSP resource Status: mac_muladd_16s_15ns_19s_31_4_1_U16/loop_uhat_sparse_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_32 0 2586 2586: Used 1 time : Rejected (85 > 52) uniquify 0 
+ DSP resource Status: mul_13s_71s_71_5_1_U2/buff0_reg_34 0 9759 2375: Used 1 time : Accepted (15 < 52) uniquify 0 
+ DSP resource Status: mul_13s_71s_71_5_1_U2/buff0_reg_34 1 9759 2442: Used 1 time : Accepted (16 < 52) uniquify 0 
+ DSP resource Status: mul_13s_71s_71_5_1_U2/buff0_reg_34 2 9759 2412: Used 1 time : Accepted (17 < 52) uniquify 0 
+ DSP resource Status: mul_13s_71s_71_5_1_U2/buff0_reg_34 3 9759 2530: Used 1 time : Accepted (18 < 52) uniquify 0 
+ DSP resource Status: mul_43ns_36ns_79_3_1_U4/tmp_product_3d 0 3711 1785: Used 1 time : Rejected (83 > 52) uniquify 0 
+ DSP resource Status: mul_43ns_36ns_79_3_1_U4/tmp_product_3d 1 3711 1926: Used 1 time : Rejected (84 > 52) uniquify 0 
+ DSP resource Status: mul_43ns_36ns_79_3_1_U4/tmp_product_3c 0 6552 3173: Used 1 time : Rejected (62 > 52) uniquify 0 
+ DSP resource Status: mul_43ns_36ns_79_3_1_U4/tmp_product_3c 1 6552 3379: Used 1 time : Rejected (63 > 52) uniquify 0 
+ DSP resource Status: mul_43ns_36ns_79_3_1_U4/tmp_product_39 0 6552 3173: Used 1 time : Rejected (60 > 52) uniquify 0 
+ DSP resource Status: mul_43ns_36ns_79_3_1_U4/tmp_product_39 1 6552 3379: Used 1 time : Rejected (61 > 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_48 0 7034 2087: Used 1 time : Accepted (42 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_48 1 7034 2875: Used 1 time : Accepted (43 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_48 2 7034 2072: Used 1 time : Accepted (44 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_44 0 8231 2087: Used 1 time : Accepted (37 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_44 1 8231 3221: Used 1 time : Accepted (38 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_44 2 8231 2923: Used 1 time : Accepted (39 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_40 0 9730 3221: Used 1 time : Accepted (19 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_40 1 9730 3240: Used 1 time : Accepted (20 < 52) uniquify 0 
+ DSP resource Status: mul_49ns_44ns_93_5_1_U5/buff0_reg_40 2 9730 3269: Used 1 time : Accepted (21 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4f 0 9406 3135: Used 1 time : Accepted (31 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4f 1 9406 3135: Used 1 time : Accepted (32 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4f 2 9406 3136: Used 1 time : Accepted (33 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4c 0 9539 3135: Used 1 time : Accepted (28 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4c 1 9539 3221: Used 1 time : Accepted (29 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4c 2 9539 3183: Used 1 time : Accepted (30 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4b 0 9730 3221: Used 1 time : Accepted (22 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4b 1 9730 3240: Used 1 time : Accepted (23 < 52) uniquify 0 
+ DSP resource Status: mul_50ns_50ns_100_5_1_U6/buff0_reg_4b 2 9730 3269: Used 1 time : Accepted (24 < 52) uniquify 0 
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_13s_71s_71_5_1_U2/buff2_reg' and it is trimmed from '48' to '20' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_13s_71s_71_5_1.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_13s_71s_71_5_1_U2/buff1_reg' and it is trimmed from '48' to '20' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_13s_71s_71_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_43ns_36ns_79_3_1_U4/buff0_reg' and it is trimmed from '48' to '45' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_43ns_36ns_79_3_1.v:49]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_43ns_36ns_79_3_1_U4/buff0_reg' and it is trimmed from '48' to '28' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_43ns_36ns_79_3_1.v:49]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_49ns_44ns_93_5_1_U5/buff1_reg' and it is trimmed from '48' to '25' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_49ns_44ns_93_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_49ns_44ns_93_5_1_U5/buff0_reg' and it is trimmed from '48' to '25' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_49ns_44ns_93_5_1.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_50ns_50ns_100_5_1_U6/buff1_reg' and it is trimmed from '48' to '32' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_50ns_50ns_100_5_1.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_50ns_50ns_100_5_1_U6/buff0_reg' and it is trimmed from '48' to '32' bits. [c:/Users/seank/Documents/Research/VivadoProjectZync/VivadoProjectZync.gen/sources_1/bd/design_1/ipshared/e16e/hdl/verilog/loop_uhat_sparse_mul_50ns_50ns_100_5_1.v:53]
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 153, Available = 100. Will try to implement using LUT-RAM. 
+CRITICAL WARNING: [Synth 8-7048] Resources of type BRAM have been overutilized even after performing resource management. Used = 128, Available = 100. 
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:31 . Memory (MB): peak = 1749.906 ; gain = 872.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 1752.855 ; gain = 875.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------

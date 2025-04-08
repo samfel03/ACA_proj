@@ -1,0 +1,27 @@
+make clean_conf -f Makefile_upmem
+
+NR_DPUS=35 TRANSFER=SERIAL make -f Makefile_upmem
+
+g++ --std=c++11 -o ./library/loop_uhat.o ./library/loop_uhat.cpp -c
+
+g++ --std=c++11 -o test main.cpp library/*.o `dpu-pkg-config --cflags --libs dpu` -g
+
+g++ --std=c++11 -o ./bin/host_code ./host/app.cpp library/*.o `dpu-pkg-config --cflags --libs dpu` -DNR_DPUS=40 -DNR_TASKLETS=16 -g
+
+NR_DPUS=40 NR_TASKLETS=16 make
+
+clear && make clean && NR_DPUS=60 NR_TASKLETS=16 make && ./bin/host_code
+
+./bin/host_code
+
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+
+# sudo swapoff /swapfile
+sudo swapon /swapfile
+swapon --show
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+pwd
+
+clear && make clean && NR_DPUS=60 NR_TASKLETS=20 make -f Makefile_og

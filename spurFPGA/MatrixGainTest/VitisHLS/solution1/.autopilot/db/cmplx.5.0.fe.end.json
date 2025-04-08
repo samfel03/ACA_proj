@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "doGain",
+        "file": "core.cpp",
+        "fileloc": "7",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

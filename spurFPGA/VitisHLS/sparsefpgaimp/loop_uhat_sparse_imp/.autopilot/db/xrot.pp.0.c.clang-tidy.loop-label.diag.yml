@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Research/CU-Spur-Sean/spurFPGA/VitisHLS/sparsefpgaimp/loop_uhat_sparse_imp/.autopilot/db/xrot.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
+    FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xrot.c'
+    Replacements:    
+      - FilePath:        'C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\xrot.pp.0.c'
+        Offset:          47735
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_1: '
+...

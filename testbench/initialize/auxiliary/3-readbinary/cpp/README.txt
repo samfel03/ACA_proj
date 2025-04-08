@@ -1,0 +1,1 @@
+http://www.java2s.com/Tutorial/Cpp/0240__File-Stream/Saveandreaddoublearrayinabinaryfile.htm

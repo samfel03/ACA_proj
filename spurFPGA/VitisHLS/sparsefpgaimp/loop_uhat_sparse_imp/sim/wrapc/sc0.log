@@ -1,0 +1,17 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling loop_uhat_sparse.cpp_pre.cpp.tb.cpp
+   Compiling apatb_loop_uhat_sparse.cpp
+   Compiling mainsparse.cpp_pre.cpp.tb.cpp
+   Compiling xnrm2.c_pre.c.tb.c
+   Compiling rtGetInf.c_pre.c.tb.c
+   Compiling rtGetNaN.c_pre.c.tb.c
+   Compiling xrot.c_pre.c.tb.c
+   Compiling xaxpy.c_pre.c.tb.c
+   Compiling svd.c_pre.c.tb.c
+   Compiling xswap.c_pre.c.tb.c
+   Compiling xdotc.c_pre.c.tb.c
+   Compiling xrotg.c_pre.c.tb.c
+   Compiling rt_nonfinite.c_pre.c.tb.c
+   Compiling call_rcond.c_pre.c.tb.c
+   Compiling apatb_loop_uhat_sparse_ir.ll
+   Generating cosim.tv.exe

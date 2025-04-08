@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="call_rcond.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\call_rcond.c"/>
+    <originFiles name="loop_uhat_sparse.cpp" path="C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse.cpp"/>
+    <originFiles name="rtGetInf.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\rtGetInf.c"/>
+    <originFiles name="rtGetNaN.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\rtGetNaN.c"/>
+    <originFiles name="rt_nonfinite.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\rt_nonfinite.c"/>
+    <originFiles name="svd.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\svd.c"/>
+    <originFiles name="xaxpy.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xaxpy.c"/>
+    <originFiles name="xdotc.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xdotc.c"/>
+    <originFiles name="xnrm2.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xnrm2.c"/>
+    <originFiles name="xrot.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xrot.c"/>
+    <originFiles name="xrotg.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xrotg.c"/>
+    <originFiles name="xswap.c" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\src\xswap.c"/>
+  </source>
+  <testbench>
+    <originFiles name="mainsparse.cpp" path="C:\Research\CU-Spur-Sean\spurFPGA\CCE-C\library\mainsparse.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../loop_uhat_sparse.cpp in debug mode
+   Generating csim.exe
+Makefile.rules:317: recipe for target 'csim.exe' failed
+obj/loop_uhat_sparse.o: In function `loop_uhat_sparse(env_t*, double, double*, double, double*, double*, double)':
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../loop_uhat_sparse.cpp:8: multiple definition of `loop_uhat_sparse(env_t*, double, double*, double, double*, double*, double)'
+obj/mainsparse.o:C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1801: first defined here
+obj/mainsparse.o: In function `call_pinv(double const*, double*)':
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1117: undefined reference to `rtIsInf'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1117: undefined reference to `rtIsNaN'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1132: undefined reference to `svd'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1134: undefined reference to `rtIsInf'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1134: undefined reference to `rtIsNaN'
+obj/mainsparse.o: In function `call_rcond(double const*)':
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1213: undefined reference to `rtIsNaN'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1341: undefined reference to `rtIsInf'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1341: undefined reference to `rtIsNaN'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1449: undefined reference to `rtIsNaN'
+C:\Users\seank\Documents\Research\spurFPGA\sparsefpgaimp\loop_uhat_sparse\csim\build/../../../../../CCE-C/library/mainsparse.cpp:1453: undefined reference to `rtIsNaN'
+obj/mainsparse.o:mainsparse.cpp:(.rdata$.refptr.rtNaN[.refptr.rtNaN]+0x0): undefined reference to `rtNaN'
+collect2.exe: error: ld returned 1 exit status
+make: *** [csim.exe] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

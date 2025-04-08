@@ -1,0 +1,679 @@
+Starting read_binary for: H
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/H.bin
+Variable H is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for H: 51 milliseconds
+Starting read_binary for: prod0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/prod0.bin
+Variable prod0 is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for prod0: 61 milliseconds
+Starting read_binary for: pop5_dens
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/pop5_dens.bin
+Variable pop5_dens is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for pop5_dens: 67 milliseconds
+Starting read_binary for: u0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/u0.bin
+Variable u0 is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for u0: 30 milliseconds
+Starting read_binary for: a_norm
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/a_norm.bin
+Variable a_norm is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for a_norm: 67 milliseconds
+Starting read_binary for: trmult_reduced
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/trmult_reduced.bin
+Variable trmult_reduced is of size: 2325074432 bytes
+(Threads: 4): Time taken to complete read_binary for trmult_reduced: 326687 milliseconds
+Starting read_binary for: C_vect
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/C_vect.bin
+Variable C_vect is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for C_vect: 153 milliseconds
+Starting read_binary for: emi_no_ff
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/emi_no_ff.bin
+Variable emi_no_ff is of size: 4800 bytes
+(Threads: 4): Time taken to complete read_binary for emi_no_ff: 34 milliseconds
+Starting read_binary for: price_energy0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/price_energy0.bin
+Variable price_energy0 is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for price_energy0: 61 milliseconds
+Starting read_binary for: zeta_clean0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/zeta_clean0.bin
+Variable zeta_clean0 is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for zeta_clean0: 182 milliseconds
+Starting read_binary for: zeta_fossil0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/zeta_fossil0.bin
+Variable zeta_fossil0 is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for zeta_fossil0: 41 milliseconds
+Starting read_binary for: forc_noCO2
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/forc_noCO2.bin
+Variable forc_noCO2 is of size: 4808 bytes
+(Threads: 4): Time taken to complete read_binary for forc_noCO2: 22 milliseconds
+Starting read_binary for: temp0_local
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/temp0_local.bin
+Variable temp0_local is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for temp0_local: 25 milliseconds
+Starting read_binary for: temp_past
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/temp_past.bin
+Variable temp_past is of size: 6955584 bytes
+(Threads: 4): Time taken to complete read_binary for temp_past: 1146 milliseconds
+Starting read_binary for: Delta_temp
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/Delta_temp.bin
+Variable Delta_temp is of size: 6819200 bytes
+(Threads: 4): Time taken to complete read_binary for Delta_temp: 875 milliseconds
+Starting read_binary for: scaler_temp
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/scaler_temp.bin
+Variable scaler_temp is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for scaler_temp: 73 milliseconds
+Starting read_binary for: theta_amen_scen
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/theta_amen_scen.bin
+Variable theta_amen_scen is of size: 288 bytes
+(Threads: 4): Time taken to complete read_binary for theta_amen_scen: 29 milliseconds
+Starting read_binary for: theta_prod_scen
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/theta_prod_scen.bin
+Variable theta_prod_scen is of size: 288 bytes
+(Threads: 4): Time taken to complete read_binary for theta_prod_scen: 32 milliseconds
+Starting read_binary for: natal_data
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/natal_data.bin
+Variable natal_data is of size: 68544 bytes
+(Threads: 4): Time taken to complete read_binary for natal_data: 28 milliseconds
+Starting read_binary for: pop_data
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/pop_data.bin
+Variable pop_data is of size: 68544 bytes
+(Threads: 4): Time taken to complete read_binary for pop_data: 62 milliseconds
+Starting read_binary for: emi0_ff
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/emi0_ff.bin
+Variable emi0_ff is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for emi0_ff: 17 milliseconds
+Starting read_binary for: emi0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/emi0.bin
+Variable emi0 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for emi0: 27 milliseconds
+Starting read_binary for: fossil_share
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/fossil_share.bin
+Variable fossil_share is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for fossil_share: 18 milliseconds
+Starting read_binary for: chi
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/chi.bin
+Variable chi is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for chi: 20 milliseconds
+Starting read_binary for: S0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/S0.bin
+Variable S0 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for S0: 26 milliseconds
+Starting read_binary for: S1
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/S1.bin
+Variable S1 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for S1: 23 milliseconds
+Starting read_binary for: S2
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/S2.bin
+Variable S2 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for S2: 27 milliseconds
+Starting read_binary for: S3
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/S3.bin
+Variable S3 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for S3: 35 milliseconds
+Starting read_binary for: temp1
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/temp1.bin
+Variable temp1 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for temp1: 33 milliseconds
+Starting read_binary for: temp2
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/temp2.bin
+Variable temp2 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for temp2: 37 milliseconds
+Starting read_binary for: temp0_global
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/temp0_global.bin
+Variable temp0_global is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for temp0_global: 32 milliseconds
+Starting read_binary for: natal0
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/natal0.bin
+Variable natal0 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for natal0: 51 milliseconds
+Starting read_binary for: natal20
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/natal20.bin
+Variable natal20 is of size: 8 bytes
+(Threads: 4): Time taken to complete read_binary for natal20: 50 milliseconds
+Starting read_binary for: cost_emi_param
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/cost_emi_param.bin
+Variable cost_emi_param is of size: 56 bytes
+(Threads: 4): Time taken to complete read_binary for cost_emi_param: 29 milliseconds
+Starting read_binary for: clean_energy_data
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/clean_energy_data.bin
+Variable clean_energy_data is of size: 280 bytes
+(Threads: 4): Time taken to complete read_binary for clean_energy_data: 50 milliseconds
+Starting read_binary for: emi_ff_data
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/emi_ff_data.bin
+Variable emi_ff_data is of size: 400 bytes
+(Threads: 4): Time taken to complete read_binary for emi_ff_data: 26 milliseconds
+Starting read_binary for: emi_ff_data_tend
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/emi_ff_data_tend.bin
+Variable emi_ff_data_tend is of size: 400 bytes
+(Threads: 4): Time taken to complete read_binary for emi_ff_data_tend: 23 milliseconds
+Starting read_binary for: m2_i
+Opening in read_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/input/m2_i.bin
+Variable m2_i is of size: 136384 bytes
+(Threads: 4): Time taken to complete read_binary for m2_i: 83 milliseconds
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+Writing begins for: H
+Memset begins for: H
+strcpy printpath for: H
+strcat filename for: H
+strcat filename for filename.bin: H
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/H.bin
+fwrite start: H
+fwrite end: H
+Writing complete for: H
+Writing begins for: prod0
+Memset begins for: prod0
+strcpy printpath for: prod0
+strcat filename for: prod0
+strcat filename for filename.bin: prod0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/prod0.bin
+fwrite start: prod0
+fwrite end: prod0
+Writing complete for: prod0
+Writing begins for: pop5_dens
+Memset begins for: pop5_dens
+strcpy printpath for: pop5_dens
+strcat filename for: pop5_dens
+strcat filename for filename.bin: pop5_dens
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/pop5_dens.bin
+fwrite start: pop5_dens
+fwrite end: pop5_dens
+Writing complete for: pop5_dens
+Writing begins for: u0
+Memset begins for: u0
+strcpy printpath for: u0
+strcat filename for: u0
+strcat filename for filename.bin: u0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/u0.bin
+fwrite start: u0
+fwrite end: u0
+Writing complete for: u0
+Writing begins for: a_norm
+Memset begins for: a_norm
+strcpy printpath for: a_norm
+strcat filename for: a_norm
+strcat filename for filename.bin: a_norm
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/a_norm.bin
+fwrite start: a_norm
+fwrite end: a_norm
+Writing complete for: a_norm
+Writing begins for: trmult_reduced
+Memset begins for: trmult_reduced
+strcpy printpath for: trmult_reduced
+strcat filename for: trmult_reduced
+strcat filename for filename.bin: trmult_reduced
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/trmult_reduced.bin
+fwrite start: trmult_reduced
+fwrite end: trmult_reduced
+Writing complete for: trmult_reduced
+Writing begins for: C_vect
+Memset begins for: C_vect
+strcpy printpath for: C_vect
+strcat filename for: C_vect
+strcat filename for filename.bin: C_vect
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/C_vect.bin
+fwrite start: C_vect
+fwrite end: C_vect
+Writing complete for: C_vect
+Writing begins for: emi_no_ff
+Memset begins for: emi_no_ff
+strcpy printpath for: emi_no_ff
+strcat filename for: emi_no_ff
+strcat filename for filename.bin: emi_no_ff
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/emi_no_ff.bin
+fwrite start: emi_no_ff
+fwrite end: emi_no_ff
+Writing complete for: emi_no_ff
+Writing begins for: price_energy0
+Memset begins for: price_energy0
+strcpy printpath for: price_energy0
+strcat filename for: price_energy0
+strcat filename for filename.bin: price_energy0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/price_energy0.bin
+fwrite start: price_energy0
+fwrite end: price_energy0
+Writing complete for: price_energy0
+Writing begins for: zeta_clean0
+Memset begins for: zeta_clean0
+strcpy printpath for: zeta_clean0
+strcat filename for: zeta_clean0
+strcat filename for filename.bin: zeta_clean0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/zeta_clean0.bin
+fwrite start: zeta_clean0
+fwrite end: zeta_clean0
+Writing complete for: zeta_clean0
+Writing begins for: zeta_fossil0
+Memset begins for: zeta_fossil0
+strcpy printpath for: zeta_fossil0
+strcat filename for: zeta_fossil0
+strcat filename for filename.bin: zeta_fossil0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/zeta_fossil0.bin
+fwrite start: zeta_fossil0
+fwrite end: zeta_fossil0
+Writing complete for: zeta_fossil0
+Writing begins for: forc_noCO2
+Memset begins for: forc_noCO2
+strcpy printpath for: forc_noCO2
+strcat filename for: forc_noCO2
+strcat filename for filename.bin: forc_noCO2
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/forc_noCO2.bin
+fwrite start: forc_noCO2
+fwrite end: forc_noCO2
+Writing complete for: forc_noCO2
+Writing begins for: temp0_local
+Memset begins for: temp0_local
+strcpy printpath for: temp0_local
+strcat filename for: temp0_local
+strcat filename for filename.bin: temp0_local
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/temp0_local.bin
+fwrite start: temp0_local
+fwrite end: temp0_local
+Writing complete for: temp0_local
+Writing begins for: temp_past
+Memset begins for: temp_past
+strcpy printpath for: temp_past
+strcat filename for: temp_past
+strcat filename for filename.bin: temp_past
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/temp_past.bin
+fwrite start: temp_past
+fwrite end: temp_past
+Writing complete for: temp_past
+Writing begins for: Delta_temp
+Memset begins for: Delta_temp
+strcpy printpath for: Delta_temp
+strcat filename for: Delta_temp
+strcat filename for filename.bin: Delta_temp
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/Delta_temp.bin
+fwrite start: Delta_temp
+fwrite end: Delta_temp
+Writing complete for: Delta_temp
+Writing begins for: scaler_temp
+Memset begins for: scaler_temp
+strcpy printpath for: scaler_temp
+strcat filename for: scaler_temp
+strcat filename for filename.bin: scaler_temp
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/scaler_temp.bin
+fwrite start: scaler_temp
+fwrite end: scaler_temp
+Writing complete for: scaler_temp
+Writing begins for: theta_amen_scen
+Memset begins for: theta_amen_scen
+strcpy printpath for: theta_amen_scen
+strcat filename for: theta_amen_scen
+strcat filename for filename.bin: theta_amen_scen
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/theta_amen_scen.bin
+fwrite start: theta_amen_scen
+fwrite end: theta_amen_scen
+Writing complete for: theta_amen_scen
+Writing begins for: theta_prod_scen
+Memset begins for: theta_prod_scen
+strcpy printpath for: theta_prod_scen
+strcat filename for: theta_prod_scen
+strcat filename for filename.bin: theta_prod_scen
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/theta_prod_scen.bin
+fwrite start: theta_prod_scen
+fwrite end: theta_prod_scen
+Writing complete for: theta_prod_scen
+Writing begins for: natal_data
+Memset begins for: natal_data
+strcpy printpath for: natal_data
+strcat filename for: natal_data
+strcat filename for filename.bin: natal_data
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/natal_data.bin
+fwrite start: natal_data
+fwrite end: natal_data
+Writing complete for: natal_data
+Writing begins for: pop_data
+Memset begins for: pop_data
+strcpy printpath for: pop_data
+strcat filename for: pop_data
+strcat filename for filename.bin: pop_data
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/pop_data.bin
+fwrite start: pop_data
+fwrite end: pop_data
+Writing complete for: pop_data
+Writing begins for: m2_i
+Memset begins for: m2_i
+strcpy printpath for: m2_i
+strcat filename for: m2_i
+strcat filename for filename.bin: m2_i
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/m2_i.bin
+fwrite start: m2_i
+fwrite end: m2_i
+Writing complete for: m2_i
+Writing begins for: emi0_ff
+Memset begins for: emi0_ff
+strcpy printpath for: emi0_ff
+strcat filename for: emi0_ff
+strcat filename for filename.bin: emi0_ff
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/emi0_ff.bin
+fwrite start: emi0_ff
+fwrite end: emi0_ff
+Writing complete for: emi0_ff
+Writing begins for: emi0
+Memset begins for: emi0
+strcpy printpath for: emi0
+strcat filename for: emi0
+strcat filename for filename.bin: emi0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/emi0.bin
+fwrite start: emi0
+fwrite end: emi0
+Writing complete for: emi0
+Writing begins for: fossil_share
+Memset begins for: fossil_share
+strcpy printpath for: fossil_share
+strcat filename for: fossil_share
+strcat filename for filename.bin: fossil_share
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/fossil_share.bin
+fwrite start: fossil_share
+fwrite end: fossil_share
+Writing complete for: fossil_share
+Writing begins for: chi
+Memset begins for: chi
+strcpy printpath for: chi
+strcat filename for: chi
+strcat filename for filename.bin: chi
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/chi.bin
+fwrite start: chi
+fwrite end: chi
+Writing complete for: chi
+Writing begins for: S0
+Memset begins for: S0
+strcpy printpath for: S0
+strcat filename for: S0
+strcat filename for filename.bin: S0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/S0.bin
+fwrite start: S0
+fwrite end: S0
+Writing complete for: S0
+Writing begins for: S1
+Memset begins for: S1
+strcpy printpath for: S1
+strcat filename for: S1
+strcat filename for filename.bin: S1
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/S1.bin
+fwrite start: S1
+fwrite end: S1
+Writing complete for: S1
+Writing begins for: S2
+Memset begins for: S2
+strcpy printpath for: S2
+strcat filename for: S2
+strcat filename for filename.bin: S2
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/S2.bin
+fwrite start: S2
+fwrite end: S2
+Writing complete for: S2
+Writing begins for: S3
+Memset begins for: S3
+strcpy printpath for: S3
+strcat filename for: S3
+strcat filename for filename.bin: S3
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/S3.bin
+fwrite start: S3
+fwrite end: S3
+Writing complete for: S3
+Writing begins for: temp1
+Memset begins for: temp1
+strcpy printpath for: temp1
+strcat filename for: temp1
+strcat filename for filename.bin: temp1
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/temp1.bin
+fwrite start: temp1
+fwrite end: temp1
+Writing complete for: temp1
+Writing begins for: temp2
+Memset begins for: temp2
+strcpy printpath for: temp2
+strcat filename for: temp2
+strcat filename for filename.bin: temp2
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/temp2.bin
+fwrite start: temp2
+fwrite end: temp2
+Writing complete for: temp2
+Writing begins for: temp0_global
+Memset begins for: temp0_global
+strcpy printpath for: temp0_global
+strcat filename for: temp0_global
+strcat filename for filename.bin: temp0_global
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/temp0_global.bin
+fwrite start: temp0_global
+fwrite end: temp0_global
+Writing complete for: temp0_global
+Writing begins for: natal0
+Memset begins for: natal0
+strcpy printpath for: natal0
+strcat filename for: natal0
+strcat filename for filename.bin: natal0
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/natal0.bin
+fwrite start: natal0
+fwrite end: natal0
+Writing complete for: natal0
+Writing begins for: natal20
+Memset begins for: natal20
+strcpy printpath for: natal20
+strcat filename for: natal20
+strcat filename for filename.bin: natal20
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/natal20.bin
+fwrite start: natal20
+fwrite end: natal20
+Writing complete for: natal20
+Writing begins for: cost_emi_param
+Memset begins for: cost_emi_param
+strcpy printpath for: cost_emi_param
+strcat filename for: cost_emi_param
+strcat filename for filename.bin: cost_emi_param
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/cost_emi_param.bin
+fwrite start: cost_emi_param
+fwrite end: cost_emi_param
+Writing complete for: cost_emi_param
+Writing begins for: clean_energy_data
+Memset begins for: clean_energy_data
+strcpy printpath for: clean_energy_data
+strcat filename for: clean_energy_data
+strcat filename for filename.bin: clean_energy_data
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/clean_energy_data.bin
+fwrite start: clean_energy_data
+fwrite end: clean_energy_data
+Writing complete for: clean_energy_data
+Writing begins for: emi_ff_data
+Memset begins for: emi_ff_data
+strcpy printpath for: emi_ff_data
+strcat filename for: emi_ff_data
+strcat filename for filename.bin: emi_ff_data
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/emi_ff_data.bin
+fwrite start: emi_ff_data
+fwrite end: emi_ff_data
+Writing complete for: emi_ff_data
+Writing begins for: emi_ff_data_tend
+Memset begins for: emi_ff_data_tend
+strcpy printpath for: emi_ff_data_tend
+strcat filename for: emi_ff_data_tend
+strcat filename for filename.bin: emi_ff_data_tend
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/emi_ff_data_tend.bin
+fwrite start: emi_ff_data_tend
+fwrite end: emi_ff_data_tend
+Writing complete for: emi_ff_data_tend
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+
+
+loop_uhat called
+
+loop_uhat duration: 193416
+
+
+realgdp0_w = 1.0624791927087671Writing begins for: bwd_l0_model
+Memset begins for: bwd_l0_model
+strcpy printpath for: bwd_l0_model
+strcat filename for: bwd_l0_model
+strcat filename for filename.bin: bwd_l0_model
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_l0_model.bin
+fwrite start: bwd_l0_model
+fwrite end: bwd_l0_model
+Writing complete for: bwd_l0_model
+Writing begins for: bwd_realgdp0_model
+Memset begins for: bwd_realgdp0_model
+strcpy printpath for: bwd_realgdp0_model
+strcat filename for: bwd_realgdp0_model
+strcat filename for filename.bin: bwd_realgdp0_model
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_realgdp0_model.bin
+fwrite start: bwd_realgdp0_model
+fwrite end: bwd_realgdp0_model
+Writing complete for: bwd_realgdp0_model
+Writing begins for: bwd_weight_pop_matrix
+Memset begins for: bwd_weight_pop_matrix
+strcpy printpath for: bwd_weight_pop_matrix
+strcat filename for: bwd_weight_pop_matrix
+strcat filename for filename.bin: bwd_weight_pop_matrix
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_weight_pop_matrix.bin
+fwrite start: bwd_weight_pop_matrix
+fwrite end: bwd_weight_pop_matrix
+Writing complete for: bwd_weight_pop_matrix
+Writing begins for: bwd_b0T
+Memset begins for: bwd_b0T
+strcpy printpath for: bwd_b0T
+strcat filename for: bwd_b0T
+strcat filename for filename.bin: bwd_b0T
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_b0T.bin
+fwrite start: bwd_b0T
+fwrite end: bwd_b0T
+Writing complete for: bwd_b0T
+Writing begins for: bwd_bw
+Memset begins for: bwd_bw
+strcpy printpath for: bwd_bw
+strcat filename for: bwd_bw
+strcat filename for filename.bin: bwd_bw
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_bw.bin
+fwrite start: bwd_bw
+fwrite end: bwd_bw
+Writing complete for: bwd_bw
+Writing begins for: bwd_l20_model
+Memset begins for: bwd_l20_model
+strcpy printpath for: bwd_l20_model
+strcat filename for: bwd_l20_model
+strcat filename for filename.bin: bwd_l20_model
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_l20_model.bin
+fwrite start: bwd_l20_model
+fwrite end: bwd_l20_model
+Writing complete for: bwd_l20_model
+Writing begins for: bwd_realgdp20_model
+Memset begins for: bwd_realgdp20_model
+strcpy printpath for: bwd_realgdp20_model
+strcat filename for: bwd_realgdp20_model
+strcat filename for filename.bin: bwd_realgdp20_model
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_realgdp20_model.bin
+fwrite start: bwd_realgdp20_model
+fwrite end: bwd_realgdp20_model
+Writing complete for: bwd_realgdp20_model
+Writing begins for: bwd_temp20_local
+Memset begins for: bwd_temp20_local
+strcpy printpath for: bwd_temp20_local
+strcat filename for: bwd_temp20_local
+strcat filename for filename.bin: bwd_temp20_local
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_temp20_local.bin
+fwrite start: bwd_temp20_local
+fwrite end: bwd_temp20_local
+Writing complete for: bwd_temp20_local
+Backward climate
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+ T=50,min=-0.0351497010000000,max=0.0219432970000000,center=13.2785960000000003,steep=0.1000000000000000
+
+
+Verify climate theta:
+(0,0.020706,-24.816319) (1,0.020534,-23.484230) (2,0.021028,-27.889156) (3,0.021038,-27.999439) (4,0.020777,-25.423430) (5,0.020002,-20.190755) (6,-0.020393,23.817694) (7,-0.020393,23.817694) (8,-0.020393,23.817694) (9,-0.020393,23.817694)
+ T=50,min=-0.0351497010000000,max=0.0219432970000000,center=13.2785960000000003,steep=0.1000000000000000
+
+
+Verify climate theta:
+(0,0.020706,-24.816319) (1,0.020534,-23.484230) (2,0.021028,-27.889156) (3,0.021038,-27.999439) (4,0.020777,-25.423430) (5,0.020002,-20.190755) (6,-0.020393,23.817694) (7,-0.020393,23.817694) (8,-0.020393,23.817694) (9,-0.020393,23.817694) Writing begins for: bwd_m2_i
+Memset begins for: bwd_m2_i
+strcpy printpath for: bwd_m2_i
+strcat filename for: bwd_m2_i
+strcat filename for filename.bin: bwd_m2_i
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_m2_i.bin
+fwrite start: bwd_m2_i
+fwrite end: bwd_m2_i
+Writing complete for: bwd_m2_i
+
+coef pop: -0.6899999999999999 0.0000000000000000 -5.0000000000000000 -0.5100000000000000 -0.2500000000000000 -5.0000000000000000 2.8799999999999999 -0.6700000000000000
+upsilon_fossil: 1.1499999999999999
+upsilon_clean: 1.1499999999999999
+ realgdp0_w: 1.0624791927087671Writing begins for: bwd_temp_past
+Memset begins for: bwd_temp_past
+strcpy printpath for: bwd_temp_past
+strcat filename for: bwd_temp_past
+strcat filename for filename.bin: bwd_temp_past
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_temp_past.bin
+fwrite start: bwd_temp_past
+fwrite end: bwd_temp_past
+Writing complete for: bwd_temp_past
+Writing begins for: bwd_theta_amen_temp
+Memset begins for: bwd_theta_amen_temp
+strcpy printpath for: bwd_theta_amen_temp
+strcat filename for: bwd_theta_amen_temp
+strcat filename for filename.bin: bwd_theta_amen_temp
+Opening in write_binary the file: /mnt/e/Code/IS/eco_data/CCE-C/C/output/bwd_theta_amen_temp.bin
+fwrite start: bwd_theta_amen_temp
+fwrite end: bwd_theta_amen_temp
+Writing complete for: bwd_theta_amen_temp
+
+
+loop_uhat called
+
+loop_uhat duration: 176265
+t = -0; error_realgdp = 1.010000; error_e = 1.001000; error_l = 834828.540606
+t = -0; error_realgdp = 1.010000; error_e = 1.001000; error_l = 1039.956214
+t = -0; error_realgdp = 1.010000; error_e = 1.001000; error_l = 1.642701
+
+
+loop_uhat called
+
+loop_uhat duration: 96549
+t = -0; error_realgdp = 1.010000; error_e = 0.366951; error_l = 2498.174417
+t = -0; error_realgdp = 1.010000; error_e = 0.366951; error_l = 2.878984
+
+
+loop_uhat called
+
+loop_uhat duration: 65840
+t = -0; error_realgdp = 1.010000; error_e = 0.052221; error_l = 5.394157
+
+
+loop_uhat called
+
+loop_uhat duration: 143331
+t = -1; error_realgdp = 1.010000; error_e = 1.001000; error_l = 76472684.033842
+t = -1; error_realgdp = 1.010000; error_e = 1.001000; error_l = 94464.656441
+t = -1; error_realgdp = 1.010000; error_e = 1.001000; error_l = 117.931854
+t = -1; error_realgdp = 1.010000; error_e = 1.001000; error_l = 0.269110
+
+
+loop_uhat called
+
+loop_uhat duration: 219508
+t = -1; error_realgdp = 1.010000; error_e = 0.558109; error_l = 2407.464894
+t = -1; error_realgdp = 1.010000; error_e = 0.558109; error_l = 2.591726
+
+
+loop_uhat called
+loop_uhat duration: 95207
+t = -1; error_realgdp = 1.010000; error_e = 0.050047; error_l = 5.383438
+
+
+loop_uhat called
+
+loop_uhat duration: 182925
+t = -2; error_realgdp = 1.010000; error_e = 1.001000; error_l = 76295934.769684
+t = -2; error_realgdp = 1.010000; error_e = 1.001000; error_l = 94211.209312
+t = -2; error_realgdp = 1.010000; error_e = 1.001000; error_l = 116.624631
+t = -2; error_realgdp = 1.010000; error_e = 1.001000; error_l = 0.039896

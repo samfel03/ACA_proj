@@ -1,0 +1,145 @@
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1816:3: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+  for (q = 0; q < 7; q++) {
+  ^~~
+  VITIS_LOOP_53_1: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1816:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1832:9: warning: Added loop label VITIS_LOOP_69_2:   [xilinx-label-all-loops]
+        for (k = qq; k <= qjj; k++) {
+        ^~~
+        VITIS_LOOP_69_2: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1832:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1837:9: warning: Added loop label VITIS_LOOP_74_3:   [xilinx-label-all-loops]
+        for (k = qq; k <= qjj; k++) {
+        ^~~
+        VITIS_LOOP_74_3: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1837:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1846:5: warning: Added loop label VITIS_LOOP_83_4:   [xilinx-label-all-loops]
+    for (jj = qp1; jj < 9; jj++) {
+    ^~~
+    VITIS_LOOP_83_4: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1846:5: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1854:5: warning: Added loop label VITIS_LOOP_91_5:   [xilinx-label-all-loops]
+    for (ii = q + 1; ii < 9; ii++) {
+    ^~~
+    VITIS_LOOP_91_5: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1854:5: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1871:11: warning: Added loop label VITIS_LOOP_108_6:   [xilinx-label-all-loops]
+          for (k = qp1; k < 9; k++) {
+          ^~~
+          VITIS_LOOP_108_6: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1871:11: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1875:11: warning: Added loop label VITIS_LOOP_112_7:   [xilinx-label-all-loops]
+          for (k = qp1; k < 9; k++) {
+          ^~~
+          VITIS_LOOP_112_7: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1875:11: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1881:9: warning: Added loop label VITIS_LOOP_118_8:   [xilinx-label-all-loops]
+        for (ii = qp1; ii < 9; ii++) {
+        ^~~
+        VITIS_LOOP_118_8: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1881:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1884:9: warning: Added loop label VITIS_LOOP_121_9:   [xilinx-label-all-loops]
+        for (jj = qp1; jj < 9; jj++) {
+        ^~~
+        VITIS_LOOP_121_9: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1884:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1888:9: warning: Added loop label VITIS_LOOP_125_10:   [xilinx-label-all-loops]
+        for (jj = qp1; jj < 9; jj++) {
+        ^~~
+        VITIS_LOOP_125_10: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1888:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1893:7: warning: Added loop label VITIS_LOOP_130_11:   [xilinx-label-all-loops]
+      for (ii = qp1; ii < 9; ii++) {
+      ^~~
+      VITIS_LOOP_130_11: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1893:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1904:3: warning: Added loop label VITIS_LOOP_141_12:   [xilinx-label-all-loops]
+  for (q = 6; q >= 0; q--) {
+  ^~~
+  VITIS_LOOP_141_12: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1904:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1909:7: warning: Added loop label VITIS_LOOP_146_13:   [xilinx-label-all-loops]
+      for (jj = qp1; jj < 9; jj++) {
+      ^~~
+      VITIS_LOOP_146_13: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1909:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1914:7: warning: Added loop label VITIS_LOOP_151_14:   [xilinx-label-all-loops]
+      for (ii = q + 1; ii < 9; ii++) {
+      ^~~
+      VITIS_LOOP_151_14: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1914:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1919:7: warning: Added loop label VITIS_LOOP_156_15:   [xilinx-label-all-loops]
+      for (ii = 0; ii < q; ii++) {
+      ^~~
+      VITIS_LOOP_156_15: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1919:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1927:3: warning: Added loop label VITIS_LOOP_164_16:   [xilinx-label-all-loops]
+  for (q = 7; q >= 0; q--) {
+  ^~~
+  VITIS_LOOP_164_16: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1927:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1931:7: warning: Added loop label VITIS_LOOP_168_17:   [xilinx-label-all-loops]
+      for (jj = qp1; jj < 9; jj++) {
+      ^~~
+      VITIS_LOOP_168_17: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1931:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1942:3: warning: Added loop label VITIS_LOOP_179_18:   [xilinx-label-all-loops]
+  for (q = 0; q < 8; q++) {
+  ^~~
+  VITIS_LOOP_179_18: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1942:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1953:7: warning: Added loop label VITIS_LOOP_190_19:   [xilinx-label-all-loops]
+      for (k = qp1jj + 1; k <= qjj; k++) {
+      ^~~
+      VITIS_LOOP_190_19: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1953:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1966:9: warning: Added loop label VITIS_LOOP_203_20:   [xilinx-label-all-loops]
+        for (k = qp1jj + 1; k <= qjj; k++) {
+        ^~~
+        VITIS_LOOP_203_20: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1966:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1973:3: warning: Added loop label VITIS_LOOP_210_21:   [xilinx-label-all-loops]
+  while ((m + 2 > 0) && (iter < 75)) {
+  ^~~~~
+  VITIS_LOOP_210_21: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1973:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1978:5: warning: Added loop label VITIS_LOOP_215_22:   [xilinx-label-all-loops]
+    while (!(exitg1 || (ii == 0))) {
+    ^~~~~
+    VITIS_LOOP_215_22: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1978:5: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1996:7: warning: Added loop label VITIS_LOOP_233_23:   [xilinx-label-all-loops]
+      while ((!exitg1) && (qjj >= ii)) {
+      ^~~~~
+      VITIS_LOOP_233_23: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:1996:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2031:7: warning: Added loop label VITIS_LOOP_268_24:   [xilinx-label-all-loops]
+      for (k = jj; k >= ii + 1; k--) {
+      ^~~
+      VITIS_LOOP_268_24: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2031:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2045:7: warning: Added loop label VITIS_LOOP_282_25:   [xilinx-label-all-loops]
+      for (k = ii + 1; k <= m + 2; k++) {
+      ^~~
+      VITIS_LOOP_282_25: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2045:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2079:7: warning: Added loop label VITIS_LOOP_316_26:   [xilinx-label-all-loops]
+      for (k = ii + 1; k <= jj; k++) {
+      ^~~
+      VITIS_LOOP_316_26: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2079:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2106:9: warning: Added loop label VITIS_LOOP_343_27:   [xilinx-label-all-loops]
+        for (k = qp1jj + 1; k <= qjj; k++) {
+        ^~~
+        VITIS_LOOP_343_27: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2106:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2111:7: warning: Added loop label VITIS_LOOP_348_28:   [xilinx-label-all-loops]
+      while ((ii + 1 < 8) && (b_s[ii] < b_s[qp1])) {
+      ^~~~~
+      VITIS_LOOP_348_28: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2111:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2125:3: warning: Added loop label VITIS_LOOP_362_29:   [xilinx-label-all-loops]
+  for (k = 0; k < 8; k++) {
+  ^~~
+  VITIS_LOOP_362_29: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\svd.pp.0.c:2125:3: note: FIX-IT applied suggested code changes

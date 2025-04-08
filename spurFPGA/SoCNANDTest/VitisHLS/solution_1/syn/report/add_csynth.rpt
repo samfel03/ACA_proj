@@ -1,0 +1,130 @@
+
+
+================================================================
+== Vitis HLS Report for 'add'
+================================================================
+* Date:           Wed Jul 17 12:08:05 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        VitisHLS
+* Solution:       solution_1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.552 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     39|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        0|   -|    144|    232|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|      -|    -|
+|Register         |        -|   -|      -|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|    144|    271|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  66|  28800|  14400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|      1|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------+-------------+---------+----+-----+-----+-----+
+    |    Instance   |    Module   | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------+-------------+---------+----+-----+-----+-----+
+    |CRTLS_s_axi_U  |CRTLS_s_axi  |        0|   0|  144|  232|    0|
+    +---------------+-------------+---------+----+-----+-----+-----+
+    |Total          |             |        0|   0|  144|  232|    0|
+    +---------------+-------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_return     |         +|   0|  0|  39|          32|          32|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|  39|          32|          32|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
++---------------------+-----+-----+------------+--------------+--------------+
+|s_axi_CRTLS_AWVALID  |   in|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_AWREADY  |  out|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_AWADDR   |   in|    6|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_WVALID   |   in|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_WREADY   |  out|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_WDATA    |   in|   32|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_WSTRB    |   in|    4|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_ARVALID  |   in|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_ARREADY  |  out|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_ARADDR   |   in|    6|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_RVALID   |  out|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_RREADY   |   in|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_RDATA    |  out|   32|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_RRESP    |  out|    2|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_BVALID   |  out|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_BREADY   |   in|    1|       s_axi|         CRTLS|        scalar|
+|s_axi_CRTLS_BRESP    |  out|    2|       s_axi|         CRTLS|        scalar|
+|ap_clk               |   in|    1|  ap_ctrl_hs|           add|  return value|
+|ap_rst_n             |   in|    1|  ap_ctrl_hs|           add|  return value|
+|interrupt            |  out|    1|  ap_ctrl_hs|           add|  return value|
++---------------------+-----+-----+------------+--------------+--------------+
+

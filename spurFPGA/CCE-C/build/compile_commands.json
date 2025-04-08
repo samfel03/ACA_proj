@@ -1,0 +1,80 @@
+[
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\call_rcond.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\call_rcond.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/call_rcond.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/call_rcond.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\rt_nonfinite.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\rt_nonfinite.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/rt_nonfinite.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/rt_nonfinite.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\rtGetInf.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\rtGetInf.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/rtGetInf.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/rtGetInf.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\rtGetNaN.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\rtGetNaN.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/rtGetNaN.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/rtGetNaN.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\svd.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\svd.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/svd.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/svd.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\xaxpy.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\xaxpy.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/xaxpy.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/xaxpy.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\xdotc.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\xdotc.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/xdotc.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/xdotc.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\xnrm2.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\xnrm2.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/xnrm2.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/xnrm2.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\xrot.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\xrot.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/xrot.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/xrot.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\xrotg.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\xrotg.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/xrotg.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/xrotg.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CCE-C.dir/includes_C.rsp -g -o CMakeFiles\\CCE-C.dir\\src\\xswap.c.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\xswap.c",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/xswap.c",
+  "output": "library/CMakeFiles/CCE-C.dir/src/xswap.c.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/library",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CCE-C.dir/includes_CXX.rsp  -pg -mavx -g -o CMakeFiles\\CCE-C.dir\\src\\loop_uhat_sparse.cpp.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\library\\src\\loop_uhat_sparse.cpp",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/library/src/loop_uhat_sparse.cpp",
+  "output": "library/CMakeFiles/CCE-C.dir/src/loop_uhat_sparse.cpp.obj"
+},
+{
+  "directory": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/build/apps",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -g -pg -mavx -g -o CMakeFiles\\main.dir\\mainsparse.cpp.obj -c C:\\Research\\CU-Spur-Sean\\spurFPGA\\CCE-C\\apps\\mainsparse.cpp",
+  "file": "C:/Research/CU-Spur-Sean/spurFPGA/CCE-C/apps/mainsparse.cpp",
+  "output": "apps/CMakeFiles/main.dir/mainsparse.cpp.obj"
+}
+]

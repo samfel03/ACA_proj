@@ -1,0 +1,145 @@
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1736:3: warning: Added loop label VITIS_LOOP_52_1:   [xilinx-label-all-loops]
+  while ((!exitg1) && (j < 8568)) {
+  ^~~~~
+  VITIS_LOOP_52_1: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1736:3: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1738:5: warning: Added loop label VITIS_LOOP_54_2:   [xilinx-label-all-loops]
+    for (i = 0; i < 8568; i++) {
+    ^~~
+    VITIS_LOOP_54_2: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1738:5: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1753:5: warning: Added loop label VITIS_LOOP_69_3:   [xilinx-label-all-loops]
+    for (j = 0; j < 8567; j++) {
+    ^~~
+    VITIS_LOOP_69_3: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1753:5: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1760:7: warning: Added loop label VITIS_LOOP_76_4:   [xilinx-label-all-loops]
+      for (jA = 2; jA <= iy; jA++) {
+      ^~~
+      VITIS_LOOP_76_4: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1760:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1770:11: warning: Added loop label VITIS_LOOP_86_5:   [xilinx-label-all-loops]
+          for (jA = 0; jA < 8568; jA++) {
+          ^~~
+          VITIS_LOOP_86_5: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1770:11: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1779:9: warning: Added loop label VITIS_LOOP_95_6:   [xilinx-label-all-loops]
+        for (i = jp1j; i <= b_i; i++) {
+        ^~~
+        VITIS_LOOP_95_6: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1779:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1784:7: warning: Added loop label VITIS_LOOP_100_7:   [xilinx-label-all-loops]
+      for (b_j = 0; b_j <= iter; b_j++) {
+      ^~~
+      VITIS_LOOP_100_7: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1784:7: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1789:11: warning: Added loop label VITIS_LOOP_105_8:   [xilinx-label-all-loops]
+          for (iy = b_i; iy <= jjA; iy++) {
+          ^~~
+          VITIS_LOOP_105_8: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1789:11: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1797:5: warning: Added loop label VITIS_LOOP_113_9:   [xilinx-label-all-loops]
+    do {
+    ^~
+    VITIS_LOOP_113_9: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1797:5: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1811:9: warning: Added loop label VITIS_LOOP_127_10:   [xilinx-label-all-loops]
+        for (i = 0; i < 8568; i++) {
+        ^~~
+        VITIS_LOOP_127_10: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1811:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1814:9: warning: Added loop label VITIS_LOOP_130_11:   [xilinx-label-all-loops]
+        while (kase != 0) {
+        ^~~~~
+        VITIS_LOOP_130_11: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1814:9: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1816:13: warning: Added loop label VITIS_LOOP_132_12:   [xilinx-label-all-loops]
+            for (b_j = 0; b_j < 8568; b_j++) {
+            ^~~
+            VITIS_LOOP_132_12: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1816:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1819:15: warning: Added loop label VITIS_LOOP_135_13:   [xilinx-label-all-loops]
+              for (i = 0; i <= b_i; i++) {
+              ^~~
+              VITIS_LOOP_135_13: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1819:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1824:13: warning: Added loop label VITIS_LOOP_140_14:   [xilinx-label-all-loops]
+            for (b_j = 8567; b_j >= 0; b_j--) {
+            ^~~
+            VITIS_LOOP_140_14: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1824:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1827:15: warning: Added loop label VITIS_LOOP_143_15:   [xilinx-label-all-loops]
+              for (i = 0; i < b_j; i++) {
+              ^~~
+              VITIS_LOOP_143_15: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1827:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1833:13: warning: Added loop label VITIS_LOOP_149_16:   [xilinx-label-all-loops]
+            for (b_j = 0; b_j < 8568; b_j++) {
+            ^~~
+            VITIS_LOOP_149_16: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1833:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1836:15: warning: Added loop label VITIS_LOOP_152_17:   [xilinx-label-all-loops]
+              for (i = 0; i < b_j; i++) {
+              ^~~
+              VITIS_LOOP_152_17: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1836:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1841:13: warning: Added loop label VITIS_LOOP_157_18:   [xilinx-label-all-loops]
+            for (b_j = 8567; b_j >= 0; b_j--) {
+            ^~~
+            VITIS_LOOP_157_18: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1841:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1845:15: warning: Added loop label VITIS_LOOP_161_19:   [xilinx-label-all-loops]
+              for (i = 8568; i >= b_i; i--) {
+              ^~~
+              VITIS_LOOP_161_19: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1845:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1853:13: warning: Added loop label VITIS_LOOP_169_20:   [xilinx-label-all-loops]
+            for (jA = 0; jA < 8568; jA++) {
+            ^~~
+            VITIS_LOOP_169_20: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1853:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1857:15: warning: Added loop label VITIS_LOOP_173_21:   [xilinx-label-all-loops]
+              for (jA = 0; jA < 8568; jA++) {
+              ^~~
+              VITIS_LOOP_173_21: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1857:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1875:13: warning: Added loop label VITIS_LOOP_191_22:   [xilinx-label-all-loops]
+            for (jA = 0; jA < 8567; jA++) {
+            ^~~
+            VITIS_LOOP_191_22: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1875:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1889:13: warning: Added loop label VITIS_LOOP_205_23:   [xilinx-label-all-loops]
+            for (jA = 0; jA < 8568; jA++) {
+            ^~~
+            VITIS_LOOP_205_23: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1889:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1894:15: warning: Added loop label VITIS_LOOP_210_24:   [xilinx-label-all-loops]
+              for (jA = 0; jA < 8568; jA++) {
+              ^~~
+              VITIS_LOOP_210_24: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1894:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1901:15: warning: Added loop label VITIS_LOOP_217_25:   [xilinx-label-all-loops]
+              for (jA = 0; jA < 8568; jA++) {
+              ^~~
+              VITIS_LOOP_217_25: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1901:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1918:13: warning: Added loop label VITIS_LOOP_234_26:   [xilinx-label-all-loops]
+            for (jA = 0; jA < 8567; jA++) {
+            ^~~
+            VITIS_LOOP_234_26: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1918:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1933:15: warning: Added loop label VITIS_LOOP_249_27:   [xilinx-label-all-loops]
+              for (jA = 0; jA < 8568; jA++) {
+              ^~~
+              VITIS_LOOP_249_27: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1933:15: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1942:13: warning: Added loop label VITIS_LOOP_258_28:   [xilinx-label-all-loops]
+            for (jA = 0; jA < 8568; jA++) {
+            ^~~
+            VITIS_LOOP_258_28: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1942:13: note: FIX-IT applied suggested code changes
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1957:11: warning: Added loop label VITIS_LOOP_273_29:   [xilinx-label-all-loops]
+          for (jA = 0; jA < 73410624; jA++) {
+          ^~~
+          VITIS_LOOP_273_29: 
+C:\Research\CU-Spur-Sean\spurFPGA\VitisHLS\sparsefpgaimp\loop_uhat_sparse_imp\.autopilot\db\call_rcond.pp.0.c:1957:11: note: FIX-IT applied suggested code changes

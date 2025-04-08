@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "core.cpp",
+    "fileloc": 7,
+    "instructions": 86,
+    "loads": {
+      "L": 7
+    },
+    "name": "doGain",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 128
+  }
+}

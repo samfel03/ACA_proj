@@ -1,0 +1,61 @@
+{
+  "0": {
+    "basicblocks": 26,
+    "calls": "3 3",
+    "file": "loop_uhat_sparse.cpp",
+    "fileloc": 31,
+    "instructions": 252,
+    "loads": {
+      "L": 21
+    },
+    "name": "loop_uhat_sparse",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 1738
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 8,
+    "loads": {
+      "L": 3
+    },
+    "name": "to_ieee",
+    "total_instructions": 8
+  },
+  "2": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 251,
+    "loads": {
+      "G": 7,
+      "L": 2
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 251
+  },
+  "3": {
+    "basicblocks": 31,
+    "calls": "1 1 1 1 1 2 1 1 1 1",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 404,
+    "loads": {
+      "G": 6,
+      "L": 2
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 727
+  }
+}

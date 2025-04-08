@@ -1,0 +1,530 @@
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 9163
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 26.29895763397217 -37.37809104919434 -0.4825496673583984
+
+----------------------------Delta_temp
+0.1417631149291978 -0.1666437149047848 0.2875007629394526 0
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1736
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 -8.643080568313598 8.141278553009034 0.2447461366653443
+
+----------------------------Delta_temp
+0.1417631149291978 0.121348571777343 0.03759641647338863 105851000
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 182
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 26.67141151428223 0.016499 7495376283.73
+
+----------------------------Delta_temp
+0.1417631149291978 0.2887998580932596 0.00587 13261155645.78
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+Total number of elements in trmult_reduced larger than 0.000000 is: 1791449
+
+----------------------------theta_amen
+-0.035149701 0.021943297 13.278596 0.1
+
+----------------------------temp_past
+-24.67455539703369 23.13486232757568 25.24605503082275 23.6140157699585
+
+----------------------------Delta_temp
+0.1417631149291978 0.04730987548828125 0.06430301666259908 -0.199217605590821
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = CALL_C_DUT.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+

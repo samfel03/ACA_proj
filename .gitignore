@@ -1,0 +1,6 @@
+.vscode
+/xcode_upmem/CCE-C/CCE-C/bin/
+/xcode_upmem/CCE-C/CCE-C/library
+/xcode_upmem/CCE-C/CCE-C/library/
+/fol
+*.o
